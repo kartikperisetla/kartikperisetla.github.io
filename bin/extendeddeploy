@@ -12,6 +12,6 @@ git commit -m "nit change"
 
 git push
 
-y | ./bin/deploy
+echo 'y' | ./bin/deploy
 
 exit 0
