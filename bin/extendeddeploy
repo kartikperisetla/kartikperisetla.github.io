@@ -12,7 +12,6 @@ git commit -m "nit change"
 
 git push
 
-./bin/deploy
+y | ./bin/deploy
 
-echo "Deployment successful!"
 exit 0
