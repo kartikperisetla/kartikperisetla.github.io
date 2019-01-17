@@ -12,7 +12,7 @@ profile:
     <p></p>
     <p></p>
 
-news: true
+news: false
 social: true
 ---
 

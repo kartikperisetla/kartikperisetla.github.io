@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Your Name
-email: you@example.com
+name: Kartik Perisetla
+email: kartik.peri@gmail.com
 description: > # this means to ignore newlines until "url:"
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -16,7 +16,7 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 github_username: kartikperisetla
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: kartikperisetla
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 contact_note: >
