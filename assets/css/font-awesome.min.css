@@ -711,6 +711,11 @@
   content: "\f081"
 }
 
+.fa-twitter-square:hover {
+  color:cornflowerblue
+}
+
+
 .fa-facebook-square:before {
   content: "\f082"
 }
@@ -754,6 +759,10 @@
 
 .fa-linkedin-square:before {
   content: "\f08c"
+}
+
+.fa-linkedin-square:hover {
+  color:cornflowerblue
 }
 
 .fa-thumb-tack:before {
@@ -1034,6 +1043,10 @@
 
 .fa-envelope:before {
   content: "\f0e0"
+}
+
+.fa-envelope:hover {
+  color:cornflowerblue
 }
 
 .fa-linkedin:before {
@@ -1749,6 +1762,10 @@
 
 .fa-envelope-square:before {
   content: "\f199"
+}
+
+.fa-envelope-square:hover {
+  color:cornflowerblue
 }
 
 .fa-wordpress:before {
