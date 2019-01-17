@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Run this script to deploy the app to Github Pages
+
+# Parse cmd arguments
+
+echo "commiting changes..."
+git status
+
+echo "creating commit..."
+git add .
+
+git commit -m "nit change"
+
+git push
+
+echo 'y' | ./bin/deploy
+
+exit 0
