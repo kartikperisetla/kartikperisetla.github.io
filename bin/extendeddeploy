@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Run this script to deploy the app to Github Pages
+
+# Parse cmd arguments
+
+echo "Extended deploy invoked..."
+
+git add .
+
+git commit -m "nit change"
+
+git push
+
+./bin/deploy
+
+echo "Deployment successful!"
+exit 0
