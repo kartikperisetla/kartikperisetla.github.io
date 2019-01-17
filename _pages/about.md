@@ -6,7 +6,7 @@ description:
 
 profile:
   align: right
-  image: pr_pic.jpg
+  image: prpic.jpg
   address: >
     <p></p>
     <p></p>
