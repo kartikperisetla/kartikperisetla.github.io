@@ -6,9 +6,10 @@
 
 echo "commiting changes..."
 git status
-
-echo "creating commit..."
 git add .
+
+echo "commited changes..."
+git status
 
 git commit -m "nit change"
 
