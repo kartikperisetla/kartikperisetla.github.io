@@ -3,16 +3,24 @@ layout: page
 ---
 
 {% if page.profile %}
-  <div class="profile col one {{ page.profile.align }}">
-    {% if page.profile.image %}
-      <img class="one" src="{{ page.profile.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
-    {% endif %}
-    {% if page.profile.address %}
-      <div class="address">
-        {{ page.profile.address }}
-      </div>
-    {% endif %}
+<div class="profile col one {{ page.profile.align }}">
+  {% if page.profile.image %}
+  <img class="one" src="{{ page.profile.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  {% if page.profile.address %}
+  <div class="address">
+    {{ page.profile.address }}
   </div>
+  {% endif %}
+  <div class="social">
+    <span class="contacticon center">
+      <a href="mailto:kartik.peri@gmail.com"><i class="fa fa-envelope-square"></i></a>
+      <a href="https://github.com/kartikperisetla" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
+      <a href="https://twitter.com/kartikperisetla" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://www.linkedin.com/in/kartikperisetla" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+    </span>
+  </div>
+</div>
 {% endif %}
 
 {{ content }}

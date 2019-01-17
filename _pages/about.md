@@ -13,7 +13,8 @@ profile:
     <p></p>
 
 news: false
-social: true
+social: false
+
 ---
 <p align="left">
 I am an Applied Scientist at Microsoft working on Natural Language Processing and Machine Learning. Before Microsoft, I got my Masters from <a href="http://cmu.edu/">Carnegie Mellon University.</a>
