@@ -23,3 +23,7 @@ I am an Applied Scientist at Microsoft working on Natural Language Processing an
 <p align="left">
 My research interests spans the areas of Natural Language Processing, Machine Learning and Computer Vision with a view to build systems that can operate in this world by understanding existing knowledge in the form of text, speech, images and videos. I am specially interested in systems that can learn from experience in iterative manner.
 </p>
+
+<p align="left">
+Currently I am actively working on Neural Language Models for Text Generation.
+</p>
