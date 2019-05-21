@@ -5,7 +5,11 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 ---
 
-{% for project in site.projects %}
+<p>
+coming soon...
+</p>
+
+<!-- {% for project in site.projects %}
 
 {% if project.redirect %}
 <div class="project">
@@ -45,4 +49,4 @@ description: A growing collection of your cool projects.
 
 {% endif %}
 
-{% endfor %}
+{% endfor %} -->
