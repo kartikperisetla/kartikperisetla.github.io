@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Knowledge Extraction from unstructured Text
+title: Knowledge Extraction from unstructured text
 description: worked on this project as part of Microsoft Research AI school(AI-611)
 img: /assets/img/Microsoft-AI.jpg
 ---
