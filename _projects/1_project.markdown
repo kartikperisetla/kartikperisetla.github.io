@@ -10,3 +10,7 @@ The goal of the project was to find relevant profile from LinkedIn using people 
 You can learn more about this project here :
 <a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 
+
+<div class="img_row">
+    <img class="col three left" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="LinkedIn profile card in O365"/>
+</div>
