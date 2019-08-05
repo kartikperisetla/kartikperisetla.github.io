@@ -2,7 +2,7 @@
 layout: page
 title: One Laptop per Child
 description: open source contributor for OLPC laptop's sugar desktop environment
-img:
+img: /assets/img/olpc1.jpg
 ---
 
 Open Source Evangelist spending part of my free time on: Sugar Desktop Environment. It is being developed for One Laptop
