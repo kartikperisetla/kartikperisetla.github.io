@@ -9,7 +9,7 @@ description: A growing collection of your cool projects.
 coming soon...
 </p>
 
-<!-- {% for project in site.projects %}
+{% for project in site.projects %}
 
 {% if project.redirect %}
 <div class="project">
@@ -49,4 +49,4 @@ coming soon...
 
 {% endif %}
 
-{% endfor %} -->
+{% endfor %}
