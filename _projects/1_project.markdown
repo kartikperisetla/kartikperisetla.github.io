@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Search Ranker for LinkedIn people card in O365
-description: Worked on Search Relevance for LinkedIn people card feature in Office 365 products
+description: Developed search rankers for LinkedIn people card feature in Office 365 products
 img: https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png
 ---
 
