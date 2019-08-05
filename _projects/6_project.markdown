@@ -1,55 +1,31 @@
 ---
 layout: page
-title: Project 6
-description: a project with no image
+title: One Laptop per Child
+description: open source contributor for OLPC laptop's sugar desktop environment
 img:
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
+Open Source Evangelist spending part of my free time on: Sugar Desktop Environment. It is being developed for One Laptop Per Child project in collaboration with SugarLabs. My goal is to develop Sugar Activities that helps children learn with fun on XO laptops.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+As part of this effort:
 
-    ---
-    layout: page
-    title: Project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<ol>
+    <li><a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">WikipediaHI</a> - Wikipedia in Hindi for Sugar.
+    <li><a href="https://sites.google.com/site/developwebactivity/">DevelopWeb</a> - it is an Activity for Web Development using which children can develop Web Sites through HTML, Javascript and other web technologies. Children can learn quickly how to develop web pages in a step by step approach through examples provided for each HTML component.</li>
+    <li><a href="https://sites.google.com/site/oopsysugaractivity/">Oopsy</a> is a Sugar activity that will allow children to develop C/C++ programs, compile them and execute them to learn, explore and have fun!</li>
+</ol>
 
 
 <div class="img_row">
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/1.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/2.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/3.jpg" alt="" title="example image"/>
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/olpc1.jpg" alt="" title="child using olpc laptop"/>
 </div>
 <div class="col three caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    a kid using OLPC laptop in Bhagmalpur, India 
 </div>
+
 <div class="img_row">
-    <img class="col three left" src="{{ site.baseurl }}/assets/img/5.jpg" alt="" title="example image"/>
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/olpc2.jpg" alt="" title="kids using olpc laptop"/>
 </div>
 <div class="col three caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
-
-
-<div class="img_row">
-    <img class="col two left" src="{{ site.baseurl }}/assets/img/6.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-<br/><br/>
-
-
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above:
-
-<div class="img_row">
-    <img class="col two left" src="/img/6.jpg"/>
-    <img class="col one left" src="/img/11.jpg"/>
+    Project Bhagmalpur : https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/
 </div>
