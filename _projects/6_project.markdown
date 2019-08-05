@@ -23,7 +23,7 @@ As part of this effort, I have contributed:
         children to develop C/C++ programs, compile them and execute them to learn, explore and have fun!
     </li>
     <li>
-        <a href="Project Bhagmalpur : https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project
+        <a href="https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project
             Bhagmalpur</a> : worked with <a href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a
             href="https://www.olpcsf.org/node/91">Dr. Sameer Verma</a> and <a href="https://github.com/godiard">Gonzalo
             Odiard</a> to deploy XSCE school server at Bhagmalpur, India.
