@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NELL: Never-Ending Language Learning
+title: NELL- Never-Ending Language Learning
 description: a computer system that learns over time to read the web
 img: /assets/img/nell.png
 ---
