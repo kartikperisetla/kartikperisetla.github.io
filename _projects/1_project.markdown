@@ -12,5 +12,6 @@ https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-o
 
 
 <div class="img_row">
-    <img class="col one left" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="example image"/>
+    <img src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="example image"/>
 </div>
+
