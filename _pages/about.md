@@ -21,7 +21,7 @@ I am an Applied Scientist at Microsoft working on Natural Language Processing an
 </p>
 
 <p align="left">
-My research interests spans the areas of Natural Language Processing, Machine Learning and Computer Vision with a view to build systems that can operate in this world by understanding existing knowledge in the form of text, speech, images and videos. I am specially interested in systems that can learn from experience in iterative manner.
+My research interests spans the areas of Natural Language Processing, Machine Learning and Computer Vision with a view to build systems that can operate in this world by understanding existing knowledge in the form of text, speech, images and videos. I am specially interested in Questions Answering powered with Knowledge graphs for Open Domain Q&A and Visual Question Answering.
 </p>
 
 <p align="left">
