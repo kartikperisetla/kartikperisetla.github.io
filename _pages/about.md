@@ -6,7 +6,7 @@ description:
 
 profile:
   align: right
-  image: prpic.jpeg
+  image: morant_curve_pic.jpeg
   address: >
     <p></p>
     <p></p>
