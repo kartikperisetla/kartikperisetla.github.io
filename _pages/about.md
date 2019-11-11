@@ -17,7 +17,7 @@ social: false
 
 ---
 <p align="left">
-I am an Applied Scientist at Microsoft working on Natural Language Processing and Machine Learning. Before Microsoft, I got my Masters from <a href="http://cmu.edu/">Carnegie Mellon University.</a> And worked at LinkedIn in Search Relevance and Query Understanding team before joining Carnegie Mellon.
+I am an Applied Scientist at <a href="http://microsoft.com">Microsoft</a> working on Natural Language Processing and Machine Learning. Before Microsoft, I got my Masters from <a href="http://cmu.edu/">Carnegie Mellon University.</a> And worked at <a href="https://linkedin.com">LinkedIn</a> in Search Relevance and Query Understanding team before joining Carnegie Mellon.
 </p>
 
 <p align="left">
