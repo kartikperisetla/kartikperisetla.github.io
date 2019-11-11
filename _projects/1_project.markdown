@@ -1,16 +1,20 @@
 ---
 layout: page
-title: Search ranker for LinkedIn people card in O365
-description: Developed search rankers for LinkedIn people card feature in Office 365 products
-img: https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png
+title: CRF Query Tagger for LinkedIn Search
+description: Developed query tagger for LinkedIn Search
+img: /assets/img/crf_query_tagger.png
+
 ---
 
-The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
+Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
 
-You can learn more about this project here :
-<a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
+I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from your search query using Conditional Random Fields(CRF). Implemented Conditional Random Fields(CRF) library for LinkedIn Search Query Tagger to detect entities like Name, Company, Title, Location, Skill, Geo-location. In order to get this tagger in production - I designed and developed end-to-end pipeline to generate training dataset using SERP click-through chains, extract features, train CRF model and evaluate the model.
 
+These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search Results to users.
 
 <div class="img_row">
-    <img class="col three left" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="LinkedIn profile card in O365"/>
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/crf_query_tagger.png" alt="" title="Query tagging example"/>
+</div>
+<div class="col three caption">
+    How query is tagged with entity tags
 </div>
