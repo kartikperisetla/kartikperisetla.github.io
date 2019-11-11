@@ -1,12 +1,20 @@
 ---
 layout: page
-title: Knowledge worth ingesting for Satori -Bing's Knowledge Graph
-description: Developed a Machine Learning framework in Bing's Knowledge Graph that is helping selectively ingest knowledge
-img: /assets/img/satori.png
+title: CRF Query Tagger for LinkedIn Search
+description: Developed query tagger for LinkedIn Search
+img: /assets/img/crf_query_tagger.png
+
 ---
 
-Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a>
+Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
 
-Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering Satori Knowledge graph. This component has been deployed in production and is helping selectively ingest extracted information.
+I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from your search query using Conditional Random Fields(CRF). Implemented Conditional Random Fields(CRF) library for LinkedIn Search Query Tagger to detect entities like Name, Company, Title, Location, Skill, Geo-location. In order to get this tagger in production - I designed and developed end-to-end pipeline to generate training dataset using SERP click-through chains, extract features, train CRF model and evaluate the model.
 
-This framework is not only based on Natural Language processing components but also on User behavior modeling on crowdsourced knowledge platforms like Wikipedia, Reddit. 
+These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search Results to users.
+
+<div class="img_row">
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/crf_query_tagger.png" alt="" title="Query tagging example"/>
+</div>
+<div class="col three caption">
+    How query is tagged with entity tags
+</div>

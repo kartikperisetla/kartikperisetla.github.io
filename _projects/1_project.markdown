@@ -1,20 +1,18 @@
 ---
 layout: page
-title: CRF Query Tagger for LinkedIn Search
-description: Developed query tagger for LinkedIn Search
-img: /assets/img/crf_query_tagger.png
+title: Reading Wikipedia to Answer Open-Domain Questions
+description: Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering
+img: /assets/img/drqa.png
 
 ---
 
-Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
+Implementation of paper: <a href= "https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain Questions</a>
 
-I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from your search query using Conditional Random Fields(CRF). Implemented Conditional Random Fields(CRF) library for LinkedIn Search Query Tagger to detect entities like Name, Company, Title, Location, Skill, Geo-location. In order to get this tagger in production - I designed and developed end-to-end pipeline to generate training dataset using SERP click-through chains, extract features, train CRF model and evaluate the model.
-
-These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search Results to users.
+Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 
 <div class="img_row">
-    <img class="col three left" src="{{ site.baseurl }}/assets/img/crf_query_tagger.png" alt="" title="Query tagging example"/>
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/drqa.png" alt="" title="Reading Wikipedia to Answer Open-Domain Questions"/>
 </div>
 <div class="col three caption">
-    How query is tagged with entity tags
+    Danqi Chen's DrQA
 </div>

@@ -1,12 +1,16 @@
 ---
 layout: page
-title: Knowledge Extraction from unstructured text
-description: worked on this project as part of Microsoft Research AI school(AI-611)
-img: /assets/img/Microsoft-AI.jpg
+title: Search ranker for LinkedIn people card in O365
+description: Developed search rankers for LinkedIn people card feature in Office 365 products
+img: https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png
 ---
 
-Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.
+The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
 
-Our goal was to leverage deep learning methods for knowledge extraction leveraging ontological constrainsts from Satori knowledge graph. We used bi-directional LSTMs to capture semantic context and Hierarchical LSTMs to encode Ontological constraints in Knowledge Graph.
+You can learn more about this project here :
+<a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 
-We were able to improve the quality of knowledge extracted for certain entity types with specific predicate relating them.
+
+<div class="img_row">
+    <img class="col three left" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="LinkedIn profile card in O365"/>
+</div>

@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Search ranker for LinkedIn people card in O365
-description: Developed search rankers for LinkedIn people card feature in Office 365 products
-img: https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png
+title: Knowledge worth ingesting for Satori -Bing's Knowledge Graph
+description: Developed a Machine Learning framework in Bing's Knowledge Graph that is helping selectively ingest knowledge
+img: /assets/img/satori.png
 ---
 
-The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
+Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a>
 
-You can learn more about this project here :
-<a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
+Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering Satori Knowledge graph. This component has been deployed in production and is helping selectively ingest extracted information.
 
-
-<div class="img_row">
-    <img class="col three left" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" alt="" title="LinkedIn profile card in O365"/>
-</div>
+This framework is not only based on Natural Language processing components but also on User behavior modeling on crowdsourced knowledge platforms like Wikipedia, Reddit. 
