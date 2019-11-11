@@ -2,7 +2,7 @@
 layout: page
 title: Reading Wikipedia to Answer Open-Domain Questions
 description: Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering
-img: /assets/img/crf_query_tagger.png
+img: /assets/img/drqa.png
 
 ---
 
