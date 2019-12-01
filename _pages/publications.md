@@ -25,7 +25,6 @@ By: Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes
 <h4 style="color:#202E6E">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs
 </h4>
 By: Angela Fan, Claire Gardent, Chloé Braud, Antoine Bordes<br/><br/>
-<img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Implementing paper where a local knowledge graph is created to compress and reduce redundancy of information to handle long-form question answering.
+    Implementing paper where a local knowledge graph is created to compress and reduce redundancy of information to handle long-form question answering.
 </p>
