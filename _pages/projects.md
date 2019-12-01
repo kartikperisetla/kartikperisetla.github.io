@@ -8,6 +8,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px"/>
 <p>
+    <h4> Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering </h4>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
         Questions</a>
 
@@ -20,6 +21,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px"/>
 <p>
+    <h4> Developed query tagger for LinkedIn Search </h4>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
 
     I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from
@@ -38,6 +40,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px"/>
 <p>
+    <h4> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge from the web</h4>
     Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a>
 
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
