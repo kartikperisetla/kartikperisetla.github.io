@@ -89,6 +89,18 @@ description:
     them.
 </p>
 
+<h4 class="year" />
+<br />
+<h3>NELL- Never-Ending Language Learning
+</h3>
+<img class="thumbnail" src="/assets/img/nell.png" width="540px" height="380px" border="0px">
+<p>
+    <h4>a computer system that learns over time to read the web</h4>
+    I worked on project NELL during my Masters at Carnegie Mellon University under <a href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a>
+
+You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
+
+</p>
 
 <!-- 
 {% for project in site.projects %}
