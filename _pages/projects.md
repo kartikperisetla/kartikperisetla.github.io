@@ -6,7 +6,7 @@ description:
 ---
 <h3>Reading Wikipedia to Answer Open-Domain Questions
 </h3>
-<img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px"/>
+<img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px" />
 <p>
     <h4> Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering </h4>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
@@ -15,11 +15,11 @@ description:
     Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
 <h4 class="year" />
-<br/>
+<br />
 
 <h3>CRF Query Tagger for LinkedIn Search
 </h3>
-<img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px"/>
+<img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p>
     <h4> Developed query tagger for LinkedIn Search </h4>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
@@ -35,12 +35,13 @@ description:
 </p>
 
 <h4 class="year" />
-<br/>
+<br />
 <h3>Knowledge worth ingesting for Satori -Bing's Knowledge Graph
 </h3>
-<img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px"/>
+<img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px" />
 <p>
-    <h4> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge from the web</h4>
+    <h4> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
+        from the web</h4>
     Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a>
 
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
@@ -54,16 +55,38 @@ description:
 </p>
 
 <h4 class="year" />
-<br/>
+<br />
 <h3>Search ranker for LinkedIn people card in O365
 </h3>
-<img class="thumbnail" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px" height="380px" border="0px">
+<img class="thumbnail"
+    src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
+    height="380px" border="0px">
 <p>
     <h4>Developed search rankers for LinkedIn people card feature in Office 365 products</h4>
-    The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
+    The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about
+    authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for
+    this feature. This feature went live in September 2017.
 
-You can learn more about this project here :
-<a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
+    You can learn more about this project here :
+    <a
+        href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
+</p>
+
+<h4 class="year" />
+<br />
+<h3>Knowledge Extraction from unstructured text
+</h3>
+<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="540px" height="380px" border="0px">
+<p>
+    <h4>worked on this project as part of Microsoft Research AI school(AI-611)</h4>
+    Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.
+
+    Our goal was to leverage deep learning methods for knowledge extraction leveraging ontological constrainsts from
+    Satori knowledge graph. We used bi-directional LSTMs to capture semantic context and Hierarchical LSTMs to encode
+    Ontological constraints in Knowledge Graph.
+
+    We were able to improve the quality of knowledge extracted for certain entity types with specific predicate relating
+    them.
 </p>
 
 
