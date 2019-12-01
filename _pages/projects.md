@@ -2,20 +2,22 @@
 layout: page
 title: projects
 permalink: /projects/
-description: some of the projects I worked on
+description:
 ---
-<h3 >Reading Wikipedia to Answer Open-Domain Questions
+<h3>Reading Wikipedia to Answer Open-Domain Questions
 </h3>
+<img class="thumbnail" src="/assets/img/drqa.png" />
 <p>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
         Questions</a>
 
     Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
-<h4 class="year"/>
+<h4 class="year" />
 
-<h3 >CRF Query Tagger for LinkedIn Search
+<h3>CRF Query Tagger for LinkedIn Search
 </h3>
+<img class="thumbnail" src="/assets/img/crf_query_tagger.png" />
 <p>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
 
@@ -27,6 +29,23 @@ description: some of the projects I worked on
 
     These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search
     Results to users.
+</p>
+
+<h4 class="year" />
+<h3>Knowledge worth ingesting for Satori -Bing's Knowledge Graph
+</h3>
+<img class="thumbnail" src="/assets/img/satori.png" />
+<p>
+    Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a>
+
+    Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
+    knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
+    component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering
+    Satori Knowledge graph. This component has been deployed in production and is helping selectively ingest extracted
+    information.
+
+    This framework is not only based on Natural Language processing components but also on User behavior modeling on
+    crowdsourced knowledge platforms like Wikipedia, Reddit.
 </p>
 
 
