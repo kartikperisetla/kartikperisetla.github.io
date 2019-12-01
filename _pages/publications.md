@@ -10,8 +10,8 @@ description:
 <h4 class="year" />
 <br />
 
-<h5 style="color:#202E6E">Reading Wikipedia to Answer Open-Domain Questions
-</h5>
+<h4 style="color:#202E6E">Reading Wikipedia to Answer Open-Domain Questions
+</h4>
 By: Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes
 <img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px" />
 <p align="justify">
@@ -22,8 +22,8 @@ By: Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes
 <h4 class="year" />
 <br />
 
-<h5 style="color:#202E6E">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs
-</h5>
+<h4 style="color:#202E6E">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs
+</h4>
 By: Angela Fan, Claire Gardent, Chloé Braud, Antoine Bordes<br/><br/>
 <img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px" />
 <p align="justify">
