@@ -57,7 +57,7 @@ description:
 <br/>
 <h3>Search ranker for LinkedIn people card in O365
 </h3>
-<img class="thumbnail" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="360px" height="180px" border="0px"/>
+<img class="thumbnail" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px" height="380px" border="0px">
 <p>
     <h4>Developed search rankers for LinkedIn people card feature in Office 365 products</h4>
     The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
