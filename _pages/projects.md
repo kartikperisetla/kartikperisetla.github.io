@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: some of the projects I worked on
 ---
-<h3 class="year">Reading Wikipedia to Answer Open-Domain Questions
+<h3 >Reading Wikipedia to Answer Open-Domain Questions
 </h3>
 <p>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
@@ -13,7 +13,7 @@ description: some of the projects I worked on
     Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
 
-<h3 class="year">CRF Query Tagger for LinkedIn Search
+<h3 >CRF Query Tagger for LinkedIn Search
 </h3>
 <p>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
