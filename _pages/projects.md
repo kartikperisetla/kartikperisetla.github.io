@@ -12,6 +12,7 @@ description: some of the projects I worked on
 
     Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
+<h4 class=year>
 
 <h3 >CRF Query Tagger for LinkedIn Search
 </h3>
