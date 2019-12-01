@@ -6,7 +6,7 @@ description:
 ---
 <h3>Reading Wikipedia to Answer Open-Domain Questions
 </h3>
-<img class="thumbnail" src="/assets/img/drqa.png" />
+<img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="1px"/>
 <p>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
         Questions</a>
@@ -17,7 +17,7 @@ description:
 
 <h3>CRF Query Tagger for LinkedIn Search
 </h3>
-<img class="thumbnail" src="/assets/img/crf_query_tagger.png" />
+<img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="1px"/>
 <p>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.
 
