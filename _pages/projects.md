@@ -76,7 +76,7 @@ description:
 <br />
 <h3>Knowledge Extraction from unstructured text
 </h3>
-<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px"/>
+<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px" />
 <p>
     <h4>worked on this project as part of Microsoft Research AI school(AI-611)</h4>
     Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.
@@ -93,12 +93,36 @@ description:
 <br />
 <h3>NELL- Never-Ending Language Learning
 </h3>
-<img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px"/>
+<img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p>
     <h4>a computer system that learns over time to read the web</h4>
-    I worked on project NELL during my Masters at Carnegie Mellon University under <a href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a>
+    I worked on project NELL during my Masters at Carnegie Mellon University under <a
+        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a>
 
-You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
+    You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
+
+</p>
+
+<h4 class="year" />
+<br />
+<h3>Gloss Extraction Engine
+</h3>
+<img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
+<p>
+    <h4>An attempt to attach glosses to Knowledge Bases</h4>
+    Natural Language Processing framework written in python to extract definitional sentences about real world named
+    entities from large datasets like Wikipedia and ClueWeb. The core of the framework is based on the filters,
+    transformations, parsers, feature extractors, samplers and modelers you use. Thus it is extensible and customizable
+    for your needs. All you need to do is extend the base functionality and write your own filters, transformations,
+    parsers, feature extractors, samplers and modelers specific for your NLP task or datasource.
+
+    Project URL: <a
+        href="https://github.com/kartikperisetla/glossextractionengine">https://github.com/kartikperisetla/glossextractionengine</a>
+
+    This was part of project NELL during my Masters at Carnegie Mellon University under <a
+        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a>
+
+    You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
 
 </p>
 
