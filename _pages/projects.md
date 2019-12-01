@@ -14,6 +14,7 @@ description:
     Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
 <h4 class="year" />
+<br/>
 
 <h3>CRF Query Tagger for LinkedIn Search
 </h3>
@@ -32,6 +33,7 @@ description:
 </p>
 
 <h4 class="year" />
+<br/>
 <h3>Knowledge worth ingesting for Satori -Bing's Knowledge Graph
 </h3>
 <img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px"/>
@@ -46,6 +48,19 @@ description:
 
     This framework is not only based on Natural Language processing components but also on User behavior modeling on
     crowdsourced knowledge platforms like Wikipedia, Reddit.
+</p>
+
+<h4 class="year" />
+<br/>
+<h3>Search ranker for LinkedIn people card in O365
+</h3>
+<img class="thumbnail" src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="360px" height="180px" border="0px"/>
+<p>
+    <h4>Developed search rankers for LinkedIn people card feature in Office 365 products</h4>
+    The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for this feature. This feature went live in September 2017.
+
+You can learn more about this project here :
+<a href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 </p>
 
 
