@@ -76,7 +76,7 @@ description:
 <br />
 <h3>Knowledge Extraction from unstructured text
 </h3>
-<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="540px" height="380px" border="0px">
+<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px"/>
 <p>
     <h4>worked on this project as part of Microsoft Research AI school(AI-611)</h4>
     Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.
@@ -93,7 +93,7 @@ description:
 <br />
 <h3>NELL- Never-Ending Language Learning
 </h3>
-<img class="thumbnail" src="/assets/img/nell.png" width="540px" height="380px" border="0px">
+<img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px"/>
 <p>
     <h4>a computer system that learns over time to read the web</h4>
     I worked on project NELL during my Masters at Carnegie Mellon University under <a href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a>
