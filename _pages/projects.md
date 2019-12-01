@@ -20,13 +20,13 @@ description:
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
     <h4 style="color:#4E505A"> Developed query tagger for LinkedIn Search </h4>
-    Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.<br/>
+    Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.<br/><br/>
 
     I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from
     your search query using Conditional Random Fields(CRF). Implemented Conditional Random Fields(CRF) library for
     LinkedIn Search Query Tagger to detect entities like Name, Company, Title, Location, Skill, Geo-location. In order
     to get this tagger in production - I designed and developed end-to-end pipeline to generate training dataset using
-    SERP click-through chains, extract features, train CRF model and evaluate the model.<br/>
+    SERP click-through chains, extract features, train CRF model and evaluate the model.<br/><br/>
 
     These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search
     Results to users.
@@ -40,13 +40,13 @@ description:
 <p align="justify">
     <h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4>
-    Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a><br/>
+    Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a><br/><br/>
 
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
     knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
     component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering
     Satori Knowledge graph. This component has been deployed in production and is helping selectively ingest extracted
-    information.<br/>
+    information.<br/><br/>
 
     This framework is not only based on Natural Language processing components but also on User behavior modeling on
     crowdsourced knowledge platforms like Wikipedia, Reddit.
@@ -63,7 +63,7 @@ description:
     <h4 style="color:#4E505A">Developed search rankers for LinkedIn people card feature in Office 365 products</h4>
     The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about
     authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for
-    this feature. This feature went live in September 2017.<br/>
+    this feature. This feature went live in September 2017.<br/><br/>
 
     You can learn more about this project here :
     <a
@@ -77,11 +77,11 @@ description:
 <img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px" />
 <p align="justify">
     <h4 style="color:#4E505A">worked on this project as part of Microsoft Research AI school(AI-611)</h4>
-    Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.<br/>
+    Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.<br/><br/>
 
     Our goal was to leverage deep learning methods for knowledge extraction leveraging ontological constrainsts from
     Satori knowledge graph. We used bi-directional LSTMs to capture semantic context and Hierarchical LSTMs to encode
-    Ontological constraints in Knowledge Graph.<br/>
+    Ontological constraints in Knowledge Graph.<br/><br/>
 
     We were able to improve the quality of knowledge extracted for certain entity types with specific predicate relating
     them.
@@ -95,7 +95,7 @@ description:
 <p align="justify">
     <h4 style="color:#4E505A">a computer system that learns over time to read the web</h4>
     I worked on project NELL during my Masters at Carnegie Mellon University under <a
-        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/>
+        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
 
     You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
 
@@ -112,13 +112,13 @@ description:
     entities from large datasets like Wikipedia and ClueWeb. The core of the framework is based on the filters,
     transformations, parsers, feature extractors, samplers and modelers you use. Thus it is extensible and customizable
     for your needs. All you need to do is extend the base functionality and write your own filters, transformations,
-    parsers, feature extractors, samplers and modelers specific for your NLP task or datasource.<br/>
+    parsers, feature extractors, samplers and modelers specific for your NLP task or datasource.<br/><br/>
 
     Project URL: <a
-        href="https://github.com/kartikperisetla/glossextractionengine">https://github.com/kartikperisetla/glossextractionengine</a><br/>
+        href="https://github.com/kartikperisetla/glossextractionengine">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
 
     This was part of project NELL during my Masters at Carnegie Mellon University under <a
-        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/>
+        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
 
     You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
 
@@ -135,7 +135,7 @@ description:
     Laptop
     Per Child project in collaboration with SugarLabs. My goal is to develop Sugar Activities that helps children learn
     with
-    fun on XO laptops.<br/>
+    fun on XO laptops.<br/><br/>
 
     As part of this effort, I have contributed:
 
