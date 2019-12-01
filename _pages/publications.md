@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /publications/
-title: 
+title: publications
 description: 
 ---
 
-<h3 style="color:#202E6E">Papers that I implemented
+<h3 style="color:#202E6E">Implementation of papers
 </h3>
 <h4 class="year" />
 <br />
