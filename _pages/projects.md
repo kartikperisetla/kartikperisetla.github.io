@@ -8,7 +8,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/drqa.png" width="520px" height="300px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A"> Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering </h4>
+    <b><h4 style="color:#4E505A"> Implemented DrQA as per Danqi Chen's paper on Open-Domain question answering </h4></b>
     Implementation of paper: <a href="https://arxiv.org/pdf/1704.00051.pdf">Reading Wikipedia to Answer Open-Domain
         Questions</a>. Uses search component and DNN to detect answers to questions in Wikipedia paragraphs.
 </p>
@@ -19,7 +19,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A"> Developed query tagger for LinkedIn Search </h4>
+    <b><h4 style="color:#4E505A"> Developed query tagger for LinkedIn Search </h4></b>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.<br/><br/>
 
     I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from
@@ -38,8 +38,8 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
-        from the web</h4>
+    <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
+        from the web</h4></b>
     Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a><br/><br/>
 
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
@@ -60,7 +60,7 @@ description:
     src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
     height="380px" border="0px">
 <p align="justify">
-    <h4 style="color:#4E505A">Developed search rankers for LinkedIn people card feature in Office 365 products</h4>
+    <b><h4 style="color:#4E505A">Developed search rankers for LinkedIn people card feature in Office 365 products</h4></b>
     The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about
     authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for
     this feature. This feature went live in September 2017.<br/><br/>
@@ -76,7 +76,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A">worked on this project as part of Microsoft Research AI school(AI-611)</h4>
+    <b><h4 style="color:#4E505A">worked on this project as part of Microsoft Research AI school(AI-611)</h4></b>
     Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.<br/><br/>
 
     Our goal was to leverage deep learning methods for knowledge extraction leveraging ontological constrainsts from
@@ -93,7 +93,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A">a computer system that learns over time to read the web</h4>
+    <b><h4 style="color:#4E505A">a computer system that learns over time to read the web</h4></b>
     I worked on project NELL during my Masters at Carnegie Mellon University under <a
         href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
 
@@ -107,7 +107,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A">An attempt to attach glosses to Knowledge Bases</h4>
+    <b><h4 style="color:#4E505A">An attempt to attach glosses to Knowledge Bases</h4></b>
     Natural Language Processing framework written in python to extract definitional sentences about real world named
     entities from large datasets like Wikipedia and ClueWeb. The core of the framework is based on the filters,
     transformations, parsers, feature extractors, samplers and modelers you use. Thus it is extensible and customizable
@@ -130,7 +130,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/olpc1.jpg" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <h4 style="color:#4E505A">open source contributor for OLPC laptop's sugar desktop environment</h4>
+    <b><h4 style="color:#4E505A">open source contributor for OLPC laptop's sugar desktop environment</h4></b>
     Open Source Evangelist spending part of my free time on: Sugar Desktop Environment. It is being developed for One
     Laptop
     Per Child project in collaboration with SugarLabs. My goal is to develop Sugar Activities that helps children learn
