@@ -22,9 +22,14 @@ By: Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes
 <h4 class="year" />
 <br />
 
-<h4 style="color:#202E6E">Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs
+<h4 style="color:#202E6E">Improving long-form question answering by compressing search results
 </h4>
 By: Angela Fan, Claire Gardent, Chloé Braud, Antoine Bordes<br/><br/>
 <p align="justify">
-    Implementing paper where a local knowledge graph is created to compress and reduce redundancy of information to handle long-form question answering.
+    Currently working on implementing paper by Facebook on long-form question answering where a local knowledge graph is created to compress and reduce redundancy of information.
+
+    To learn more about this research: https://ai.facebook.com/blog/research-in-brief-training-ai-to-answer-questions-using-compressed-search-results/
+
+    To read full paper: https://research.fb.com/publications/using-local-knowledge-graph-construction-to-scale-seq2seq-models-to-multi-document-inputs/
+
 </p>
