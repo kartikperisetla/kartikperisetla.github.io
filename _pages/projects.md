@@ -143,7 +143,7 @@ description:
     As part of this effort, I have contributed:
 
     <ul>
-        <li><a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">WikipediaHI</a> - Wikipedia in Hindi for
+        <li><a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Wikipedia Hindi</a> - Wikipedia in Hindi for
             Sugar.
         </li>
         <li><a href="https://sites.google.com/site/developwebactivity/">DevelopWeb</a> - it is an Activity for Web
@@ -168,7 +168,7 @@ description:
             title="little joy" />
     </div>
     <div class="col three caption">
-        developed WikipediaHindi for offline access on XO laptop through XSCE school server <br/><br/>Download: <a href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
+        developed WikipediaHindi for offline access on XO laptop through XSCE school server<br/>Download: <a href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
     </div>
 
     <div class="img_row">
