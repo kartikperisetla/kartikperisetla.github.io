@@ -164,6 +164,14 @@ description:
     </ul>
 
     <div class="img_row">
+        <img class="col three left" src="{{ site.baseurl }}/assets/img/xo_bhagmalpur.png" alt=""
+            title="little joy" />
+    </div>
+    <div class="col three caption">
+        developed WikipediaHindi for offline access on XO laptop through XSCE school server <br/><br/>Download: <a href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
+    </div>
+
+    <div class="img_row">
         <img class="col three left" src="{{ site.baseurl }}/assets/img/olpc1.jpg" alt=""
             title="child using olpc laptop" />
     </div>
@@ -179,13 +187,7 @@ description:
         kids using Wikipedia Hindi at Bhagmalpur
     </div>
 
-    <div class="img_row">
-        <img class="col three left" src="{{ site.baseurl }}/assets/img/xo_bhagmalpur.png" alt=""
-            title="little joy" />
-    </div>
-    <div class="col three caption">
-        developed WikipediaHindi for offline access on XO laptop through XSCE school server https://activities.sugarlabs.org/en-US/sugar/addon/4632
-    </div>
+    
 
 </p>
 
