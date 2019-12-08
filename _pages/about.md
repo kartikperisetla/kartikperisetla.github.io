@@ -21,7 +21,7 @@ I am an Applied Scientist at <a href="http://microsoft.com">Microsoft</a> workin
 </p>
 
 <p align="left">
-My research interests spans the areas of Natural Language Processing, Machine Learning and Computer Vision with a view to build systems that can operate in this world by understanding existing knowledge in the form of text, speech, images and videos. I am specially interested in Questions Answering powered with Knowledge graphs for Open Domain Q&A and Visual Question Answering.
+My research interests spans Natural Language Understanding, Computer Vision and Commonsense reasoning with a view to build agents that can operate in this world by understanding existing concepts from text, images and videos. I am specially interested in Conversational AI, Open Domain Q&A and Visual Question Answering.
 </p>
 
 <p align="left">
