@@ -134,13 +134,11 @@ description:
 <img class="thumbnail" src="/assets/img/olpc1.jpg" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">open source contributor for OLPC laptop's sugar desktop environment</h4></b>
-    Open Source Evangelist spending part of my free time on: Sugar Desktop Environment. It is being developed for One
+    Sugar Desktop Environment is being developed for One
     Laptop
-    Per Child project in collaboration with SugarLabs. My goal is to develop Sugar Activities that helps children learn
-    with
-    fun on XO laptops.<br/><br/>
+    Per Child project in collaboration with SugarLabs. My goal was to develop Sugar Activities that makes learning experience fun on XO laptops.<br/><br/>
 
-    As part of this effort, I have contributed:
+    As part of this effort, I have developed/contributed to:
 
     <ul>
         <li><a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Wikipedia Hindi</a> - Wikipedia in Hindi for
