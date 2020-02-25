@@ -17,7 +17,7 @@ social: false
 
 ---
 <p align="left">
-I am currently working on Open Domain Question Answering for <a href="https://www.apple.com/siri/">Apple Siri</a>. Prior to this, I was working on Natural language generation at <a href="http://microsoft.com">Microsoft</a>. Before Microsoft, I got my Masters from <a href="http://cmu.edu/">Carnegie Mellon University.</a> And worked at <a href="https://linkedin.com">LinkedIn</a> in Search Relevance and Query Understanding team before joining Carnegie Mellon.
+I am currently working on Open Domain Question Answering for <a href="https://www.apple.com/siri/" target="_blank">Apple Siri</a>. Prior to this, I was working on Natural language generation at <a href="http://microsoft.com" target="_blank">Microsoft</a>. Before Microsoft, I got my Masters from <a href="http://cmu.edu/" target="_blank">Carnegie Mellon University.</a> And worked at <a href="https://linkedin.com" target="_blank">LinkedIn</a> in Search Relevance and Query Understanding team before joining Carnegie Mellon.
 </p>
 
 <p align="left">
