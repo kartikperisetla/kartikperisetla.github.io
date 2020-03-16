@@ -1,5 +1,8 @@
 ---
 layout: page
+title: blog
+permalink: /blog/
+description:
 ---
 <h3 style="color:#202E6E">Blog posts
 </h3>
