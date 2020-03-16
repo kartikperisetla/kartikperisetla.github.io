@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improving long-form question answering by compressing search results
+title: Improving Long-form Question Answering by compressing search results
 date: 2020-03-16
 description: An approach on creating a local knowledge graph by compressing and reducing redundancy of information during answer retrieval
 ---
