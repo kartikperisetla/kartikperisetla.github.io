@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Question Answering with Subgraph Embeddings
-date: 2020-03-15 07:00:00
-description: using question embedding and knowledge graph segment embedding for Question Answering
+date: 2020-03-15
+description: An approach on how to use question embedding and knowledge subgraph embedding for Question Answering
 ---
 In this post we will walk through an interesting paper by Facebook Research: 
-paper:<a href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
-
+paper publised in 2014:<a href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
