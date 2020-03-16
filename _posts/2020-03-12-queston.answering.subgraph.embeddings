@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Question Answering with Subgraph Embeddings
-date: 2020-03-15
+date: 2020-03-12
 description: An approach on how to use question embedding and knowledge subgraph embedding for Question Answering
 ---
 <b>keywords</b>: question answering, knowledge graph, embeddings<br/>
