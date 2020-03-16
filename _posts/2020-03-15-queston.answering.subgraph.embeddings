@@ -15,7 +15,10 @@ In this post we will walk through an interesting paper by Facebook Research publ
 
 <br/>
 <p align="justify">
-This paper presents an approach where low dimension embeddings are learned for input question, answer candidates and a segment of knowledge graph that captures actual answer. The key idea this paper is based on the idea that embedding corresponding to knowledge subgraph containing answer captures lot more context that helps system to answer unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer.
+This paper presents an approach where low dimension embeddings are learned for input question, answer candidates and a segment of knowledge graph that captures actual answer. 
+</p><br/>
+<p align="justify">
+The key idea this paper is based on the idea that embedding corresponding to knowledge subgraph containing answer captures lot more context that helps system to answer unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer.
 </p>
 <br/><br/>
 <p align="justify">
