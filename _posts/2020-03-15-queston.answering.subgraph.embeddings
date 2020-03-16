@@ -8,8 +8,10 @@ description: An approach on how to use question embedding and knowledge subgraph
 <h4 class="year"/>
 
 <p align="justify">
-In this post we will walk through an interesting paper by Facebook Research published in 2014: <a href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
+In this post we will walk through an interesting paper by Facebook Research published in 2014:
 </p>
+<a href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
+
 <br/><br/>
 <div class="img_row">
     <img class="col three" src="{{ site.baseurl }}/assets/img/subgraph_embedding.png">
