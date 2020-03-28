@@ -21,5 +21,5 @@ Currently working on Open Domain Question Answering for <a href="https://www.app
 </p>
 
 <p align="left">
-My research interests spans Natural Language Understanding, Visual Question Answering and Commonsense reasoning with a view to build agents that can operate in this world by understanding existing concepts from text, images and videos.
+My research interests spans Natural Language Generation, Semantic Parsing, Language modeling, Visual Question Answering and Commonsense reasoning with a view to build agents that can operate in this world by understanding existing concepts from text, images and videos.
 </p>
