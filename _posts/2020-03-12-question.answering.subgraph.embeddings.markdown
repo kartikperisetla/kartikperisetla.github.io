@@ -20,10 +20,27 @@ In this post we will walk through an interesting paper by Facebook Research publ
 <p align="justify">
 This paper presents an approach where low dimension embeddings are learned for input question, answer candidates and a segment of knowledge graph that captures actual answer. 
 </p><br/>
+<h3>
+Key Idea
+</h3>
 <p align="justify">
-The key idea this paper is based on the idea that embedding corresponding to knowledge subgraph containing answer captures lot more context that helps system to answer unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer.
+The key idea this paper is based on the idea that embedding corresponding to knowledge subgraph containing answer captures lot more context that helps system to answer unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer. The two main contributions this paper makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge bases) and semantically rich representation of answers which encodes graph path from question entity to answer entity and surrounding entities in graph.
 </p>
-<br/><br/>
+<br/>
+<h3>Background</h3>
+<p align="justify">
+There are mainly two techniques widely used for Question Answering - Information Retrieval based and Semantic Parsing based. Information retrieval based systems retrieves a set of candidate answers for a given question and then rank them to pick the best answer. Semantic Parsing based systems are focused on correct interpretation of the meaning of the question in order to answer. After successful parsing, usually the structured representation of question is converted into a database query that returns the correct answer. One major limitation of both these approaches is that although both the approachs can handle large knowledge bases(KB), they require domain expertise to create grammers, KB schemas. This need human intervation when scaling such systems to new languages and new knowledge bases.
+</p><br/>
+
+<h3>Task setup</h3>
+<p align="justify">
+The task is to come up with a embeddings based QnA model using a training set where Question-Answer pairs are given along with corresponding entities in Knowledge Base(KB). Knowledge Base (also known as Knowledge Graph) is a graph with entities as nodes and relationships between entities as edges.
+</p>
+
+<h3></h3>
+<p align="justify">
+
+</p>
 <p align="justify">
 ##writing-in-progress##
 </p>
