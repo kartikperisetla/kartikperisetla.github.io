@@ -35,10 +35,15 @@ There are mainly two techniques widely used for Question Answering - Information
 <h3>Task setup</h3>
 <p align="justify">
 The task is to come up with a embeddings based QnA model using a training set where Question-Answer pairs are given along with corresponding entities in Knowledge Base(KB). Knowledge Base (also known as Knowledge Graph) is a graph with entities as nodes and relationships between entities as edges.
+<br/><br/>
+The dataset used in this paper consists of : WebQuestions(used for evaluation): filtered such that question has entities that are present in Freebase, Freebase: taking subject-predicate-object triples and generation question-answer pairs using it, ClueWeb is used to expand the lexicon and vocab of system. In addition authors have used paraphrase generation techniques to supplement the training data. Freebase generated question-answer pairs, Clueweb extraction triples and questions from paraphrasing are used to train their model.
 </p>
 
-<h3></h3>
+<h3>Embedding Questions and Answers</h3>
 <p align="justify">
+Let "q" denote a question and "a" denote a candidate answer. Embeddings for questions and answers is learned by learning a scoring function.
+<br/>
+<img src="{{ site.baseurl }}/assets/img/blog/scoring_fn.png">
 
 </p>
 <p align="justify">
