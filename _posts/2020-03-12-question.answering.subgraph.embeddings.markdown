@@ -122,14 +122,6 @@ description: An approach on how to use question embedding and knowledge subgraph
     <img width="500px" src="{{ site.baseurl }}/assets/img/blog/loss-fn.png"><br />
     Minimizing equation learns the embedding matrix W such that the score of a question with a correct answer is greater than with any incorrect answer by atleast margin of m. Each incorrect answer are sampled from a pool of incorrect answers. Incorrect answer is obtained by sampling entities connected to question entity except the actual answer entity.
 </p>
-
-<h3>Training and Loss function</h3>
-<p align="justify">
-    Authors have used a margin-based ranking loss function:
-    <br/>
-    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/loss-fn.png"><br />
-    Minimizing equation learns the embedding matrix W such that the score of a question with a correct answer is greater than with any incorrect answer by atleast margin of m. Each incorrect answer are sampled from a pool of incorrect answers. Incorrect answer is obtained by sampling entities connected to question entity except the actual answer entity.
-</p>
 <h3>Inference</h3>
 <p align="justify">
     At inference time, given a question q, the model predicts the answe with
