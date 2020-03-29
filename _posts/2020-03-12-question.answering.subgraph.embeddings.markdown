@@ -43,8 +43,9 @@ The dataset used in this paper consists of : WebQuestions(used for evaluation): 
 <p align="justify">
 Let "q" denote a question and "a" denote a candidate answer. Embeddings for questions and answers is learned by learning a scoring function.
 <br/>
-<img src="{{ site.baseurl }}/assets/img/blog/scoring_fn.png">
-
+<img width="500px" src="{{ site.baseurl }}/assets/img/blog/scoring_fn.png">
+<br/>
+Here q and a represent a combination of embeddings of consitituent words, thus learning scoring function involves learning these embeddings.
 </p>
 <p align="justify">
 ##writing-in-progress##
