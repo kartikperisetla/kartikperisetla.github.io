@@ -47,8 +47,8 @@ Let "q" denote a question and "a" denote a candidate answer. Embeddings for ques
 <br/>
 Here q and a represent a combination of embeddings of consitituent words, thus learning scoring function involves learning these embeddings.
 <br/><br/>
-W shown below is the matrix consisting of embeddings of words, entities and relationships. Enitity embedding corresponding to entity "Obama" is highlighted in figure below:
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/embedding_matrix.png">
+W shown below is the matrix consisting of embeddings of words, entities and relationships. Enitity embedding corresponding to entity "Obama" is highlighted in figure below:<br/>
+<img width="600px" src="{{ site.baseurl }}/assets/img/blog/embedding_matrix.png">
 <br/>
 </p>
 
