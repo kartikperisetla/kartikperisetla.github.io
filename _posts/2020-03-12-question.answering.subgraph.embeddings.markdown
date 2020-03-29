@@ -59,11 +59,11 @@ The function that maps the questions into the embedding space and the function w
 <p align="justify">
 Authors present 3 different types of representation of a single candidate answer.
 
-**Single Entity**
+<b><i>Single Entity</i></b>
 <br/>
 The answer candidate is represented as a single entity from Freebase, as 1-of-Ns coded vector with 1 corresponding to the entity of answer and rest 0.
 
-**Path Representation**
+<b><i>Path Representation</i></b>
 <br>
 The answer is represented as path from entity in question to the answer entity.
 
