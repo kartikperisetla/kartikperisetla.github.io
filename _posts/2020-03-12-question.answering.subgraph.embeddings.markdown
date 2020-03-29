@@ -7,7 +7,7 @@ description: An approach on how to use question embedding and knowledge subgraph
 <h4 class="year" />
 
 <p align="justify">
-    In this post we will walk through an interesting paper by Facebook Research published in 2014:
+    This post will walk through an interesting paper by Facebook Research published in 2014:
 </p>
 <a
     href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
@@ -126,9 +126,9 @@ description: An approach on how to use question embedding and knowledge subgraph
 <p align="justify">
     At inference time, given a question q, the model predicts the answer with:<br/>
     <img width="300px" src="{{ site.baseurl }}/assets/img/blog/argmax.png"><br />
-    One possibility of this candidate set - is to take complete knowledge base, but has speed and precisiion issues. So authors decided to go ahead with generation of this answer candidate set for each question.<br/>
+    One possibility of this candidate set - is to take complete knowledge base, but has speed and precisiion issues. So authors decided to go ahead with generation of this answer candidate set for each question.<br/><br/>
 
-    Authors went ahead with two approaches: C1 -> where they consider only the Freebase triples that have the question entity in them such that all 1-hop answer entities are included in the candidate set.<br/>
+    Authors went ahead with two approaches: C1 -> where they consider only the Freebase triples that have the question entity in them such that all 1-hop answer entities are included in the candidate set.<br/><br/>
 
     C2 -> In order to be able to answer answers which are at 2-hop, authors are leveraging beam-search to expand the 2nd hop relations candidates. The model first ranks relations type that are likely to be expressed in question and only add 2nd hop candidates to answer candidate set when these relations appear in those paths.
 </p><br/>
@@ -136,6 +136,6 @@ description: An approach on how to use question embedding and knowledge subgraph
 <h3>Experiments and Results</h3>
 <p align="justify">
 Authors have shared numbers in the table that indicates their strategy C2 performs the best in terms of F1 score and Precision@1. Replacing C2 by C1 shows a drop in performance as system is not able to handle any questions other than 1-hop ones.
-<br/>
+<br/><br/>
 Overall, the results presented in this paper verify the hypothesis that a richer representation for answers using local subgraoph can store the pertinent information which helps in correctly answering the question.
 </p>
