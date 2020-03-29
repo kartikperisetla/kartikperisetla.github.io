@@ -3,72 +3,99 @@ layout: post
 title: Question Answering with Subgraph Embeddings
 description: An approach on how to use question embedding and knowledge subgraph embedding for Question Answering
 ---
-<b>keywords</b>: question answering, knowledge graph, embeddings<br/>
-<h4 class="year"/>
+<b>keywords</b>: question answering, knowledge graph, embeddings<br />
+<h4 class="year" />
 
 <p align="justify">
-In this post we will walk through an interesting paper by Facebook Research published in 2014:
+    In this post we will walk through an interesting paper by Facebook Research published in 2014:
 </p>
-<a href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
+<a
+    href="https://research.fb.com/publications/question-answering-with-subgraph-embeddings/">research.fb.com/publications/question-answering-with-subgraph-embeddings</a>
 
-<br/><br/>
+<br /><br />
 <div class="img_row">
     <img class="col three" src="{{ site.baseurl }}/assets/img/subgraph_embedding.png">
 </div>
 
-<br/>
+<br />
 <p align="justify">
-This paper presents an approach where low dimension embeddings are learned for input question, answer candidates and a segment of knowledge graph that captures actual answer. 
-</p><br/>
+    This paper presents an approach where low dimension embeddings are learned for input question, answer candidates and
+    a segment of knowledge graph that captures actual answer.
+</p><br />
 <h3>
-Key Idea
+    Key Idea
 </h3>
 <p align="justify">
-The key idea of this paper is that embedding corresponding to knowledge subgraph containing answer captures a lot more context that helps system to answer the question unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer. The two main contributions this paper makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge bases) and semantically rich representation of answers which encodes graph path from question entity to answer entity and surrounding entities in subgraph.
+    The key idea of this paper is that embedding corresponding to knowledge subgraph containing answer captures a lot
+    more context that helps system to answer the question unlike typical question-answering systems where answer
+    embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and
+    relationships connected to actual answer that when represented as embedding, encodes lot more information as
+    compared to just learning embedding for a span of text containing answer. The two main contributions this paper
+    makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge
+    bases) and semantically rich representation of answers which encodes graph path from question entity to answer
+    entity and surrounding entities in subgraph.
 </p>
-<br/>
+<br />
 <h3>Background</h3>
 <p align="justify">
-There are mainly two techniques widely used for Question Answering - Information Retrieval based and Semantic Parsing based. Information retrieval based systems retrieves a set of candidate answers for a given question and then rank them to pick the best answer. Semantic Parsing based systems are focused on correct interpretation of the meaning of the question in order to answer. After successful parsing, usually the structured representation of question is converted into a database query that returns the correct answer. One major limitation of both these approaches is that although both the approachs can handle large knowledge bases(KB), they require domain expertise to create grammers, KB schemas. This need human intervation when scaling such systems to new languages and new knowledge bases.
-</p><br/>
+    There are mainly two techniques widely used for Question Answering - Information Retrieval based and Semantic
+    Parsing based. Information retrieval based systems retrieves a set of candidate answers for a given question and
+    then rank them to pick the best answer. Semantic Parsing based systems are focused on correct interpretation of the
+    meaning of the question in order to answer. After successful parsing, usually the structured representation of
+    question is converted into a database query that returns the correct answer. One major limitation of both these
+    approaches is that although both the approachs can handle large knowledge bases(KB), they require domain expertise
+    to create grammers, KB schemas. This need human intervation when scaling such systems to new languages and new
+    knowledge bases.
+</p><br />
 
 <h3>Task setup</h3>
 <p align="justify">
-The task is to come up with a embeddings based QnA model using a training set where Question-Answer pairs are given along with corresponding entities in Knowledge Base(KB). Knowledge Base (also known as Knowledge Graph) is a graph with entities as nodes and relationships between entities as edges.
-<br/><br/>
-The dataset used in this paper consists of : WebQuestions(used for evaluation): filtered such that question has entities that are present in Freebase, Freebase: taking subject-predicate-object triples and generation question-answer pairs using it, ClueWeb is used to expand the lexicon and vocab of system. In addition authors have used paraphrase generation techniques to supplement the training data. Freebase generated question-answer pairs, Clueweb extraction triples and questions from paraphrasing are used to train their model.
+    The task is to come up with a embeddings based QnA model using a training set where Question-Answer pairs are given
+    along with corresponding entities in Knowledge Base(KB). Knowledge Base (also known as Knowledge Graph) is a graph
+    with entities as nodes and relationships between entities as edges.
+    <br /><br />
+    The dataset used in this paper consists of : WebQuestions(used for evaluation): filtered such that question has
+    entities that are present in Freebase, Freebase: taking subject-predicate-object triples and generation
+    question-answer pairs using it, ClueWeb is used to expand the lexicon and vocab of system. In addition authors have
+    used paraphrase generation techniques to supplement the training data. Freebase generated question-answer pairs,
+    Clueweb extraction triples and questions from paraphrasing are used to train their model.
 </p>
 
 <h3>Embedding Questions and Answers</h3>
 <p align="justify">
-Let "q" denote a question and "a" denote a candidate answer. Embeddings for questions and answers is learned by learning a scoring function.
-<br/>
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/scoring_fn.png">
-<br/>
-Here q and a represent a combination of embeddings of consitituent words, thus learning scoring function involves learning these embeddings.
-<br/><br/>
-W shown below is the matrix consisting of embeddings of words, entities and relationships. Enitity embedding corresponding to entity "Obama" is highlighted in figure below:<br/>
-<img width="600px" src="{{ site.baseurl }}/assets/img/blog/embedding_matrix.png">
-<br/>
-The function that maps the questions into the embedding space and the function which maps the answer into the same embedding space as the questions are defined as
-<br/>
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/functions.png">
+    Let "q" denote a question and "a" denote a candidate answer. Embeddings for questions and answers is learned by
+    learning a scoring function.
+    <br />
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/scoring_fn.png">
+    <br />
+    Here q and a represent a combination of embeddings of consitituent words, thus learning scoring function involves
+    learning these embeddings.
+    <br /><br />
+    W shown below is the matrix consisting of embeddings of words, entities and relationships. Enitity embedding
+    corresponding to entity "Obama" is highlighted in figure below:<br />
+    <img width="600px" src="{{ site.baseurl }}/assets/img/blog/embedding_matrix.png">
+    <br />
+    The function that maps the questions into the embedding space and the function which maps the answer into the same
+    embedding space as the questions are defined as
+    <br />
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/functions.png">
 </p>
 
 <h3> Representing Candidate Answers</h3>
 <p align="justify">
-Authors present 3 different types of representation of a single candidate answer.
-
-<b><i>Single Entity</i></b>
-<br/>
-The answer candidate is represented as a single entity from Freebase, as 1-of-Ns coded vector with 1 corresponding to the entity of answer and rest 0.
-
-<b><i>Path Representation</i></b>
-<br>
-The answer is represented as path from entity in question to the answer entity.
+    Authors present 3 different types of representation of a single candidate answer.
+    <br />
+    <b><i>Single Entity</i></b>
+    <br />
+    The answer candidate is represented as a single entity from Freebase, as 1-of-Ns coded vector with 1 corresponding
+    to the entity of answer and rest 0.
 
 </p>
-
 <p align="justify">
-##writing-in-progress##
+<b><i>Path Representation</i></b>
+<br/>
+The answer is represented as path from entity in question to the answer entity.
+</p>
+<p align="justify">
+    ##writing-in-progress##
 </p>
