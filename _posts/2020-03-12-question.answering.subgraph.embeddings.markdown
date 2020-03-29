@@ -54,7 +54,7 @@ description: An approach on how to use question embedding and knowledge subgraph
     along with corresponding entities in Knowledge Base(KB). Knowledge Base (also known as Knowledge Graph) is a graph
     with entities as nodes and relationships between entities as edges.
     <br /><br />
-    The dataset used in this paper consists of : WebQuestions(used for evaluation): filtered such that question has
+    The dataset used in this paper consists of: WebQuestions(used for evaluation): filtered such that question has
     entities that are present in Freebase, Freebase: taking subject-predicate-object triples and generation
     question-answer pairs using it, ClueWeb is used to expand the lexicon and vocab of system. In addition authors have
     used paraphrase generation techniques to supplement the training data. Freebase generated question-answer pairs,
@@ -84,12 +84,12 @@ description: An approach on how to use question embedding and knowledge subgraph
 <h3> Representing Candidate Answers</h3>
 <p align="justify">
     Authors present 3 different types of representation of a single candidate answer.
-    <br />
+    <br /><br />
     <b><i>Single Entity</i></b>
     <br />
     The answer candidate is represented as a single entity from Freebase, as 1-of-Ns coded vector with 1 corresponding
     to the entity of answer and rest 0.
-    <br/>
+    <br />
     <img width="500px" src="{{ site.baseurl }}/assets/img/blog/entity_encoding.png">
 
 </p>
@@ -98,10 +98,10 @@ description: An approach on how to use question embedding and knowledge subgraph
     <br />
     The answer is represented as path from entity in question to the answer entity. In their experiments authors
     considered only 1-hop and 2-hop paths.
-    Thus the encoding of the answer is either a 3-of-Ns coded vector<br/>
-    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/1-hop.png"><br/>
-    or 4-of-Ns coded vector<br/>
-    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/2-hop.png"><br/>
+    Thus the encoding of the answer is either a 3-of-Ns coded vector<br />
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/1-hop.png"><br />
+    or 4-of-Ns coded vector<br />
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/2-hop.png"><br />
 </p>
 <p align="justify">
     <b><i>Subgraph Representation</i></b>
@@ -111,9 +111,13 @@ description: An approach on how to use question embedding and knowledge subgraph
     representation. In order to differentiate entity representation if it is in the path representation versus it is
     present as connected entity to answer entity(subgraph representation), a dictionary double the size is used and they
     will have different embeddings.
-    <br/>
-    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/subgraph-embedding.png"><br/>
+    <br />
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/subgraph-embedding.png"><br />
 </p>
+
+<h3>Training and Loss function</h3>
 <p align="justify">
-    ##writing-in-progress##
+    Authors have used a margin-based ranking loss function:
+    <br/>
+    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/loss-fn.png"><br />
 </p>
