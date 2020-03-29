@@ -109,7 +109,7 @@ description: An approach on how to use question embedding and knowledge subgraph
     In this case the path representation and the subgraph of entities connected to answer entity are encoded. For each
     entity connected to answer entity, the relation between them and connected entity are included in encoded
     representation. In order to differentiate entity representation if it is in the path representation versus it is
-    present as connected entity to answer entity(subgraph representation), a dictionary double the size is used and they
+    present as connected entity to answer entity (subgraph representation), a dictionary double the size is used and they
     will have different embeddings.
     <br />
     <img width="500px" src="{{ site.baseurl }}/assets/img/blog/subgraph-embedding.png"><br />
@@ -125,7 +125,7 @@ description: An approach on how to use question embedding and knowledge subgraph
 <h3>Inference</h3>
 <p align="justify">
     At inference time, given a question q, the model predicts the answer with:<br/>
-    <img width="400px" src="{{ site.baseurl }}/assets/img/blog/argmax.png"><br />
+    <img width="300px" src="{{ site.baseurl }}/assets/img/blog/argmax.png"><br />
     One possibility of this candidate set - is to take complete knowledge base, but has speed and precisiion issues. So authors decided to go ahead with generation of this answer candidate set for each question.<br/>
 
     Authors went ahead with two approaches: C1 -> where they consider only the Freebase triples that have the question entity in them such that all 1-hop answer entities are included in the candidate set.<br/>
