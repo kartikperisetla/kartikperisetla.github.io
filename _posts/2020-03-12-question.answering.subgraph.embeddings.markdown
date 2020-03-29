@@ -89,6 +89,7 @@ description: An approach on how to use question embedding and knowledge subgraph
     <br />
     The answer candidate is represented as a single entity from Freebase, as 1-of-Ns coded vector with 1 corresponding
     to the entity of answer and rest 0.
+    <br/>
     <img width="500px" src="{{ site.baseurl }}/assets/img/blog/entity_encoding.png">
 
 </p>
@@ -109,7 +110,7 @@ description: An approach on how to use question embedding and knowledge subgraph
     entity connected to answer entity, the relation between them and connected entity are included in encoded
     representation. In order to differentiate entity representation if it is in the path representation versus it is
     present as connected entity to answer entity(subgraph representation), a dictionary double the size is used and they
-    will have different embeddings.6tgv6tgvhn 4
+    will have different embeddings.
     <br/>
     <img width="500px" src="{{ site.baseurl }}/assets/img/blog/subgraph-embedding.png"><br/>
 </p>
