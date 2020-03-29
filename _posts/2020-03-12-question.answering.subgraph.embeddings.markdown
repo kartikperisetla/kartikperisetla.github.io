@@ -24,7 +24,7 @@ This paper presents an approach where low dimension embeddings are learned for i
 Key Idea
 </h3>
 <p align="justify">
-The key idea this paper is based on the idea that embedding corresponding to knowledge subgraph containing answer captures lot more context that helps system to answer unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer. The two main contributions this paper makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge bases) and semantically rich representation of answers which encodes graph path from question entity to answer entity and surrounding entities in graph.
+The key idea of this paper is that embedding corresponding to knowledge subgraph containing answer captures a lot more context that helps system to answer the question unlike typical question-answering systems where answer embedding is learned from the textual context it lies within. Knowledge graph has lot more entities and relationships connected to actual answer that when represented as embedding, encodes lot more information as compared to just learning embedding for a span of text containing answer. The two main contributions this paper makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge bases) and semantically rich representation of answers which encodes graph path from question entity to answer entity and surrounding entities in subgraph.
 </p>
 <br/>
 <h3>Background</h3>
@@ -50,8 +50,11 @@ Here q and a represent a combination of embeddings of consitituent words, thus l
 W shown below is the matrix consisting of embeddings of words, entities and relationships. Enitity embedding corresponding to entity "Obama" is highlighted in figure below:<br/>
 <img width="600px" src="{{ site.baseurl }}/assets/img/blog/embedding_matrix.png">
 <br/>
+The function that maps the questions into the embedding space and the function which maps the answer into the same embedding space as the questions are defined as
+<img width="600px" src="{{ site.baseurl }}/assets/img/blog/functions.png">
 </p>
 
+<h3> Representing Candidate Answers</h3>
 <p align="justify">
 ##writing-in-progress##
 </p>
