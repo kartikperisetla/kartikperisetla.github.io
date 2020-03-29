@@ -124,14 +124,14 @@ description: An approach on how to use question embedding and knowledge subgraph
 </p>
 <h3>Inference</h3>
 <p align="justify">
-    At inference time, given a question q, the model predicts the answe with
-    <img width="500px" src="{{ site.baseurl }}/assets/img/blog/argmax.png"><br />
-    One possibility of this candidate set - is to take complete knowledge base, but has speed and precisiion issues. So authors decided to go ahead with generation of this answer candidate set for each question.
+    At inference time, given a question q, the model predicts the answer with:<br/>
+    <img width="400px" src="{{ site.baseurl }}/assets/img/blog/argmax.png"><br />
+    One possibility of this candidate set - is to take complete knowledge base, but has speed and precisiion issues. So authors decided to go ahead with generation of this answer candidate set for each question.<br/>
 
-    Authors went ahead with two approaches: C1 -> where they consider only the Freebase triples that have the question entity in them such that all 1-hop answer entities are included in the candidate set.
+    Authors went ahead with two approaches: C1 -> where they consider only the Freebase triples that have the question entity in them such that all 1-hop answer entities are included in the candidate set.<br/>
 
     C2 -> In order to be able to answer answers which are at 2-hop, authors are leveraging beam-search to expand the 2nd hop relations candidates. The model first ranks relations type that are likely to be expressed in question and only add 2nd hop candidates to answer candidate set when these relations appear in those paths.
-</p>
+</p><br/>
 
 <h3>Experiments and Results</h3>
 <p align="justify">
