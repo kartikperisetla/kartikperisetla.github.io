@@ -14,5 +14,5 @@ description: an approach to generate data for Extractive Question Answering mode
 
 <br /><br />
 <div class="img_row">
-    <img class="col three" src="{{ site.baseurl }}/assets/img/unsupervised_cloze.png">
+    <img class="col three" src="{{ site.baseurl }}/assets/img/blog/unsupervised_cloze.png">
 </div>
