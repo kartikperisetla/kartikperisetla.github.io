@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unsupervised Question Answering by Cloze Translation
-description: an approach to generate data for Extractive Question Answering models in unsupervised manner
+description: an approach on how to generate context, question and answer triples in unsupervised manner and leverage it to synthesize training data for Extractive Question Answering task
 comments: true
 ---
 <b>keywords</b>: question answering, unsupervised, cloze<br />
@@ -17,6 +17,15 @@ comments: true
 <div class="img_row">
     <img width="300px" src="{{ site.baseurl }}/assets/img/blog/unsupervised_cloze.png">
 </div>
+<br />
+<p align="justify">
+    This paper presents an approach on how to generate context, question and answer triples in unsupervised manner and leverage it to synthesize training data for Extractive Question Answering task. For that authors propose and compare various ways to perform cloze-to-natural question translation.
+</p><br />
+<h3>
+    Key Idea
+</h3>
+<p align="justify">
+</p>
 
 <br/>
 {% if page.comments %}
