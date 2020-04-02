@@ -141,6 +141,7 @@ Authors have shared numbers in the table that indicates their strategy C2 perfor
 Overall, the results presented in this paper verify the hypothesis that a richer representation for answers using local subgraoph can store the pertinent information which helps in correctly answering the question.
 </p>
 
+<br/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
