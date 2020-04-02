@@ -34,8 +34,9 @@ comments: true
     makes are: an inference procedure that is efficient and can handle large paths( i.e. multi-hop queries in knowledge
     bases) and semantically rich representation of answers which encodes graph path from question entity to answer
     entity and surrounding entities in subgraph.
-    <br/>
-    Looking at figure above, given an input question "q", the corresponding entity in question, calling it as "question entity" is identified in Freebase Knowledge subgraph. For training, the binary encoding of question is obtained which is then linearly transformed to obtain question embedding. The correct answer entity is identified in same subgraph. The answer entity and entities connected to are binary encodedm first and then a linear transformation is done to obtain subgraph embedding.
+</p>
+<p align="justify">
+    Looking at figure above, given an input question "q", the corresponding entity in question, calling it as "question entity" is identified in Freebase Knowledge subgraph. For training, the binary encoding of question is obtained which is then linearly transformed to obtain question embedding. The correct answer entity is identified in same subgraph. The answer entity and entities connected to are binary encoded first and then a linear transformation is done to obtain subgraph embedding. A scoring function is applied on question and answer embedding to obtain a score. During training, the objective is to maximize the score for correct question-answer pair.
 </p>
 <br />
 <h3>Background</h3>
