@@ -14,8 +14,8 @@ comments: true
     href="https://ai.facebook.com/research/publications/unsupervised-question-answering-by-cloze-translation/">https://ai.facebook.com/research/publications/unsupervised-question-answering-by-cloze-translation/</a>
 
 <br /><br />
-<div class="img_row">
-    <img width="300px" src="{{ site.baseurl }}/assets/img/blog/unsupervised_cloze.png">
+<div>
+    <img width="600px" src="{{ site.baseurl }}/assets/img/blog/unsupervised_cloze.png">
 </div>
 <br />
 <p align="justify">
