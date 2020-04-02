@@ -19,7 +19,7 @@ comments: true
 </div>
 <br />
 <p align="justify">
-    This paper presents an approach on how to generate context, question and answer triples in unsupervised manner and leverage it to synthesize training data for Extractive Question Answering task. For that authors propose and compare various ways to perform cloze-to-natural question translation.
+    This paper presents an approach on how to generate context, question and answer triples in unsupervised manner and leverage it to synthesize training data for Extractive Question Answering task. For that, authors propose and compare various ways to perform cloze-to-natural question translation.
 </p><br />
 <h3>
     Key Idea
