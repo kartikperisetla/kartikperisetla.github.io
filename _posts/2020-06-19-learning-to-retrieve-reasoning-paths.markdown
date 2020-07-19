@@ -34,10 +34,18 @@ The method presented in this paper learns to retrieve reasoning paths (or you ca
 </p>
 
 <p align="justify">
-Internal Hyperlinks on Wikipedia are used to construct edges/relationships between articles in this Wikipedia graph. Also, links within same document i.e. one paragraph linking to another paragraph in same article is also leveraged in creating this Wikipedia paragraph graph.
+Internal Hyperlinks on Wikipedia are used to construct edges/relationships between articles in this Wikipedia graph. Also, links within same document i.e. one paragraph linking to another paragraph in same article is also leveraged in creating this Wikipedia paragraph graph. The resulting Wikipedia graph is densly connected and covers a wide range of topics that provide useful evidence for open-domain questions.
 </p>
 
-
+<h3>
+    Framework
+</h3>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/multi-hop-framework.png"/>
+<h4>
+    Graph based Recurrent Retriever
+</h4>
+<p align="justify">
+</p>
 
 <br/>
 {% if page.comments %}
