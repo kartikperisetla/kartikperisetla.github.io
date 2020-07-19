@@ -10,13 +10,28 @@ comments: true
 <p align="justify">
     This post will walk through an interesting paper by published in ICLR 2020:
 </p>
-<a
-    href="https://arxiv.org/abs/1911.10470">[arXiv](https://arxiv.org/abs/1911.10470)
+<a href="https://arxiv.org/abs/1911.10470">[arXiv](https://arxiv.org/abs/1911.10470)
 </a>
+<p align="justify">
+    This paper presents a new recurrent retrieval approach that learns to retrieve reasoning paths over Wikipedia graph to answer multi-hop open-domain questions. Authors present how interplay between a retriever and reader model enabled them outperform the state-of-the-art by 14 points on HotpotQA.
+</p><br />
+
+We are aware of Open-Domain Question Answering task - answering a question given a large collection of text documents or Knowledge graph. In recent years we have seen a typical setup of having a two step approach to tackle this - firstly, leveraging non-parameterized models based on TF-IDF, BM25, Okapi to retrieve a set of documents and then leverage a recurrent model to extract the answer span from this reduced set of retrieved documents. Since it is not possible to apply recurrent model on all the documents - the candidate set of documents is smaller when non-parameterized models are used as first step in such two step approaches for Question-Answering.
+
+Even though such settings are widely used, they are mostly suitable for cases when question can be answered just using single paragraph. Such settings fail to answer questions that require multiple hops or looking at multiple paragraphs to answer the question. Looking at multiple paragraphs is for finding the connection between entities in context and finding the most relevant paragraph that contains the answer, this is the characteristic of multi-hop questions. In the set of paragraphs that need to be looked at in order to answer the question, some of those paragraphs might have little or no lexical overlap or semantic relationship to the original question. Thus is the reason setting that levearge non-parameterized models as first step followed by a recurrent reader model usually fail at multi-hop Question Answering.
+
+<h3>
+    Key Idea
+</h3>
+<p align="justify">
+</p>
+
+
 
 <br/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
+
 <script>
 
 /**
@@ -36,5 +51,5 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+
 {% endif %}
