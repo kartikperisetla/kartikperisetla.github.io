@@ -13,8 +13,9 @@ comments: true
 </p>
 <p align="justify">
     This paper presents a new recurrent retrieval approach that learns to retrieve reasoning paths over Wikipedia graph to answer multi-hop open-domain questions. Authors present how interplay between a retriever and reader model enabled them outperform the state-of-the-art by 14 points on HotpotQA. The setting consists of two models - a recurrent retriever model that retrieves each evidence document conditioned on previously retrieved sequence of evidence documents retrieved to generate several reasoning paths, followed by a reading comprehension model to rank the retrieved reasoning paths and finding the answer span from best reasoning path.
+	<br/>
+	<img width="500px" src="{{ site.baseurl }}/assets/img/blog/multi-hopQA-example.png"/>
 </p><br />
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/multi-hopQA-example.png">
 <h3>
     Background
 </h3>
