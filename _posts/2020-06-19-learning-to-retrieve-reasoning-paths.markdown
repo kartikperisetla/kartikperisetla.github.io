@@ -4,6 +4,10 @@ title: Learning to retrieve Reasoning Paths over Wikipedia graph for Question An
 description: An approach that introduces a new graph based recurrent retrieval approach, which retrieves reasoning paths over the Wikipedia graph to answer multi-hop open-domain questions
 comments: true
 ---
+<!-- Mathjax Support -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <b>keywords</b>: reasoning, question answering, knowledge graph<br />
 <h4 class="year" />
 
@@ -40,12 +44,30 @@ Internal Hyperlinks on Wikipedia are used to construct edges/relationships betwe
 <h3>
     Framework
 </h3>
-<img width="800px" src="{{ site.baseurl }}/assets/img/blog/multi-hop-framework.png"/>
+<img width="950px" src="{{ site.baseurl }}/assets/img/blog/multi-hop-framework.png"/>
 <h4>
     Graph based Recurrent Retriever
 </h4>
 <p align="justify">
+The retriever is a recurrent neural network that scores each reasoning path in this Wikipedia paragraph graph by maximizing the likelihood of selecting correct evidence paragraph at each timestep and at the same time fine-tuning the paragraph BERT encodings leveraged.
 </p>
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
 
 <br/>
 {% if page.comments %}
