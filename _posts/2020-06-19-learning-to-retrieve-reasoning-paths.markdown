@@ -20,9 +20,9 @@ comments: true
 	<br/>
 	<img width="800px" src="{{ site.baseurl }}/assets/img/blog/multi-hopQA-example.png"/>
 </p><br />
-<h3>
+<h2>
     Background
-</h3>
+</h2>
 <p align="justify">
 Open-Domain Question Answering task is the task of answering a question given a large collection of text documents or Knowledge graph. In recent years we have seen Neural Open-Domain Question Answering systems [ such as Chen et al. (2017)] - a typical setup of having a two step approach to tackle this - firstly, leveraging non-parameterized models based on TF-IDF, BM25, Okapi to retrieve a set of documents and then leverage a recurrent model to extract the answer span from this reduced set of retrieved documents. Since it is not possible to apply recurrent model on all the documents - the candidate set of documents is smaller when non-parameterized models are used as first step in such two step approaches for Question-Answering. The performance of such settings is bounded by the performance of the retriever since there is no interaction or interplay between the two models.
 </p>
@@ -30,9 +30,9 @@ Open-Domain Question Answering task is the task of answering a question given a 
 <p align="justify">
 Even though such settings are widely used, they are mostly suitable for cases when question can be answered just using single paragraph. Such settings fail to answer questions that require multiple hops or looking at multiple paragraphs to answer the question. Looking at multiple paragraphs is for finding the connection between entities(usually called bridge entities) in context and finding the most relevant paragraph that contains the answer, this is the characteristic of multi-hop questions. In the set of paragraphs that need to be looked at in order to answer the question, some of those paragraphs might have little or no lexical overlap or semantic relationship to the original question. Thus is the reason setting that levearge non-parameterized models as first step followed by a recurrent reader model usually fail at multi-hop Question Answering.
 </p>
-<h3>
+<h2>
     Constructing the Wikipedia paragraph graph
-</h3>
+</h2>
 <p align="justify">
 The method presented in this paper learns to retrieve reasoning paths (or you can say graph walks) across a graph structure. Since the original question might have little or no lexical overlap with paragraphs in reasoning paths or the answer paragraph, in order for model to find such reasoning paths - a graph structure is needed. This graph is created using Wikipedia paragraphs. Each node in this Wikipedia graph is a single paragraph p<sub>i</sub>.
 </p>
@@ -41,13 +41,13 @@ The method presented in this paper learns to retrieve reasoning paths (or you ca
 Internal Hyperlinks on Wikipedia are used to construct edges/relationships between articles in this Wikipedia graph. Also, links within same document i.e. one paragraph linking to another paragraph in same article is also leveraged in creating this Wikipedia paragraph graph. The resulting Wikipedia graph is densly connected and covers a wide range of topics that provide useful evidence for open-domain questions.
 </p>
 
-<h3>
+<h2>
     Framework
-</h3>
+</h2>
 <img width="950px" src="{{ site.baseurl }}/assets/img/blog/multi-hop-framework.png"/>
-<h4>
+<h3>
     Graph based Recurrent Retriever
-</h4>
+</h3>
 <p align="justify">
 The retriever is a recurrent neural network that scores each reasoning path in this Wikipedia paragraph graph by maximizing the likelihood of selecting correct evidence paragraph at each timestep and at the same time fine-tuning the paragraph BERT encodings leveraged.
 <br/>
