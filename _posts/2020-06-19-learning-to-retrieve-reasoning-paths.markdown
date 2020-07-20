@@ -75,7 +75,7 @@ Since the number of paragraphs in the Wikipedia paragraphs graph is in order of 
 </h3>
 <p align="justify">
 The role of this reader model is take top B reasoning paths and output the answer span from the most likely reasoning path.
-The reader model is a muti-task learning of 2 tasks: (1) Reading comprehension - that is responsible for extracting answer span from a reasoning path E using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked. (2) Reasoning path reranking - ranking the reasoning paths by using the probability that the path includes the answer.
+The reader model is a muti-task learning of 2 tasks: (1) Reading comprehension - that is responsible for extracting answer span from most likely reasoning path using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked. (2) Reasoning path reranking - ranking the reasoning paths by using the probability that the path includes the answer.
 <br/><br/>
 
 For the task of reading comprehension, input to BERT is question text, separator and concatenated text from all paragraphs from this reasoning path. For both the tasks the token representation of [CLS] is used as encoding for question-answer pair.
@@ -126,10 +126,24 @@ where C<sub>t</sub> is the set of negative examples.
 <br/>
 <br/>
 
-The objective function for reader model is the sum of cross entropy lossees for reranking and span prediction tasks. The loss for the question q and its reasoning path E is given by:
+The objective function for reader model is the sum of cross entropy lossees for reranking and span prediction tasks. The loss for the question q and its evidence candidate E is given by:
 </p>
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/loss-reader.png"/>
+<p align="justify">
+where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the ground truth start and end indices. <b><i>L<sub>no_answer</sub></i></b> is the loss of the reranking model to discriminate the distorted paths with no answers. <b><i>P<sup>r</sup></i></b> is <b><i>P(E|q)</i></b> of E is the ground truth evidence.
+</p>
 
+<h3>
+    Experiments & Results
+</h3>
+<p align="justify">
+</p>
+
+<h3>
+    Ablation Study
+</h3>
+<p align="justify">
+</p>
 
 <br/>
 {% if page.comments %}
