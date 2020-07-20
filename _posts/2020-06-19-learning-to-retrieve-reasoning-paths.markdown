@@ -58,8 +58,10 @@ Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>
 </p>
 
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert-rnn.png"/>
-<img width="700px" src="{{ site.baseurl }}/assets/img/blog/retriever-equations.png"/>
-
+<br/>
+<p align="justify">
+<img width="500px" src="{{ site.baseurl }}/assets/img/blog/retriever-equations.png"/>
+</p>
 <p align="justify">
 Once a paragraph is selected by RNN at current timestep, the candidate set of paragraphs for next timestep i.e. <b><i>C<sub>t+1</sub></i></b> will include all the paragraphs that have an edge from this selected paragraph node in Wikipedia paragraph graph. And also, in order to add flexibility for model to retrieve multiple paragraphs within candidate set at current timestep <b><i>C<sub>t</sub></i></b>, <b><i>K-best</i></b> paragraphs from <b><i>C<sub>t</sub></i></b> are added to <b><i>C<sub>t+1</sub></i></b> based on probability. Thus in Fig.2 you can see that after paragraph B is selected, the candidate paragraphs for next timestep includes [C, D] even though direct link between B and D doesn't exist.
 </p>
