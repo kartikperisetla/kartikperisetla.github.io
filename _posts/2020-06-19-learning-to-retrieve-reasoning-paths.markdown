@@ -64,7 +64,7 @@ Once a paragraph is selected by RNN at current timestep, the candidate set of pa
 </p>
 
 <p align="justify">
-Since the number of paragraphs in the Wikipedia paragraphs graph is in order of millions, it is computationally not possible to pass through <b>BERT</b> and get <b>[CLS]</b> token embedding as representation for question along with answer paragraph. Thus beam search is used to explore limited number of most probable reasoning paths at any given timestep. The Initial candidate set (t=0) <b><i>C<sub>1</sub></i></b> is initialized with paragraphs having highest TF-IDF scores with respect to input question. For t>1, <b><i>C<sub>t</sub></i></b> is expanded by picking paragraph nodes connected to currently input paragraph at this timestep. For each paragraph that made it to beam, a RNN is instantiated such that that paragraph is passed as input to BERT and then to RNN ( i.e. Here we are finding top B likely sequences or reasoning paths at any timestep using beam size B). The score of a reasoning path <b><i>E=[p<sub>i</sub>,..p<sub>k</sub>]</i></b> is the multiplication of probabilities of selecting those paragraphs as RNN unrolls. Finally, we obtain top B reasoning paths with higest score that are passed onto reader model.
+Since the number of paragraphs in the Wikipedia paragraphs graph is in order of millions, it is computationally not possible to pass through <b>BERT</b> and get <b>[CLS]</b> token embedding as representation for question along with answer paragraph. Thus beam search is used to explore limited number of most probable reasoning paths at any given timestep. The Initial candidate set (t=0) <b><i>C<sub>1</sub></i></b> is initialized with paragraphs having highest TF-IDF scores with respect to input question. For t>1, <b><i>C<sub>t</sub></i></b> is expanded by picking paragraph nodes connected to currently input paragraph at this timestep. For each paragraph that made it to beam, a RNN is instantiated such that that paragraph is passed as input to BERT and then to RNN ( i.e. Here we are finding top B likely sequences or reasoning paths at any timestep with beam size B). The score of a reasoning path <b><i>E=[p<sub>i</sub>,..p<sub>k</sub>]</i></b> is the multiplication of probabilities of selecting those paragraphs as RNN unrolls. Finally, we obtain top B reasoning paths with higest score that are passed onto reader model.
 </p>
 
 <h3>
@@ -73,7 +73,7 @@ Since the number of paragraphs in the Wikipedia paragraphs graph is in order of 
 <p align="justify">
 The role of this reader model is take top B reasoning paths and output the answer span from the most likely reasoning path.
 The reader model is a muti-task learning of 2 tasks: (1) Reading comprehension - that is responsible for extracting answer span from a reasoning path E using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked. (2) Reasoning path reranking - ranking the reasoning paths by using the probability that the path includes the answer.
-<br/>
+<br/><br/>
 
 For the task of reading comprehension, input to BERT is question text, separator and concatenated text from all paragraphs from this reasoning path. For both the tasks the token representation of [CLS] is used as encoding for question-answer pair.
 </p>
@@ -82,12 +82,16 @@ For the task of reading comprehension, input to BERT is question text, separator
 <p align="justify">
 Probability of reasoning path <b><i>E</i></b> given the question <b><i>q</i></b> is given by:
 </p>
-<img width="400px" src="{{ site.baseurl }}/assets/img/blog/p_e_q.png"/>
+<img width="600px" src="{{ site.baseurl }}/assets/img/blog/p_e_q.png"/>
 
 <p align="justify">
 Best reasoning path <b><i>E<sub>best</sub></i></b> and output answer span <b><i>S<sub>read</sub></i></b> is given by:
 </p>
-<img width="400px" src="{{ site.baseurl }}/assets/img/blog/argmax_ebest.png"/>
+<img width="600px" src="{{ site.baseurl }}/assets/img/blog/argmax_ebest.png"/>
+<p align="justify">
+Where <b><i>P<sub>i</sub><sup>start</sup></i></b>, <b><i>P<sub>j</sub><sup>end</sup></i></b> denote the probability that <b><i>i</i></b>-th and <b><i>j</i></b>-th tokens in <b><i>E<sub>best</sub></i></b> are start and end positions of the answer span as shown below:
+</p>
+<img width="600px" src="{{ site.baseurl }}/assets/img/blog/bert-answer-span.png"/>
 
 <br/>
 {% if page.comments %}
