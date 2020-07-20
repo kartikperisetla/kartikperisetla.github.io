@@ -93,6 +93,23 @@ Where <b><i>P<sub>i</sub><sup>start</sup></i></b>, <b><i>P<sub>j</sub><sup>end</
 </p>
 <img width="600px" src="{{ site.baseurl }}/assets/img/blog/bert-answer-span.png"/>
 
+<h3>
+    Model Training
+</h3>
+<p align="justify">
+Recurrent retriever model is trained in a supervised manner using the evidence paragraphs annotated for each question. Single-hop QA has a single paragraph and for multi-hop QA we have multiple paragraphs for each question. 
+<br/><br/>
+<b><i>Data augmentation</i></b> is used to generate more training samples for recurrent retriever model. As part of that, first the ground truth reasoning path <b><i>g=[p<sub>1</sub>,...p<sub>g</sub>]</i></b> is derived using annotation. <b><i>p<sub>g</sub></i></b> is set to end-of-evidence (EOE) token for indicating termination of reasoning path. In order to stabilize the training process, authors have augmented training data with additional reasoning path that can still derive the answer but not necessarily the shortest paths. i.e. additional paragraphs node were added to ground truth reasoning paths for a question. For example, <b><i>g=[p<sub>r</sub>,p<sub>1</sub>,...p<sub>g</sub>]</i></b> is a new training path by adding paragraph <b><i>p<sub>r</sub></i></b> such that it has high TF-IDF score and is linked to paragraph <b><i>p<sub>1</sub></i></b> in the ground truth path <b><i>g</i></b>. This addition of new training paths enables model to handle cases during inference time when the first paragraph in reasoning path does not necessarily appear in paragraph set used during initialization using TF-IDF scores with respect to question.
+
+<br/>
+<br/>
+In order to make the recurrent retriever model differentiate between relevant and irrelevant paragraphs, <b><i>Negative paragraph examples</i></b> are used during training time along with the ground truth paragraphs. Authors have used two types of negative examples - (1) using TF-IDF: adding paragraphs with least TF-IDF scores (2) Hyperlink based ones. TF-IDF based examples are useful for single-hop QA, for multi-hop QA, both are used but (2) adds more value since - it is training model to prevent getting distracted by reasoning paths that do not contain the answer span.
+</p>
+
+<p align="justify">
+The multi-task reader model also uses the same ground truth evidence paragraphs as used for training the retriever model. In addition reader model uses distantly supervised examples from TF-IDF retriever, as such approach is known to be effective (Chen et al. 2017). In order for reader model to discriminate between relevant and irrelevant reasoning paths, data augmentation is used with additional negative examples - specifically, for single-hop QA, the single ground truth paragraph is replaced TF-IDF based negative example; for multi-hop QA, a ground truth paragraph containing the actual answer span is selected and is swapped by TF-IDF based negative example. At training time, we essentially want to maximize the likelihood of ground truth reasoning path given the question and we want to minimize the likelihood of distorted reasoning path given the question.
+</p>
+
 <br/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
