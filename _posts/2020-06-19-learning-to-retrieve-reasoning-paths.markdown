@@ -52,8 +52,12 @@ Internal Hyperlinks on Wikipedia are used to construct edges/relationships betwe
 The retriever is a recurrent neural network that scores each reasoning path in this Wikipedia paragraph graph by maximizing the likelihood of selecting correct evidence paragraph at each timestep and at the same time fine-tuning the paragraph BERT encodings leveraged.
 <br/>
 
+<img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert.png"/>
+
 Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path( i.e. paragraph at any given timestep). At t<i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
 </p>
+
+<img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert-rnn.png"/>
 
 <p align="justify">
 Once a paragraph is selected by RNN at current timestep, the candidate set of paragraphs for next timestep i.e. <b><i>C<sub>t+1</sub></i></b> will include all the paragraphs that have an edge from this selected paragraph node in Wikipedia paragraph graph. And also, in order to add flexibility for model to retrieve multiple paragraphs within candidate set at current timestep <b><i>C<sub>t</sub></i></b>, <b><i>K-best</i></b> paragraphs from <b><i>C<sub>t</sub></i></b> are added to <b><i>C<sub>t+1</sub></i></b> based on probability.
