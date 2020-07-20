@@ -120,10 +120,17 @@ The multi-task reader model also uses the same ground truth evidence paragraphs 
  For retriever model, binary cross entropy loss is used to maximize the probabilty of all the possible reasoning paths. Loss function at reasoning path <b><i>g</i></b> is at <b><i>t</i></b>-th timestep is given by:
 </p>
 <img width="600px" src="{{ site.baseurl }}/assets/img/blog/loss-retriever.png"/>
+
 <p align="justify">
 where C<sub>t</sub> is the set of negative examples.
+<br/>
+<br/>
+
+The objective function for reader model is the sum of cross entropy lossees for reranking and span prediction tasks. The loss for the question q and its reasoning path E is given by:
 </p>
-<img width="600px" src="{{ site.baseurl }}/assets/img/blog/loss-reader.png"/>
+<img width="700px" src="{{ site.baseurl }}/assets/img/blog/loss-reader.png"/>
+
+
 <br/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
