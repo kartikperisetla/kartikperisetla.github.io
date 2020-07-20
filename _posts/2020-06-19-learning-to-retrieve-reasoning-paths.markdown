@@ -60,7 +60,11 @@ Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert-rnn.png"/>
 
 <p align="justify">
-Once a paragraph is selected by RNN at current timestep, the candidate set of paragraphs for next timestep i.e. <b><i>C<sub>t+1</sub></i></b> will include all the paragraphs that have an edge from this selected paragraph node in Wikipedia paragraph graph. And also, in order to add flexibility for model to retrieve multiple paragraphs within candidate set at current timestep <b><i>C<sub>t</sub></i></b>, <b><i>K-best</i></b> paragraphs from <b><i>C<sub>t</sub></i></b> are added to <b><i>C<sub>t+1</sub></i></b> based on probability.
+Once a paragraph is selected by RNN at current timestep, the candidate set of paragraphs for next timestep i.e. <b><i>C<sub>t+1</sub></i></b> will include all the paragraphs that have an edge from this selected paragraph node in Wikipedia paragraph graph. And also, in order to add flexibility for model to retrieve multiple paragraphs within candidate set at current timestep <b><i>C<sub>t</sub></i></b>, <b><i>K-best</i></b> paragraphs from <b><i>C<sub>t</sub></i></b> are added to <b><i>C<sub>t+1</sub></i></b> based on probability. Thus in Fig.2 you can see that after paragraph B is selected, the candidate paragraphs for next timestep includes [C, D] even though direct link between B and D doesn't exist.
+</p>
+
+<p align="justify">
+Since the number of paragraphs in the Wikipedia paragraphs graph is in order of millions, it is computationally not possible to pass through BERT and get [CLS] token embedding as representation for question along with answer paragraph. Thus beam search is used to explore limited number of most probable reasoning paths at any given timestep. The Initial candidate set(t=0) C<sub>1</sub> is initialized with paragraphs having highest TF-IDF scores with respect to input question. For t>1, C<sub>t</sub> is expanded by picking paragraph nodes connectedto currently input paragraph at this timestep. For each paragraph that made it to beam, a RNN is instantiated such that that paragraph is passed as input to BERT and then to RNN ( i.e. Here we are finding top B likely sequences or reasoning paths at any timestep using beam size B). The score of a reasoning path E=[p<sub>i</sub>,..p<sub>k</sub>] is the multiplication of probabilities of selecting those paragraphs as RNN unrolls. Finally, we obtain top B reasoning paths with higest score that are passed onto reader model.
 </p>
 
 <br/>
