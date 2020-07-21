@@ -3,7 +3,6 @@ layout: post
 title: Learning to retrieve Reasoning Paths over Wikipedia graph for Question Answering
 description: An approach that introduces a new graph based recurrent retrieval approach, which retrieves reasoning paths over the Wikipedia graph to answer multi-hop open-domain questions
 comments: true
-date: 07-18-2020
 ---
 <!-- Mathjax Support -->
 <script type="text/javascript" async
