@@ -3,6 +3,7 @@ layout: post
 title: Learning to retrieve Reasoning Paths over Wikipedia graph for Question Answering
 description: An approach that introduces a new graph based recurrent retrieval approach, which retrieves reasoning paths over the Wikipedia graph to answer multi-hop open-domain questions
 comments: true
+date: 07-18-2020
 ---
 <!-- Mathjax Support -->
 <script type="text/javascript" async
@@ -10,7 +11,6 @@ comments: true
 </script>
 <b>keywords</b>: reasoning, question answering, knowledge graph<br />
 <h4 class="year" />
-
 <p align="justify">
     This post will walk through an interesting paper by published in ICLR 2020: <a href="https://arxiv.org/abs/1911.10470"> [arXiv]
 </a>
@@ -19,7 +19,7 @@ comments: true
     This paper presents a new recurrent retrieval approach that learns to retrieve reasoning paths over Wikipedia graph to answer multi-hop open-domain questions. Authors present how interplay between a retriever and reader model enabled them outperform the state-of-the-art by 14 points on HotpotQA. The setting consists of two models - a recurrent retriever model that retrieves each evidence document conditioned on previously retrieved sequence of evidence documents retrieved to generate several reasoning paths, followed by a reading comprehension model to rank the retrieved reasoning paths and finding the answer span from best reasoning path.
 	<br/>
 	<img width="800px" src="{{ site.baseurl }}/assets/img/blog/multi-hopQA-example.png"/>
-</p><br />
+</p><br/>
 <h2>
     Background
 </h2>
