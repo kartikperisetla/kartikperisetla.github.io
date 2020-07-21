@@ -28,7 +28,7 @@ Open-Domain Question Answering task is the task of answering a question given a 
 </p>
 
 <p align="justify">
-Even though such settings are widely used, they are mostly suitable for cases when question can be answered just using single paragraph. Such settings fail to answer questions that require multiple hops or looking at multiple paragraphs to answer the question. Looking at multiple paragraphs is for finding the connection between entities(usually called bridge entities) in context and finding the most relevant paragraph that contains the answer, this is the characteristic of multi-hop questions. In the set of paragraphs that need to be looked at in order to answer the question, some of those paragraphs might have little or no lexical overlap or semantic relationship to the original question. Thus is the reason setting that levearge non-parameterized models as first step followed by a recurrent reader model usually fail at multi-hop Question Answering.
+Even though such settings are widely used, they are mostly suitable for cases when question can be answered just using single paragraph. Such settings fail to answer questions that require multiple hops or looking at multiple paragraphs to answer the question. Looking at multiple paragraphs is for finding the connection between entities (usually called bridge entities) in context and finding the most relevant paragraph that contains the answer, this is the characteristic of multi-hop questions. In the set of paragraphs that need to be looked at in order to answer the question, some of those paragraphs might have little or no lexical overlap or semantic relationship to the original question. Thus is the reason setting that levearge non-parameterized models as first step followed by a recurrent reader model usually fail at multi-hop Question Answering.
 </p>
 <h2>
     Constructing the Wikipedia paragraph graph
@@ -54,7 +54,7 @@ The retriever is a recurrent neural network that scores each reasoning path in t
 
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert.png"/>
 
-Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path( i.e. paragraph at any given timestep). At t<i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
+Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path ( i.e. paragraph at any given timestep). At t<i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
 </p>
 
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert-rnn.png"/>
@@ -75,7 +75,13 @@ Since the number of paragraphs in the Wikipedia paragraphs graph is in order of 
 </h3>
 <p align="justify">
 The role of this reader model is take top B reasoning paths and output the answer span from the most likely reasoning path.
-The reader model is a muti-task learning of 2 tasks: (1) Reading comprehension - that is responsible for extracting answer span from most likely reasoning path using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked. (2) Reasoning path reranking - ranking the reasoning paths by using the probability that the path includes the answer.
+The reader model is a muti-task learning of 2 tasks:
+<dl>
+<dt><b>Reading comprehension</b</dt>
+<dd> - that is responsible for extracting answer span from most likely reasoning path using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked.</dd>
+<dt><b>Reasoning path reranking</b</dt>
+<dd> - ranking the reasoning paths by using the probability that the path includes the answer.</dd>
+</dl>
 <br/><br/>
 
 For the task of reading comprehension, input to BERT is question text, separator and concatenated text from all paragraphs from this reasoning path. For both the tasks the token representation of [CLS] is used as encoding for question-answer pair.
@@ -137,11 +143,11 @@ where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the 
     Metrics, Experiments & Results
 </h2>
 <p align="justify">
-<b><i>The metrics</i></b> reported in this paper are <b><i>F1</i></b> and <b><i>EM(ExactMatch)</i></b> scores for HotpotQA and SQuAD open and <b><i>EM</i></b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b><i>Supporting Fact F1(SP F1)</i></b> and <b><i>Supporting Fact EM(SP EM)</i></b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b><i>Answer Recall(AR)</i></b>[Recall of the answer string amont top paragraphs], <b><i>Paragraph Recall(PR)</i></b>[if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b><i>Paragraph Exact Match(P EM)</i></b>[if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
+<b><i>The metrics</i></b> reported in this paper are <b>F1</b> and <b>EM(ExactMatch)</b> scores for HotpotQA and SQuAD open and <b>EM</b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b>Supporting Fact F1(SP F1)</b> and <b>Supporting Fact EM(SP EM)</b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b>Answer Recall(AR)</b>[Recall of the answer string amont top paragraphs], <b>Paragraph Recall(PR)</b>[if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b>Paragraph Exact Match(P EM)</b>[if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
 
 <br/>
 <br/>
-The approach proposed in this paper has been <b><i>evaluated on 3 open-domain QA Wikipedia sourced datasets: HotpotQA, SQuAD open and Natural questions open</i></b>. Authors have used pre-trained BERT models using the uncased base configuration(d=768) for retriever and whole word masking uncased large(wwm) configuration(d=1024) for reader model. Authors have followed same TF-IDF based retriever model as is used by Chen et al.(2017). Hyperparameter tuning of number of initial TF-IDF based paragraphs(F), beam size(B) is done using HotpotQA dev set.
+The approach proposed in this paper has been <b>evaluated on 3 open-domain QA Wikipedia sourced datasets: HotpotQA, SQuAD open and Natural questions open</b>. Authors have used pre-trained BERT models using the uncased base configuration(d=768) for retriever and whole word masking uncased large(wwm) configuration(d=1024) for reader model. Authors have followed same TF-IDF based retriever model as is used by Chen et al.(2017). Hyperparameter tuning of number of initial TF-IDF based paragraphs(F), beam size(B) is done using HotpotQA dev set.
 </p>
 <img width="500px" src="{{ site.baseurl }}/assets/img/blog/hotpotQA_results.png"/>
 <p align="justify">
@@ -149,12 +155,12 @@ Table 1 shows how the approach presented in this paper performs on HotpotQA deve
 
 <br/>
 <br/>
-<b>The method presented in this paper achieves 14.5 F1 and 14.0 EM gains compared to state-of-the-art Semantic Retrieval(Nie et al. 2019) and 10.9 F1 gains over the concurrent Transformer-XH model(Zhao et al.2020)</b>.
+<b>The method presented in this paper achieves 14.5 F1 and 14.0 EM gains compared to state-of-the-art Semantic Retrieval (Nie et al. 2019) and 10.9 F1 gains over the concurrent Transformer-XH model (Zhao et al.2020)</b>.
 </p>
 
 <img width="500px" src="{{ site.baseurl }}/assets/img/blog/squad_results_table3.png"/>
 <p align="justify">
-<b>On SQuAD, this model outperforms the concurrent state-of-the-art model(Wang et al., 2019b) by 2.9 F1 and 3.5 EM scores as shown in Table 3. You can find more details on Paragraph Exact Match and Answer Recall numbers in the paper</b>.
+<b>On SQuAD, this model outperforms the concurrent state-of-the-art model (Wang et al., 2019b) by 2.9 F1 and 3.5 EM scores as shown in Table 3. You can find more details on Paragraph Exact Match and Answer Recall numbers in the paper</b>.
 </p>
 
 <h2>
@@ -172,7 +178,7 @@ One interesting aspect presented in this paper as part of their Ablation Study s
 <dt> <b>No link based negative examples</b></dt>
 <dd> - training retriever model without adding hyperlink based negative examples besides TF-IDF based negative examples.</dd>
 </dl>
-<br/><br/>
+<br/>
 <b>Reader Ablation</b> in following two ways: 
 <dl>
 <dt><b>No reasoning path re-ranking</b></dt>
@@ -185,16 +191,17 @@ One interesting aspect presented in this paper as part of their Ablation Study s
 <p align="justify">
 Table 6 shows results of Ablation. Main observation is that removing any of the listed components results in performance drop.
 <dl>
-<dt>recurrent module</dt>
+<dt><b>No recurrent module</b></dt>
 <dd> - The most critical component in retriever model, if removed EM drops by 17.4 points. Thus conditioning on paragraphs retrieved at previous timesteps is important.</dd>
-<dt>No link based negative examples</dt>
+<dt><b>No link based negative examples</b></dt>
 <dd> - Training without hyperlink based negative examples results in second largest performance drop, indicating model could be distracted by reasoning paths that do not contain the correct answer.</dd>
-<dt>No beam search</dt>
+<dt><b>No beam search</b></dt>
 <dd> - This results in performace drop of 4 points on EM, indicating that at each timestep exploring the best possible reasoning path is important.</dd>
-<dt>No reasoning path re-ranking</dt>
+<dt><b>No reasoning path re-ranking</b></dt>
 <dd> - Performance drop by removing re-ranking of reasoning paths indicate the importance of verifying reasoning paths in our reader model.</dd>
-<dt>No negative examples</dt>
-<dd> - Not using negative examples to train the reader model degrades the EM by more than 16 points.
+<dt><b>No negative examples</b></dt>
+<dd> - Not using negative examples to train the reader model degrades the EM by more than 16 points.</dd>
+</dl>
 </p>
 
 <br/>
