@@ -77,9 +77,9 @@ Since the number of paragraphs in the Wikipedia paragraphs graph is in order of 
 The role of this reader model is take top B reasoning paths and output the answer span from the most likely reasoning path.
 The reader model is a muti-task learning of 2 tasks:
 <dl>
-<dt><b>Reading comprehension</b</dt>
+<dt><b>Reading comprehension</b></dt>
 <dd> - that is responsible for extracting answer span from most likely reasoning path using BERT - where probability that a token is start or end of span is computed and based on that answer span is picked.</dd>
-<dt><b>Reasoning path reranking</b</dt>
+<dt><b>Reasoning path reranking</b></dt>
 <dd> - ranking the reasoning paths by using the probability that the path includes the answer.</dd>
 </dl>
 <br/><br/>
