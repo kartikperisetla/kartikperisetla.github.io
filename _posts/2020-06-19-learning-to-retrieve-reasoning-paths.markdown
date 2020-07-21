@@ -55,7 +55,7 @@ The retriever is a recurrent neural network that scores each reasoning path in t
 
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert.png"/>
 
-Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path ( i.e. paragraph at any given timestep). At t<i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
+Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path ( i.e. paragraph at any given timestep). At <b>t</b><i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
 </p>
 
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert-rnn.png"/>
@@ -191,7 +191,7 @@ One interesting aspect presented in this paper as part of their Ablation Study s
 Table 6 shows results of Ablation. Main observation is that removing any of the listed components results in performance drop.
 <dl>
 <dt><b>No recurrent module</b></dt>
-<dd> - The most critical component in retriever model, if removed EM drops by 17.4 points. Thus conditioning on paragraphs retrieved at previous timesteps is important.</dd>
+<dd> - The most critical component in retriever model, if removed EM drops by 17.4 pointsf. Thus conditioning on paragraphs retrieved at previous timesteps is important.</dd>
 <dt><b>No link based negative examples</b></dt>
 <dd> - Training without hyperlink based negative examples results in second largest performance drop, indicating model could be distracted by reasoning paths that do not contain the correct answer.</dd>
 <dt><b>No beam search</b></dt>
