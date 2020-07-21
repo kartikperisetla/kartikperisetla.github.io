@@ -203,12 +203,12 @@ Table 6 shows results of Ablation. Main observation is that removing any of the 
 </p>
 
 <h2>
-    Retriever and Reader model interplay
+    Retriever and Reader interplay
 </h2>
 <p align="justify">
-In order to show how interplay between retriever and reader model, authors shared two examples: one indicating how reranking makes mistakes and how the approach as a whole still retrieves correct answer span. Second example shows how reranking helps approach to retrieve correct answer span even though retriever selects a wrong paragraph as the best reasoning path.
+In order to show how interplay between retriever and reader model, authors shared two examples: one indicating <b>how reranking makes mistakes</b> and how the approach as a whole still retrieves correct answer span. Second example shows how reranking helps approach to retrieve correct answer span even though <b>retriever selects a wrong paragraph</b> as the best reasoning path.
 </p>
-<img width="400px" src="{{ site.baseurl }}/assets/img/blog/model_interplay.png"/>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/model_interplay.png"/>
 <p align="justify">
 In Figure 3, the approach successfully retrieves the correct reasoning path and answers correctly, while reranking fails. The top 2 paragraphs next to the graph are the introductory paragraphs of the two entities on the reasoning path and the paragraph at the bottom shows the wrong paragraph selected by rerank. As we can see "Millwall F.C" has feweer lexical overlaps and the bridge entity "Millwall" is not stated in the given question. In Figure 4, the comparison between reasoning paths ranked highest by retriever model and reader is shared. Although gold path is included in top 8 paths selected by beam search, the retriever model selects a wrong paragraph as the best reasoning path. By reranking the reasoning paths, the reader eventually selects the correct reasoning path ("2017-18 Wigan Athletic F.C. season" -> "EFL Cup").
 </p>
