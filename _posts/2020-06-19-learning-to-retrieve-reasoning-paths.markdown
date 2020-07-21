@@ -141,7 +141,7 @@ where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the 
     Metrics, Experiments & Results
 </h2>
 <p align="justify">
-<b><i>The metrics</i></b> reported in this paper are <b>F1</b> and <b>EM(ExactMatch)</b> scores for HotpotQA and SQuAD open and <b>EM</b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b>Supporting Fact F1(SP F1)</b> and <b>Supporting Fact EM(SP EM)</b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b>Answer Recall(AR)</b>[Recall of the answer string amont top paragraphs], <b>Paragraph Recall(PR)</b>[if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b>Paragraph Exact Match(P EM)</b>[if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
+<b><i>The metrics</i></b> reported in this paper are <b>F1</b> and <b>EM(ExactMatch)</b> scores for HotpotQA and SQuAD open and <b>EM</b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b>Supporting Fact F1(SP F1)</b> and <b>Supporting Fact EM(SP EM)</b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b>Answer Recall(AR)</b> [Recall of the answer string amont top paragraphs], <b>Paragraph Recall(PR)</b> [if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b>Paragraph Exact Match(P EM)</b> [if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
 
 <br/>
 <br/>
