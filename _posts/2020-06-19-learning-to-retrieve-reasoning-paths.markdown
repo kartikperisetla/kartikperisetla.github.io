@@ -181,7 +181,21 @@ One interesting aspect presented in this paper as part of their Ablation Study s
 <dd> - training the model ony with gold paragraphs. At inference time, it reads all paths and outputs an answer with the highest probability answer.</dd>
 </dl>
 </p>
-
+<img width="500px" src="{{ site.baseurl }}/assets/img/blog/ablation_results.png"/>
+<p align="justify">
+Table 6 shows results of Ablation. Main observation is that removing any of the listed components results in performance drop.
+<dl>
+<dt>recurrent module</dt>
+<dd> - The most critical component in retriever model, if removed EM drops by 17.4 points. Thus conditioning on paragraphs retrieved at previous timesteps is important.</dd>
+<dt>No link based negative examples</dt>
+<dd> - Training without hyperlink based negative examples results in second largest performance drop, indicating model could be distracted by reasoning paths that do not contain the correct answer.</dd>
+<dt>No beam search</dt>
+<dd> - This results in performace drop of 4 points on EM, indicating that at each timestep exploring the best possible reasoning path is important.</dd>
+<dt>No reasoning path re-ranking</dt>
+<dd> - Performance drop by removing re-ranking of reasoning paths indicate the importance of verifying reasoning paths in our reader model.</dd>
+<dt>No negative examples</dt>
+<dd> - Not using negative examples to train the reader model degrades the EM by more than 16 points.
+</p>
 
 <br/>
 {% if page.comments %}
