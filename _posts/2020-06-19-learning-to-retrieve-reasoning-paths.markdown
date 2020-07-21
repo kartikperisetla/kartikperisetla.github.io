@@ -96,9 +96,9 @@ Where <b><i>P<sub>i</sub><sup>start</sup></i></b>, <b><i>P<sub>j</sub><sup>end</
 </p>
 <img width="600px" src="{{ site.baseurl }}/assets/img/blog/bert-answer-span.png"/>
 
-<h3>
+<h2>
     Model Training
-</h3>
+</h2>
 <p align="justify">
 Recurrent retriever model is trained in a supervised manner using the evidence paragraphs annotated for each question. Single-hop QA has a single paragraph and for multi-hop QA we have multiple paragraphs for each question. 
 <br/><br/>
@@ -111,11 +111,11 @@ In order to make the recurrent retriever model differentiate between relevant an
 
 <p align="justify">
 The multi-task reader model also uses the same ground truth evidence paragraphs as used for training the retriever model. In addition reader model uses distantly supervised examples from TF-IDF retriever, as such approach is known to be effective (Chen et al. 2017). In order for reader model to discriminate between relevant and irrelevant reasoning paths, data augmentation is used with additional negative examples - specifically, for single-hop QA, the single ground truth paragraph is replaced TF-IDF based negative example; for multi-hop QA, a ground truth paragraph containing the actual answer span is selected and is swapped by TF-IDF based negative example. At training time, we essentially want to maximize the likelihood of ground truth reasoning path given the question and we want to minimize the likelihood of distorted reasoning path given the question.
-</p>
+</p><br/>
 
-<h3>
+<h2>
     Loss function
-</h3>
+</h2>
 <p align="justify">
  For retriever model, binary cross entropy loss is used to maximize the probabilty of all the possible reasoning paths. Loss function at reasoning path <b><i>g</i></b> is at <b><i>t</i></b>-th timestep is given by:
 </p>
@@ -132,10 +132,11 @@ The objective function for reader model is the sum of cross entropy lossees for 
 <p align="justify">
 where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the ground truth start and end indices. <b><i>L<sub>no_answer</sub></i></b> is the loss of the reranking model to discriminate the distorted paths with no answers. <b><i>P<sup>r</sup></i></b> is <b>P(E|q)</b> of E is the ground truth evidence.
 </p>
+<br/>
 
-<h3>
+<h2>
     Metrics, Experiments & Results
-</h3>
+</h2>
 <p align="justify">
 <b><i>The metrics</i></b> reported in this paper are <b><i>F1</i></b> and <b><i>EM(ExactMatch)</i></b> scores for HotpotQA and SQuAD open and <b><i>EM</i></b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b><i>Supporting Fact F1(SP F1)</i></b> and <b><i>Supporting Fact EM(SP EM)</i></b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b><i>Answer Recall(AR)</i></b>[Recall of the answer string amont top paragraphs], <b><i>Paragraph Recall(PR)</i></b>[if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b><i>Paragraph Exact Match(P EM)</i></b>[if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
 
@@ -156,9 +157,11 @@ Table 1 shows how the approach presented in this paper performs on HotpotQA deve
 <p align="justify">
 <b>On SQuAD, this model outperforms the concurrent state-of-the-art model(Wang et al., 2019b) by 2.9 F1 and 3.5 EM scores as shown in Table 3. You can find more details on Paragraph Exact Match and Answer Recall numbers in the paper</b>.
 </p>
-<h3>
+<br/>
+
+<h2>
     Ablation Study
-</h3>
+</h2>
 <p align="justify">
 One interesting aspect presented in this paper as part of their Ablation Study shows how various components and strategies interplay to beat state-of-the-art and how effective each such choice made in the presented setting.
 <br/><br/>
