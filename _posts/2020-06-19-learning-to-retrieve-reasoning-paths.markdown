@@ -111,7 +111,7 @@ In order to make the recurrent retriever model differentiate between relevant an
 
 <p align="justify">
 The multi-task reader model also uses the same ground truth evidence paragraphs as used for training the retriever model. In addition reader model uses distantly supervised examples from TF-IDF retriever, as such approach is known to be effective (Chen et al. 2017). In order for reader model to discriminate between relevant and irrelevant reasoning paths, data augmentation is used with additional negative examples - specifically, for single-hop QA, the single ground truth paragraph is replaced TF-IDF based negative example; for multi-hop QA, a ground truth paragraph containing the actual answer span is selected and is swapped by TF-IDF based negative example. At training time, we essentially want to maximize the likelihood of ground truth reasoning path given the question and we want to minimize the likelihood of distorted reasoning path given the question.
-</p><br/>
+</p>
 
 <h2>
     Loss function
@@ -132,7 +132,6 @@ The objective function for reader model is the sum of cross entropy lossees for 
 <p align="justify">
 where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the ground truth start and end indices. <b><i>L<sub>no_answer</sub></i></b> is the loss of the reranking model to discriminate the distorted paths with no answers. <b><i>P<sup>r</sup></i></b> is <b>P(E|q)</b> of E is the ground truth evidence.
 </p>
-<br/>
 
 <h2>
     Metrics, Experiments & Results
@@ -157,7 +156,6 @@ Table 1 shows how the approach presented in this paper performs on HotpotQA deve
 <p align="justify">
 <b>On SQuAD, this model outperforms the concurrent state-of-the-art model(Wang et al., 2019b) by 2.9 F1 and 3.5 EM scores as shown in Table 3. You can find more details on Paragraph Exact Match and Answer Recall numbers in the paper</b>.
 </p>
-<br/>
 
 <h2>
     Ablation Study
