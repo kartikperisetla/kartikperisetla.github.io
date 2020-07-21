@@ -9,6 +9,7 @@ date: 07-18-2020
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+18th July 2020<br/>
 <b>keywords</b>: reasoning, question answering, knowledge graph<br />
 <h4 class="year" />
 <p align="justify">
