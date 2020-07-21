@@ -82,8 +82,6 @@ The reader model is a muti-task learning of 2 tasks:
 <dt><b>Reasoning path reranking</b></dt>
 <dd> - ranking the reasoning paths by using the probability that the path includes the answer.</dd>
 </dl>
-<br/>
-
 For the task of reading comprehension, input to BERT is question text, separator and concatenated text from all paragraphs from this reasoning path. For both the tasks the token representation of [CLS] is used as encoding for question-answer pair.
 </p>
 
