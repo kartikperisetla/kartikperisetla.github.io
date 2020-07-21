@@ -162,7 +162,7 @@ Table 1 shows how the approach presented in this paper performs on HotpotQA deve
 <p align="justify">
 One interesting aspect presented in this paper as part of their Ablation Study shows how various components and strategies interplay to beat state-of-the-art and how effective each such choice made in the presented setting.
 <br/><br/>
-<b><i>Retriever Ablation</i></b> in following three ways: 
+<b>Retriever Ablation</b> in following three ways: 
 <dl>
 <dt> <b>No recurrent module</b></dt>
 <dd> - there is no recurrence, the model simply computes the probability of each paragraph to be included in reasoning paths independently and select the path with highest joint probability path on the graph.</dd>
@@ -172,7 +172,7 @@ One interesting aspect presented in this paper as part of their Ablation Study s
 <dd> - training retriever model without adding hyperlink based negative examples besides TF-IDF based negative examples.</dd>
 </dl>
 <br/><br/>
-<b><i>Reader Ablation</i></b> in following two ways: 
+<b>Reader Ablation</b> in following two ways: 
 <dl>
 <dt><b>No reasoning path re-ranking</b></dt>
 <dd> - outputs answer only  with the best reasoning path from the retriever model.</dd>
