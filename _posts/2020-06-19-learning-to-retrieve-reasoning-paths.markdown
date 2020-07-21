@@ -130,20 +130,57 @@ The objective function for reader model is the sum of cross entropy lossees for 
 </p>
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/loss-reader.png"/>
 <p align="justify">
-where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the ground truth start and end indices. <b><i>L<sub>no_answer</sub></i></b> is the loss of the reranking model to discriminate the distorted paths with no answers. <b><i>P<sup>r</sup></i></b> is <b><i>P(E|q)</i></b> of E is the ground truth evidence.
+where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the ground truth start and end indices. <b><i>L<sub>no_answer</sub></i></b> is the loss of the reranking model to discriminate the distorted paths with no answers. <b><i>P<sup>r</sup></i></b> is <b>P(E|q)</b> of E is the ground truth evidence.
 </p>
 
 <h3>
-    Experiments & Results
+    Metrics, Experiments & Results
 </h3>
 <p align="justify">
+<b><i>The metrics</i></b> reported in this paper are <b><i>F1</i></b> and <b><i>EM(ExactMatch)</i></b> scores for HotpotQA and SQuAD open and <b><i>EM</i></b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b><i>Supporting Fact F1(SP F1)</i></b> and <b><i>Supporting Fact EM(SP EM)</i></b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b><i>Answer Recall(AR)</i></b>[Recall of the answer string amont top paragraphs], <b><i>Paragraph Recall(PR)</i></b>[if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b><i>Paragraph Exact Match(P EM)</i></b>[if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
+
+<br/>
+<br/>
+The approach proposed in this paper has been <b><i>evaluated on 3 open-domain QA Wikipedia sourced datasets: HotpotQA, SQuAD open and Natural questions open</i></b>. Authors have used pre-trained BERT models using the uncased base configuration(d=768) for retriever and whole word masking uncased large(wwm) configuration(d=1024) for reader model. Authors have followed same TF-IDF based retriever model as is used by Chen et al.(2017). Hyperparameter tuning of number of initial TF-IDF based paragraphs(F), beam size(B) is done using HotpotQA dev set.
+</p>
+<img width="700px" src="{{ site.baseurl }}/assets/img/blog/hotpotQA_results.png"/>
+<p align="justify">
+Table 1 shows how the approach presented in this paper performs on HotpotQA development set. The method presented significantly outperforms all the previous results across the evaluation metrics under both full wiki as well as distractor settings. In full wiki setting, a question answering system must find the answer to a question in the scope of entire Wikipedia whereas in distractor setting, a question answering system reads 10 paragraphs to provide an answer to question.
+
+<br/>
+<br/>
+<b><i>The method presented in this paper achieves 14.5 F1 and 14.0 EM gains compared to state-of-the-art Semantic Retrieval(Nie et al. 2019) and 10.9 F1 gains over the concurrent Transformer-XH model(Zhao et al.2020)</i></b>.
 </p>
 
+<img width="700px" src="{{ site.baseurl }}/assets/img/blog/squad_results_table3.png"/>
+<p align="justify">
+On SQuAD, this model outperforms the concurrent state-of-the-art model(Wang et al., 2019b) by 2.9 F1 and 3.5 EM scores as shown in Table 3. You can find more details on Paragraph Exact Match and Answer Recall numbers in the paper.
+</p>
 <h3>
     Ablation Study
 </h3>
 <p align="justify">
+One interesting aspect presented in this paper as part of their Ablation Study shows how various components and strategies interplay to beat state-of-the-art and how effective each such choice made in the presented setting.
+<br/><br/>
+<b><i>Retriever Ablation</i></b> in following three ways: 
+<dl>
+<dt> No recurrent module</dt>
+<dd> - there is no recurrence, the model simply computes the probability of each paragraph to be included in reasoning paths independently and select the path with highest joint probability path on the graph.</dd>
+<dt>No beam search</dt>
+<dd> - A greedy choice is made at each timestep.</dd>
+<dt> No link based negative examples</dt>
+<dd> - training retriever model without adding hyperlink based negative examples besides TF-IDF based negative examples.</dd>
+</dl>
+<br/><br/>
+<b><i>Reader Ablation</i></b> in following two ways: 
+<dl>
+<dt>No reasoning path re-ranking</dt>
+<dd> - outputs answer only  with the best reasoning path from the retriever model.</dd>
+<dt>No negative examples</dt>
+<dd> - training the model ony with gold paragraphs. At inference time, it reads all paths and outputs an answer with the highest probability answer.</dd>
+</dl>
 </p>
+
 
 <br/>
 {% if page.comments %}
