@@ -5,7 +5,6 @@ permalink: /open-source/
 description:
 ---
 <h3 style="color:#202E6E">One Laptop per Child (OLPC) and Sugarlabs</h3>
-<img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
     I worked with OLPC project on Sugar. Sugar is an open source desktop environment designed with the goal of being used by children for interactive learning. Developed as part of the One Laptop per Child (OLPC) project, it is the default interface on OLPC XO-1 family of laptop computers, but also runs on most computers' hardware. Following are my contributions towards this project.
 </p>
