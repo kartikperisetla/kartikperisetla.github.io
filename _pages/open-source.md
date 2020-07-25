@@ -30,7 +30,7 @@ Involved as a volunteer in XSCE school server development, looking at Sugar rela
 </p><br/>
 
 <h4 style="color:#202E6E">Project Bhagmalpur</h4>
-<img class="thumbnail" src="{{ site.baseurl }}/assets/img/blog/bg2.png" width="100px" height="100px" border="0px"/>
+<img class="thumbnail" src="{{ site.baseurl }}/assets/img/blog/bg2.png" width="300px" height="200px" border="0px"/>
 <p align="justify">
 <a href="http://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project Bhagmalpur</a>
 <ul>
@@ -39,4 +39,10 @@ Involved as a volunteer in XSCE school server development, looking at Sugar rela
 <li>Responsible to teach children in Bhagmalpur learn to use XO laptops, XS school server for educational and social activities.</li>
 <li> Developed Wikipedia Hindi activity- Developed one of the most widely used sugar activities at Bhagmalpur as children love it. [<a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Download</a>]</li>
 </ul>
+</p>
+
+<h4 style="color:#202E6E">Oopsy</h4>
+<img class="thumbnail" src="{{ site.baseurl }}/assets/img/blog/oopsy.png" width="300px" height="200px" border="0px"/>
+<p align="justify">
+<a href="https://sites.google.com/site/oopsysugaractivity/">Oopsy</a> is a Sugar activity that will allow children to develop C/C++ programs, compile them and execute them to learn, explore and have fun!
 </p>
