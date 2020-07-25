@@ -12,20 +12,40 @@ description:
 <img class="thumbnail" src="https://sites.google.com/site/kartikperisetla/miscellaneous/developWeb.png" width="100px" height="100px" border="0px"/>
 <p align="justify">
 <a href="https://sites.google.com/site/developwebactivity" target="_blank">DevelopWeb</a> is an Activity for Web Development using which children can develop Web Sites through HTML, Javascript and other web technologies. Children can learn quickly how to develop web pages in a step by step approach through examples provided for each HTML component.
-</p>
+</p><br/>
 <h4 style="color:#202E6E">OLPC School Server Community Edition (XSCE)</h4>
-<img class="thumbnail" src="https://sites.google.com/site/kartikperisetla/miscellaneous/developWeb.png" width="100px" height="100px" border="0px"/>
 <p align="justify">
 XSCE provides communication, networking, content, and maintenance to schools and classrooms. In everyday usage, the school server extends capabilities of connected laptops and devices with services in these areas, towards giving kids the very best learning opportunities imaginable:
 <dl>
-<dt>Classroom connectivity</dt> 
+<dt><b>Classroom connectivity</b></dt> 
 <dd>- Similar to what you would find in an advanced home router.</dd>
-<dt>Internet gateway</dt> 
+<dt><b>Internet gateway</b></dt> 
 <dd>- If available, an internet connection is made available to laptops/devices.</dd>
-<dt>Content</dt>
+<dt><b>Content</b></dt>
 <dd> – Tools to make educational media available to schools and classrooms.</dd>
-<dt>Maintenance</dt>
+<dt><b>Maintenance</b></dt>
 <dd> – Tools to keep laptop/devices updated and running smoothly.</dd>
 </dl>
 Involved as a volunteer in XSCE school server development, looking at Sugar related aspects of the server. I am working on algorithms that could use the Round Robin Database(RRD) files that maintain journal logs for each connected XO laptops(client), to derive insights about usage pattern of activities by children. I believe this will help teachers and mentors understand children better in terms of interest, attention, duration spent through usage patterns and it will enable them to assess and encourage children. I am applying Machine Learning techniques to analyze the data to derive insights.
+</p><br/>
+
+<h4 style="color:#202E6E">Project Bhagmalpur</h4>
+<table>
+<tr>
+<td>
+<img class="thumbnail" src=src="{{ site.baseurl }}/assets/img/blog/bg1.png" width="100px" height="100px" border="0px"/>
+</td>
+<td>
+<img class="thumbnail" src=src="{{ site.baseurl }}/assets/img/blog/bg2.png" width="100px" height="100px" border="0px"/>
+</td>
+</tr>
+</table>
+<p align="justify">
+<a href="http://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project Bhagmalpur</a>
+<ul>
+<li>Played key role in OLPC XO laptops and XS School Server development and deployment in the remote Indian village of Bhagmalpur.</li>
+<li>Played key role in deploying and connecting XS School Server to internet. Thus connecting all XO laptops in Bhagmalpur to internet.</li>
+<li>Responsible to teach children in Bhagmalpur learn to use XO laptops, XS school server for educational and social activities.</li>
+<li> Developed Wikipedia Hindi activity- Developed one of the most widely used sugar activities at Bhagmalpur as children love it. [<a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Download</a>]</li>
+</ul>
 </p>
