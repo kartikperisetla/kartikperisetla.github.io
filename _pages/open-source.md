@@ -30,16 +30,7 @@ Involved as a volunteer in XSCE school server development, looking at Sugar rela
 </p><br/>
 
 <h4 style="color:#202E6E">Project Bhagmalpur</h4>
-<table border="0px">
-<tr>
-<td>
-<img class="thumbnail" src="{{ site.baseurl }}/assets/img/blog/bg1.png" width="100px" height="100px" border="0px"/>
-</td>
-<td>
 <img class="thumbnail" src="{{ site.baseurl }}/assets/img/blog/bg2.png" width="100px" height="100px" border="0px"/>
-</td>
-</tr>
-</table>
 <p align="justify">
 <a href="http://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project Bhagmalpur</a>
 <ul>
