@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leveraging Passage Retrieval with Generative Models for open-domain Question Answering.
+title: Leveraging Passage Retrieval with Generative Models for open-domain Question Answering
 description: An approach to open-domain question answering that relies on retrieving support passages before processing them with a generative model.
 comments: true
 ---
