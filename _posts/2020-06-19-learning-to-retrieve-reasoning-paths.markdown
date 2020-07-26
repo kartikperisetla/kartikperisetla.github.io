@@ -16,7 +16,7 @@ comments: true
 </a>
 </p>
 <p align="justify">
-    This paper presents a new recurrent retrieval approach that learns to retrieve reasoning paths over Wikipedia graph to answer multi-hop open-domain questions. Authors present how interplay between a retriever and reader model enabled them outperform the state-of-the-art by 14 points on HotpotQA. The setting consists of two models - a recurrent retriever model that retrieves each evidence document conditioned on previously retrieved sequence of evidence documents retrieved to generate several reasoning paths, followed by a reading comprehension model to rank the retrieved reasoning paths and finding the answer span from best reasoning path.
+    This paper presents a new recurrent retrieval approach that learns to retrieve reasoning paths over Wikipedia graph to answer multi-hop open-domain questions. Authors present how interplay between a retriever and reader model enabled them outperform the state-of-the-art by 14 points on <a href="https://hotpotqa.github.io/index.html">HotpotQA</a>. The setting consists of two models - a recurrent retriever model that retrieves each evidence document conditioned on previously retrieved sequence of evidence documents retrieved to generate several reasoning paths, followed by a reading comprehension model to rank the retrieved reasoning paths and finding the answer span from best reasoning path.
 	<br/>
 	<img width="800px" src="{{ site.baseurl }}/assets/img/blog/multi-hopQA-example.png"/>
 </p><br/>
@@ -50,10 +50,10 @@ Internal Hyperlinks on Wikipedia are used to construct edges/relationships betwe
 </h3>
 <p align="justify">
 The retriever is a recurrent neural network that scores each reasoning path in this Wikipedia paragraph graph by maximizing the likelihood of selecting correct evidence paragraph at each timestep and at the same time fine-tuning the paragraph BERT encodings leveraged.
+</p>
 <br/>
-
 <img width="700px" src="{{ site.baseurl }}/assets/img/blog/bert.png"/>
-
+<p align="justify">
 Each paragraph <b><i>p<sub>i</sub></i></b> is encoded along with question <b><i>q</i></b> using BERT and [CLS] token representation is taken as its embedding. A RNN is used to retrieve each node in reasoning path ( i.e. paragraph at any given timestep). At <b>t</b><i>-th</i> timestep, model selects a paragraph <b><i>p<sub>i</sub></i></b> among candidate paragraphs <b><i>C<sub>i</sub></i></b> given the curernt hidden state <b><i>h<sub>t</sub></i></b> of the RNN. Given the hidden state <b><i>h<sub>t</sub></i></b>, probability <b><i>P(p<sub>i</sub>|h<sub>t</sub>)</i></b> is computed that indicates that paragraph pi is selected at this timestep. The conditioning on the paragraph selection history allows RNN to capture relationships between paragraphs in reasoning paths. The termination of reasoning path is indicated by [EOE] end-of-evidence symbol. This allows model to explore reasoning paths of arbitrary lengths.
 </p>
 
@@ -141,15 +141,15 @@ where <b><i>y<sup>start</sup></i></b> and <b><i>y<sup>end</sup></i></b> are the 
     Metrics, Experiments & Results
 </h2>
 <p align="justify">
-<b><i>The metrics</i></b> reported in this paper are <b>F1</b> and <b>EM(ExactMatch)</b> scores for HotpotQA and SQuAD open and <b>EM</b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b>Supporting Fact F1(SP F1)</b> and <b>Supporting Fact EM(SP EM)</b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b>Answer Recall(AR)</b> [Recall of the answer string amont top paragraphs], <b>Paragraph Recall(PR)</b> [if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b>Paragraph Exact Match(P EM)</b> [if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
+<b><i>The metrics</i></b> reported in this paper are <b>F1</b> and <b>EM(ExactMatch)</b> scores for <a href="https://hotpotqa.github.io/index.html">HotpotQA</a> and SQuAD open and <b>EM</b> score for Natural Question open to evaluate overall QA accuracy to find the correct answers. For For HotpotQA, they are reporting <b>Supporting Fact F1(SP F1)</b> and <b>Supporting Fact EM(SP EM)</b> to evaluate the sentence-level support fact retrieval accuracy. To evaluate paragraph level accuracy, <b>Answer Recall(AR)</b> [Recall of the answer string amont top paragraphs], <b>Paragraph Recall(PR)</b> [if atleast one of the ground-truth paragraphs is included among the retrieved paragraphs] and <b>Paragraph Exact Match(P EM)</b> [if both of the ground truth paragraphs for multi-hop reasoning are included amont the retrieved paths].
 
 <br/>
 <br/>
-The approach proposed in this paper has been <b>evaluated on 3 open-domain QA Wikipedia sourced datasets: HotpotQA, SQuAD open and Natural questions open</b>. Authors have used pre-trained BERT models using the uncased base configuration(d=768) for retriever and whole word masking uncased large(wwm) configuration(d=1024) for reader model. Authors have followed same TF-IDF based retriever model as is used by Chen et al.(2017). Hyperparameter tuning of number of initial TF-IDF based paragraphs(F), beam size(B) is done using HotpotQA dev set.
+The approach proposed in this paper has been <b>evaluated on 3 open-domain QA Wikipedia sourced datasets: <a href="https://hotpotqa.github.io/index.html">HotpotQA</a>, SQuAD open and Natural questions open</b>. Authors have used pre-trained BERT models using the uncased base configuration(d=768) for retriever and whole word masking uncased large(wwm) configuration(d=1024) for reader model. Authors have followed same TF-IDF based retriever model as is used by Chen et al.(2017). Hyperparameter tuning of number of initial TF-IDF based paragraphs(F), beam size(B) is done using HotpotQA dev set.
 </p>
 <img width="500px" src="{{ site.baseurl }}/assets/img/blog/hotpotQA_results.png"/>
 <p align="justify">
-Table 1 shows how the approach presented in this paper performs on HotpotQA development set. The method presented significantly outperforms all the previous results across the evaluation metrics under both full wiki as well as distractor settings. In full wiki setting, a question answering system must find the answer to a question in the scope of entire Wikipedia whereas in distractor setting, a question answering system reads 10 paragraphs to provide an answer to question.
+Table 1 shows how the approach presented in this paper performs on <a href="https://hotpotqa.github.io/index.html">HotpotQA</a> development set. The method presented significantly outperforms all the previous results across the evaluation metrics under both full wiki as well as distractor settings. In full wiki setting, a question answering system must find the answer to a question in the scope of entire Wikipedia whereas in distractor setting, a question answering system reads 10 paragraphs to provide an answer to question.
 
 <br/>
 <br/>
