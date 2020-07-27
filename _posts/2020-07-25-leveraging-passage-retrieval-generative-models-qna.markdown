@@ -21,6 +21,7 @@ comments: true
 </p>
 <p align="justify">
 <img width="400px" src="{{ site.baseurl }}/assets/img/blog/passage_retrieval_generative_models.png"/>
+<br/>
 Figure shows a simple approach to open-domain question answering. Firstly, supporting text passages are retrieved from external source of knowledge such as Wikipedia. Then a generative encoder-decoder model produces the answer, conditioned on the question and the retrieved passages. This approach scales well with number of retrieved passages.
 </p>
 <br/>
