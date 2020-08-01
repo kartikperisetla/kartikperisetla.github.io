@@ -98,7 +98,7 @@ description:
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">a computer system that learns over time to read the web</h4></b>
-    I worked on project NELL during my Masters at Carnegie Mellon University under <a
+    worked on project <a href="http://rtw.ml.cmu.edu/rtw/">NELL</a> at Carnegie Mellon University under <a
         href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
 
     You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
@@ -121,7 +121,7 @@ description:
     Project URL: <a
         href="https://github.com/kartikperisetla/glossextractionengine">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
 
-    This was part of project NELL during my Masters at Carnegie Mellon University under <a
+    Part of project <a href="http://rtw.ml.cmu.edu/rtw/">NELL</a> at Carnegie Mellon University under <a
         href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
 
     You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
@@ -159,6 +159,7 @@ description:
                 href="https://www.olpcsf.org/node/91">Dr. Sameer Verma</a> and <a
                 href="https://github.com/godiard">Gonzalo
                 Odiard</a> to deploy XSCE school server at Bhagmalpur, India.
+
         </li>
     </ul>
 
