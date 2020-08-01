@@ -9,7 +9,7 @@ description:
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Neural Language Modeling for text generation </h4></b>
-	Joint work with <a href="https://www.microsoft.com/en-us/research/people/chrisq/"> Chris Quirk</a>, <a href="https://www.microsoft.com/en-us/research/people/pbailey/">Peter Bailey</a><br/><br/>
+	Joint work with <a href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank"> Chris Quirk</a>, <a href="https://www.microsoft.com/en-us/research/people/pbailey/" target="_blank">Peter Bailey</a><br/><br/>
     Worked on feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
     
     Developed Neural Language Models for text generation and reranking - using prior context and additional signals.
@@ -44,7 +44,7 @@ description:
 <p align="justify">
     <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4></b>
-    Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/"> Silviu Cucerzan</a><br/><br/>
+    Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank"> Silviu Cucerzan</a><br/><br/>
 
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
     knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
