@@ -12,7 +12,7 @@ description:
 	Joint work with <a href="https://www.microsoft.com/en-us/research/people/chrisq/"> Chris Quirk</a>, <a href="https://www.microsoft.com/en-us/research/people/pbailey/">Peter Bailey</a><br/><br/>
     Worked on feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
     
-    Responsible for building Neural Language Models for text generation - using prior context and additional signals.
+    Developed Neural Language Models for text generation and reranking - using prior context and additional signals.
 
 </p>
 
