@@ -35,24 +35,6 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
 <p align="justify">
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results.
 </p>
-<h2>
-    Approach
-</h2>
-<p align="justify">
-</p>
-
-<h2>
-    Model Training
-</h2>
-<p align="justify">
-</p>
-
-<h2>
-    Metrics, Experiments & Results
-</h2>
-<p align="justify">
-</p>
-
 
 <br/>
 {% if page.comments %}
