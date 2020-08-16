@@ -23,9 +23,8 @@ comments: true
 	<br/>
 </p>
 
-<img width="400px" src="{{ site.baseurl }}/assets/img/blog/passage_retrieval_generative_models.png"/>
+<img width="400px" src="{{ site.baseurl }}/assets/img/blog/passage_retrieval_generative_models.png"/><br/>
 <p align="justify">
-<br/>
 Figure shows a simple approach to open-domain question answering. Firstly, supporting text passages are retrieved from external source of knowledge such as Wikipedia. Then a generative encoder-decoder model produces the answer, conditioned on the question and the retrieved passages. This approach scales well with number of retrieved passages.
 </p>
 <br/>
@@ -35,7 +34,8 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
 <p align="justify">
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results.
 </p>
-
+<p>
+</p>
 <br/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
