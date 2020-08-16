@@ -10,7 +10,8 @@ comments: true
 </script>
 18th July 2020<br/>
 <b>keywords</b>: reasoning, question answering, knowledge graph<br />
-<h4 class="year" />
+
+
 <p align="justify">
     This post will walk through an interesting paper by published in ICLR 2020: <a href="https://arxiv.org/abs/1911.10470"> [arXiv]
 </a>

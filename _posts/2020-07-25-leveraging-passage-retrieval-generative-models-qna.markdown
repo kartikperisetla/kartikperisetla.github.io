@@ -10,7 +10,6 @@ comments: true
 </script>
 25th July 2020<br/>
 <b>keywords</b>: generative model, question answering, passage retrieval<br />
-<h4 class="year" />
 
 <p align="justify">
     This post will walk through a paper by Facebook AI Research and Inria Paris: <a href="https://arxiv.org/abs/2007.01282"> [arXiv]
