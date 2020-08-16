@@ -16,6 +16,8 @@ comments: true
 </a>
 </p>
 <p align="justify">
+    This is one of my favorite papers as it shows how instead of having a generative model with large number of parameters, you can augment a relatively smaller generative model with information retrieval approaches and still achieving required performance.
+    <br/><br/>
     This paper presents an approach to open-domain question answering that relies on retrieving support passages before processing them with a generative model. Generative models for open-domain question answering have proven to be competitive, without resotring to external knowledge source. However, that comes with a tradeoff in number of model parameters in Generative models. This paper presents how Generative model can benefit from retrieving passages and how its performance increases by increasing number of passages retrieved. Authors have obtained state-of-the-art results on <a href="https://ai.google.com/research/NaturalQuestions/">Natural Questions</a> and <a href="https://nlp.cs.washington.edu/triviaqa/">TriviaQA</a> open benchmarks. This indicates that Generative models are good at aggregating evidence from multiple retrieved passages.
 	<br/>
 </p>
@@ -29,7 +31,7 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
     Background
 </h2>
 <p align="justify">
-
+    Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results.
 </p>
 <h2>
     Approach
