@@ -36,7 +36,15 @@ Generative modeling for open-domain question answering has been a research area 
 <p>
 We have seen Question Answering systems being evolved when it comes to passage retrieval - initially using non-parameterized models based on TF-IDF, by leveraging additional information from Wikipedia graphs (Asai et al. 2020), and by using dense representations and approximate nearest neighbors. The benefit of using passage retrieval using dense representations is that such models can be trained using weak supervision (Karpukhin et al. 2020).
 </p>
+<p align="justify">
+We have seen the use of Generative models for question answering where the answer does not correspond to a span in the passage. T5 model by Raffel et al. (2019) is a perfect example of how competitive generative models can be for reading comprehension tasks such as SQuAD. There are models that use large scale pretrained generative models with or without any kind of augmentation to the model like Roberts et al.(2020) and Min et al.(2020) and Lewis et al.(2020). The key differentiator of this research work with prior work is that- the way the retrieved passages are processed by the generative model is diffferent in this piece of work - as we will see in sections ahead.
+</p>
 <br/>
+<h2>
+    Approach
+</h2>
+<p align="justify">
+</p>
 {% if page.comments %}
 <div id="disqus_thread"></div>
 
