@@ -44,8 +44,16 @@ We have seen the use of Generative models for question answering where the answe
     Approach
 </h2>
 <p align="justify">
-TL;DR
-The approach presented in this paper consists of two steps: firstly retrieving support passages using sparse or dense representations; and then a Seq2Seq model generating the answer, taking question and the retrieved supporting passages as input. This approach sets state-of-the-art results for TriviaQA and NaturalQuestions benchmark. The performance of this approach improves with number of supporting passages retrieved, indicating that Seq2Seq model is able to give better answers by combining evidence from retrieved passages.
+<br>TL;DR</b>
+<ul>
+<li>The approach presented in this paper consists of two steps: firstly retrieving support passages using sparse or dense representations; and then a Seq2Seq model generating the answer, taking question and the retrieved supporting passages as input.
+</li>
+<li>This approach sets state-of-the-art results for TriviaQA and NaturalQuestions benchmark. 
+</li>
+<li> The performance of this approach improves with number of supporting passages retrieved, indicating that Seq2Seq model is able to give better answers by combining evidence from retrieved passages.
+</li>
+</ul>
+
 </p>
 <h3>
 Passage Retrieval
