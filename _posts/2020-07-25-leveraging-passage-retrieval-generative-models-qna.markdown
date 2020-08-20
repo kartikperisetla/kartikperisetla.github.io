@@ -28,12 +28,11 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
 </p>
 <br/>
 <h2>
-    Background
+    Passage retrieval and Generative question answering
 </h2>
 <p align="justify">
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results just by using external source of knowledge.
 </p>
-<br/>
 <p>
 We have seen Question Answering systems being evolved when it comes to passage retrieval - initially using non-parameterized models based on TF-IDF, by leveraging additional information from Wikipedia graphs (Asai et al. 2020), and by using dense representations and approximate nearest neighbors. The benefit of using passage retrieval using dense representations is that such models can be trained using weak supervision (Karpukhin et al. 2020).
 </p>
