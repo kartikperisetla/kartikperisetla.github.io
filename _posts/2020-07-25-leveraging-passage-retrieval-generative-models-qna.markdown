@@ -28,9 +28,9 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
 </p>
 <br/>
 <h2>
-    Passage retrieval and Generative question answering
+    Background of passage retrieval and generative question answering
 </h2>
-<p align="justify">
+<p align="j ustify">
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results just by using external source of knowledge.
 </p>
 <p>
@@ -44,7 +44,26 @@ We have seen the use of Generative models for question answering where the answe
     Approach
 </h2>
 <p align="justify">
+TL;DR
+The approach presented in this paper consists of two steps: firstly retrieving support passages using sparse or dense representations; and then a Seq2Seq model generating the answer, taking question and the retrieved supporting passages as input. This approach sets state-of-the-art results for TriviaQA and NaturalQuestions benchmark. The performance of this approach improves with number of supporting passages retrieved, indicating that Seq2Seq model is able to give better answers by combining evidence from retrieved passages.
 </p>
+<h3>
+Passage Retrieval
+</h3>
+<p align="justify">
+Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpukhin et al. 2020).
+<dl>
+<dt><b>BM25</b></dt>
+<dd> Passages are represented as bag of words and ranking function is based on term and inverse document frequences. Default implementation from Apache Lucene was used for this.
+</dd>
+<dt><b> Dense Passage Retrieval</b></dt>
+<dd>
+Passages and questions are represented as dense vectors whose representation is obtained by using two separate BERT models - one for encoding passages and other to encode only questions. The ranking function in this case is the dot product between query and passage vectors. Retrieval of passages in this case is done using approximate nearest neighbors with Facebook's FAISS library.
+</dd>
+</dl>
+
+</p>
+
 {% if page.comments %}
 <div id="disqus_thread"></div>
 
