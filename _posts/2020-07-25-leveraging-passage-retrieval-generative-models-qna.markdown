@@ -44,7 +44,7 @@ We have seen the use of Generative models for question answering where the answe
     Approach
 </h2>
 <p align="justify">
-<br>TL;DR</b>
+<b>TL;DR</b>
 <ul>
 <li>The approach presented in this paper consists of two steps: firstly retrieving support passages using sparse or dense representations; and then a Seq2Seq model generating the answer, taking question and the retrieved supporting passages as input.
 </li>
