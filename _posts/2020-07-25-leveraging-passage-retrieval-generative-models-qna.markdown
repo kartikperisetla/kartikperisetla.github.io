@@ -71,14 +71,13 @@ Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpuk
 Passages and questions are represented as dense vectors whose representation is obtained by using two separate BERT models - one for encoding passages and other to encode only questions. The ranking function in this case is the dot product between query and passage vectors. Retrieval of passages in this case is done using approximate nearest neighbors with Facebook's FAISS library.
 </dd>
 </dl>
-<br/>
-Let's have a closer look at what is Dense Passage Retriever(DPR) and how it works.
-<br/>
-Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
-<br/>
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/dpr.png"/>
-<p align="justify">
 </p>
+<p align="justify">
+Let's have a closer look at what is Dense Passage Retriever(DPR) and how it works.
+<br/><br/>
+Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
+</p>
+<img width="500px" src="{{ site.baseurl }}/assets/img/blog/ablation_results.png"/>
 <h3>
 Generative model for Answer Generation
 </h3>
