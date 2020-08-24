@@ -59,6 +59,8 @@ We have seen the use of Generative models for question answering where the answe
 Passage Retrieval
 </h3>
 <p align="justify">
+As we have seen in emerging trend that when we have a reader model that detects the span in passage as answer - it is not possible to apply the reader model to all the passages in system - as it will be super expensive computationally. Thus, any open-domain Question-Answering sysmtem needs to include an efficient retriever component that can select a small set of relevant passages which can be fed to the reader model.
+<br/>
 Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpukhin et al. 2020).
 <dl>
 <dt><b>BM25</b></dt>
@@ -69,6 +71,13 @@ Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpuk
 Passages and questions are represented as dense vectors whose representation is obtained by using two separate BERT models - one for encoding passages and other to encode only questions. The ranking function in this case is the dot product between query and passage vectors. Retrieval of passages in this case is done using approximate nearest neighbors with Facebook's FAISS library.
 </dd>
 </dl>
+<br/>
+Let's have a closer look at what is Dense Passage Retriever(DPR) and how it works.
+<br/>
+Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
+<br/>
+<img width="500px" src="{{ site.baseurl }}/assets/img/blog/dpr.png"/>
+<p align="justify">
 </p>
 <h3>
 Generative model for Answer Generation
