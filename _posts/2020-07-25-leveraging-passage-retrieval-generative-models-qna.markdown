@@ -73,7 +73,7 @@ Passages and questions are represented as dense vectors whose representation is 
 </dl>
 </p>
 <p align="justify">
-Let's have a closer look at what is <b>Dense Passage Retriever(DPR) and how it works</b>.
+Let's have a closer look at what is <b>Dense Passage Retriever(DPR)</b> and how it works.
 <br/><br/>
 Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
 </p>
