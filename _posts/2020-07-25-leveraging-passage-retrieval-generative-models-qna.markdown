@@ -110,7 +110,7 @@ The generative model in this approach is based on a Seq2Seq network pretrained o
 </p>
 <img width="900px" src="{{ site.baseurl }}/assets/img/blog/fusion_in_decoder.png"/>
 <p align="justify">
-As you can see in figure above, for a given question, Dense Passage Retrieval(DPR) retrieves say k pasages
+As you can see in figure above, for a given question, Dense Passage Retrieval(DPR) retrieves say k pasages; Each passage is passed through Transformer encoder (where question, passage title, passage text are prefixed and fed as shown in figure above). The resulting representation of each retrieved passage is concatenated and the resulting vector is used on decoding side for attention. i.e. Decoder will attend to this vector while decoding. This joint processing of passages in the decoder allows to better aggregate the evidence from multiple passages. Processing passages independently in the encoder allows to scale to large number of contexts, as it only performs self attention over one context at a time. Thus, the computation time is linear in number of passages.
 </p>
 
 {% if page.comments %}
