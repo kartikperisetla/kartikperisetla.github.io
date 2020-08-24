@@ -93,13 +93,13 @@ For indexing and retrieval, FAISS (Johnson et al. 2017) library is used - as it 
 Generative model for Answer Generation
 </h3>
 <p align="justify">
-The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture is very similar to The Transformers (Vaswani et al. 2017). Below shown is the standard Transformer architecture:
+The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture presented in this paper is very similar to The Transformers (Vaswani et al. 2017), but with a small variation as you will see as we proceed. Below shown is the standard Transformer architecture by Vaswani et al:
 </p>
-<img width="800px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
+<img width="950px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
 <p align="justify">
-Model takes input: Each of the passage retrieved by DPR is fed alongwith the question and title as shown in the figure below:
+T5 Model takes input: Each of the passage retrieved by DPR is fed to the Encoder in Transformer, alongwith the question and title as shown in the figure below:
 </p>
-<img width="800px" src="{{ site.baseurl }}/assets/img/blog/passage_encoder.png"/>
+<img width="900px" src="{{ site.baseurl }}/assets/img/blog/passage_encoder.png"/>
 <p align="justify">
 <dl>
 <dt><b>Encoder</b></dt>
@@ -107,6 +107,10 @@ Model takes input: Each of the passage retrieved by DPR is fed alongwith the que
 <dt><b>Decoder</b></dt>
 <dd>Decoder performs attention over the concatenation of the resulting representations of all retrieved passages. This approach is referred as <b> Fusion-in-Decoder</b> as model performs evidence fusion in the decoder only.</dd>
 </dl>
+</p>
+<img width="900px" src="{{ site.baseurl }}/assets/img/blog/fusion_in_decoder.png"/>
+<p align="justify">
+As you can see in figure above, for a given question, Dense Passage Retrieval(DPR) retrieves say k pasages
 </p>
 
 {% if page.comments %}
