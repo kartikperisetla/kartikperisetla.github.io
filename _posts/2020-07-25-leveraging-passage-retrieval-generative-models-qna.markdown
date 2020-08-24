@@ -69,7 +69,18 @@ Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpuk
 Passages and questions are represented as dense vectors whose representation is obtained by using two separate BERT models - one for encoding passages and other to encode only questions. The ranking function in this case is the dot product between query and passage vectors. Retrieval of passages in this case is done using approximate nearest neighbors with Facebook's FAISS library.
 </dd>
 </dl>
-
+</p>
+<h3>
+Generative model for Answer Generation
+</h3>
+<p align="justify">
+The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5.
+<dl>
+<dt><b>Encoder</b></dt>
+<dd>Question + retrieved support passages -> Question is prefixed with "question:", title of passage is prefixed with "title:" and each passage is prefixed with "context:". Each passage and its title are concatenated with question and fed into Encoder.</dd>
+<dt><b>Decoder</b></dt>
+<dd>Decoder performs attention over the concatenation of the resulting representations of all retrieved passages. This approach is referred as <b> Fusion-in-Decoder</b> as model performs evidence fusion in the decoder only.</dd>
+</dl>
 </p>
 
 {% if page.comments %}
