@@ -97,7 +97,7 @@ The generative model in this approach is based on a Seq2Seq network pretrained o
 </p>
 <img width="950px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
 <p align="justify">
-T5 Model takes input: Each of the passage retrieved by DPR is fed to the Encoder in Transformer, alongwith the question and title as shown in the figure below:
+<b>T5 Model takes input</b>: Each of the passage retrieved by DPR is fed to the Encoder in Transformer, alongwith the question and title as shown in the figure below:
 </p>
 <img width="900px" src="{{ site.baseurl }}/assets/img/blog/passage_encoder.png"/>
 <p align="justify">
