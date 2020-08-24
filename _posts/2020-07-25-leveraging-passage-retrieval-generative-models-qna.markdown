@@ -93,7 +93,14 @@ For indexing and retrieval, FAISS (Johnson et al. 2017) library is used - as it 
 Generative model for Answer Generation
 </h3>
 <p align="justify">
-The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5.
+The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture is very similar to The Transformers (Vaswani et al. 2017). Below shown is the standard Transformer architecture:
+</p>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
+<p align="justify">
+Model takes input: Each of the passage retrieved by DPR is fed alongwith the question and title as shown in the figure below:
+</p>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/passage_encoder.png"/>
+<p align="justify">
 <dl>
 <dt><b>Encoder</b></dt>
 <dd>Question + retrieved support passages -> Question is prefixed with "question:", title of passage is prefixed with "title:" and each passage is prefixed with "context:". Each passage and its title are concatenated with question and fed into Encoder.</dd>
