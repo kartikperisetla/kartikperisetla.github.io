@@ -77,7 +77,7 @@ Let's have a closer look at what is Dense Passage Retriever(DPR) and how it work
 <br/><br/>
 Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
 </p>
-<img width="500px" src="{{ site.baseurl }}/assets/img/blog/ablation_results.png"/>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/ablation_results.png"/>
 <h3>
 Generative model for Answer Generation
 </h3>
