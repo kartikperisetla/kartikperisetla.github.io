@@ -73,11 +73,22 @@ Passages and questions are represented as dense vectors whose representation is 
 </dl>
 </p>
 <p align="justify">
-Let's have a closer look at what is Dense Passage Retriever(DPR) and how it works.
+Let's have a closer look at what is <b>Dense Passage Retriever(DPR) and how it works</b>.
 <br/><br/>
 Given a collection of M text passages, the goal of DPR is to index all the passages in a low dimensional continuous space such that it can retrieve efficiently the top-k passages relevant to the input question for the reader at run-time. Here M can be very large( in the order of millions of passages) and k is reletively small ~ 20-100.
 </p>
 <img width="800px" src="{{ site.baseurl }}/assets/img/blog/dpr.png"/>
+<p align="justify">
+You can see the design details of DPR in the figure above. Key points:
+<ul>
+<li>
+Two indepedent BERT networks are used as dense encoders for passage as well as question. Passage encoder maps any test passage to a d-dimensional vector. Such vectors are used to build an index that is used for retrieval. </li>
+<li>Training of DPR involves training the encoders such that dot-product similarity becomes a good ranking function for retrieval. At inference time, the question encoder encodes the input question to a d-dimensional vector and this encoding is used to retrieve k passags of which vectors are the closest to the question vector. The similarity function used in DPR is dot-product, but any decomposable similarity function can be used - such as some transformations of Euclidean distance.</li>
+<li>
+For indexing and retrieval, FAISS (Johnson et al. 2017) library is used - as it supports efficient similarity search and clustering of dense vectors applicable to billions of vectors.
+</li>
+</ul>
+</p>
 <h3>
 Generative model for Answer Generation
 </h3>
