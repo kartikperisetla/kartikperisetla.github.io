@@ -26,11 +26,10 @@ comments: true
 <p align="justify">
 Figure shows a simple approach to open-domain question answering. Firstly, supporting text passages are retrieved from external source of knowledge such as Wikipedia. Then a generative encoder-decoder model produces the answer, conditioned on the question and the retrieved passages. This approach scales well with number of retrieved passages.
 </p>
-<br/>
 <h2>
     Background of passage retrieval and generative question answering
 </h2>
-<p align="j ustify">
+<p align="j ustify">cz
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results just by using external source of knowledge.
 </p>
 <p>
@@ -39,7 +38,6 @@ We have seen Question Answering systems being evolved when it comes to passage r
 <p align="justify">
 We have seen the use of Generative models for question answering where the answer does not correspond to a span in the passage. T5 model by Raffel et al. (2019) is a perfect example of how competitive generative models can be for reading comprehension tasks such as SQuAD. There are models that use large scale pretrained generative models with or without any kind of augmentation to the model like Roberts et al.(2020) and Min et al.(2020) and Lewis et al.(2020). The key differentiator of this research work with prior work is that- the way the retrieved passages are processed by the generative model is diffferent in this piece of work - as we will see in sections ahead.
 </p>
-<br/>
 <h2>
     Approach
 </h2>
@@ -111,6 +109,26 @@ The generative model in this approach is based on a Seq2Seq network pretrained o
 <img width="1000px" src="{{ site.baseurl }}/assets/img/blog/fusion_in_decoder.png"/>
 <p align="justify">
 As you can see in figure above, for a given question, Dense Passage Retrieval(DPR) retrieves say k pasages; Each passage is passed through Transformer encoder (where question, passage title, passage text are prefixed and fed as shown in figure above). <b>The resulting representation of each retrieved passage is concatenated and the resulting vector is used on decoding side for attention. i.e. Decoder will attend to this vector while decoding. This joint processing of passages in the decoder allows to better aggregate the evidence from multiple passages</b>. Processing passages independently in the encoder allows to scale to large number of contexts, as it only performs self attention over one context at a time. Thus, the computation time is linear in number of passages.
+</p>
+<h2>
+    Metrics, Experiments & Results
+</h2>
+<p align="justify">
+The metric reported in this paper is <b>EM(ExactMatch)</b> as introduced by Rajpurkar et al.(2016). A generated answer is considered correct if it matches any answer of the list of acceptable answers after normalization. This normalization step consists in lowercasing and removing articles, punctuation and duplicated whitespace.
+<br/>
+<br/>
+The empirical evaluations of Fusion-in-Decoder for open domain QA are presented and following benchmark datasets are used:
+<dl>
+<dt>NaturalQuestions</dt>
+<dd>This contains questions corresponding to Google search queries.</dd>
+
+<dt>TriviaQA</dt>
+<dd>Contains questions gathered from trivia and quiz-league websites. The unfiltered version of TriviaQA is used for open-domain question answering.</dd>
+
+<dt>SQuAD v1.1</dt>
+<dd>It is a reading comprehension dataset. Given a paragraph extracted from Wikipedia, annotators were asked to write questions for which the answer is span from the same paragraph.</dd>
+</dl>
+Authors used validation as test and keep 10% of the training set for validation. And same preprocessing(Chen et al 2017, Karpukhin et al. 2020) was applied resulting in passages of 100 words which do not overlap.
 </p>
 
 {% if page.comments %}
