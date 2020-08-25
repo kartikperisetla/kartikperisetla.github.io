@@ -119,13 +119,13 @@ The metric reported in this paper is <b>EM(ExactMatch)</b> as introduced by Rajp
 <br/>
 The empirical evaluations of Fusion-in-Decoder for open domain QA are presented and following benchmark datasets are used:
 <dl>
-<dt>NaturalQuestions</dt>
+<dt><b>NaturalQuestions</b></dt>
 <dd>This contains questions corresponding to Google search queries.</dd>
 
-<dt>TriviaQA</dt>
+<dt><b>TriviaQA</b></dt>
 <dd>Contains questions gathered from trivia and quiz-league websites. The unfiltered version of TriviaQA is used for open-domain question answering.</dd>
 
-<dt>SQuAD v1.1</dt>
+<dt><b>SQuAD v1.1</b></dt>
 <dd>It is a reading comprehension dataset. Given a paragraph extracted from Wikipedia, annotators were asked to write questions for which the answer is span from the same paragraph.</dd>
 </dl>
 Authors used validation as test and keep 10% of the training set for validation. And same preprocessing(Chen et al 2017, Karpukhin et al. 2020) was applied resulting in passages of 100 words which do not overlap.
