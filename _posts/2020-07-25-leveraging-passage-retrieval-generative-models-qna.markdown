@@ -29,14 +29,14 @@ Figure shows a simple approach to open-domain question answering. Firstly, suppo
 <h2>
     Background of passage retrieval and generative question answering
 </h2>
-<p align="j ustify">cz
+<p align="j ustify">
 Generative modeling for open-domain question answering has been a research area continuously being explored. Building langage models with billions of parameters, where all the information is stored in model parameters have been in the leaderboards for several benchmarks. The major concern with such models is the model size. The training and inference with such huge models is expensive. This paper presents an alternative to building such large models and still getting similar benchmark results just by using external source of knowledge.
 </p>
 <p>
-We have seen Question Answering systems being evolved when it comes to passage retrieval - initially using non-parameterized models based on TF-IDF, by leveraging additional information from Wikipedia graphs (Asai et al. 2020), and by using dense representations and approximate nearest neighbors. The benefit of using passage retrieval using dense representations is that such models can be trained using weak supervision (Karpukhin et al. 2020).
+We have seen Question Answering systems being evolved when it comes to passage retrieval - initially using non-parameterized models based on TF-IDF, by leveraging additional information from Wikipedia graphs (<a href="https://arxiv.org/abs/1911.10470">Asai et al. 2020</a>), and by using dense representations and approximate nearest neighbors. The benefit of using passage retrieval using dense representations is that such models can be trained using weak supervision (<a href="https://arxiv.org/abs/2004.04906">Karpukhin et al. 2020</a>).
 </p>
 <p align="justify">
-We have seen the use of Generative models for question answering where the answer does not correspond to a span in the passage. T5 model by Raffel et al. (2019) is a perfect example of how competitive generative models can be for reading comprehension tasks such as SQuAD. There are models that use large scale pretrained generative models with or without any kind of augmentation to the model like Roberts et al.(2020) and Min et al.(2020) and Lewis et al.(2020). The key differentiator of this research work with prior work is that- the way the retrieved passages are processed by the generative model is diffferent in this piece of work - as we will see in sections ahead.
+We have seen the use of Generative models for question answering where the answer does not correspond to a span in the passage. T5 model by <a href="https://arxiv.org/abs/1910.10683">Raffel et al. (2019)</a> is a perfect example of how competitive generative models can be for reading comprehension tasks such as SQuAD. There are models that use large scale pretrained generative models with or without any kind of augmentation to the model like <a href="https://arxiv.org/abs/2002.08910">Roberts et al.(2020)</a> and <a href="https://arxiv.org/abs/1909.04849">Min et al.(2020)</a> and <a href="https://arxiv.org/abs/2005.11401">Lewis et al.(2020)</a>. The key differentiator of this research work with prior work is that- the way the retrieved passages are processed by the generative model is diffferent in this piece of work - as we will see in sections ahead.
 </p>
 <h2>
     Approach
@@ -46,7 +46,7 @@ We have seen the use of Generative models for question answering where the answe
 <ul>
 <li>The approach presented in this paper consists of two steps: firstly retrieving support passages using sparse or dense representations; and then a Seq2Seq model generating the answer, taking question and the retrieved supporting passages as input.
 </li>
-<li>This approach sets state-of-the-art results for TriviaQA and NaturalQuestions benchmark. 
+<li>This approach sets state-of-the-art results for <a href="https://nlp.cs.washington.edu/triviaqa/">TriviaQA</a> and <a href="https://ai.google.com/research/NaturalQuestions/">NaturalQuestions</a> benchmark. 
 </li>
 <li> The performance of this approach improves with number of supporting passages retrieved, indicating that Seq2Seq model is able to give better answers by combining evidence from retrieved passages.
 </li>
@@ -59,7 +59,7 @@ Passage Retrieval
 <p align="justify">
 As we have seen in emerging trend that when we have a reader model that detects the span in passage as answer - it is not possible to apply the reader model to all the passages in system - as it will be super expensive computationally. Thus, any open-domain Question-Answering sysmtem needs to include an efficient retriever component that can select a small set of relevant passages which can be fed to the reader model.
 <br/>
-Authors considered two approaches here: BM25 and Dense Passage Retrieval (Karpukhin et al. 2020).
+Authors considered two approaches here: BM25 and Dense Passage Retrieval (<a href="https://arxiv.org/abs/2004.04906">Karpukhin et al. 2020</a>).
 <dl>
 <dt><b>BM25</b></dt>
 <dd> Passages are represented as bag of words and ranking function is based on term and inverse document frequences. Default implementation from Apache Lucene was used for this.
@@ -83,7 +83,7 @@ You can see the design details of DPR in the figure above. Key points:
 Two indepedent BERT networks are used as dense encoders for passage as well as question. Passage encoder maps any test passage to a d-dimensional vector. Such vectors are used to build an index that is used for retrieval. </li>
 <li>Training of DPR involves training the encoders such that dot-product similarity becomes a good ranking function for retrieval. At inference time, the question encoder encodes the input question to a d-dimensional vector and this encoding is used to retrieve k passags of which vectors are the closest to the question vector. The similarity function used in DPR is dot-product, but any decomposable similarity function can be used - such as some transformations of Euclidean distance.</li>
 <li>
-For indexing and retrieval, FAISS (Johnson et al. 2017) library is used - as it supports efficient similarity search and clustering of dense vectors applicable to billions of vectors.
+For indexing and retrieval, FAISS (<a href="https://arxiv.org/abs/1702.08734">Johnson et al. 2017</a>) library is used - as it supports efficient similarity search and clustering of dense vectors applicable to billions of vectors.
 </li>
 </ul>
 </p>
@@ -91,7 +91,7 @@ For indexing and retrieval, FAISS (Johnson et al. 2017) library is used - as it 
 Generative model for Answer Generation
 </h3>
 <p align="justify">
-The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture presented in this paper is very similar to The Transformers (Vaswani et al. 2017), but with a small variation as you will see as we proceed. Below shown is the standard Transformer architecture by Vaswani et al:
+The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture presented in this paper is very similar to The Transformers (<a href="https://arxiv.org/abs/1706.03762">Vaswani et al. 2017</a>), but with a small variation as you will see as we proceed. Below shown is the standard Transformer architecture by Vaswani et al:
 </p>
 <img width="950px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
 <p align="justify">
@@ -114,7 +114,7 @@ As you can see in figure above, for a given question, Dense Passage Retrieval(DP
     Metrics, Experiments & Results
 </h2>
 <p align="justify">
-The metric reported in this paper is <b>EM(ExactMatch)</b> as introduced by Rajpurkar et al.(2016). A generated answer is considered correct if it matches any answer of the list of acceptable answers after normalization. This normalization step consists in lowercasing and removing articles, punctuation and duplicated whitespace.
+The metric reported in this paper is <b>EM(ExactMatch)</b> as introduced by <a href="https://arxiv.org/abs/1606.05250">Rajpurkar et al.(2016)</a>. A generated answer is considered correct if it matches any answer of the list of acceptable answers after normalization. This normalization step consists in lowercasing and removing articles, punctuation and duplicated whitespace.
 <br/>
 <br/>
 The empirical evaluations of Fusion-in-Decoder for open domain QA are presented and following benchmark datasets are used:
@@ -128,7 +128,7 @@ The empirical evaluations of Fusion-in-Decoder for open domain QA are presented 
 <dt><b>SQuAD v1.1</b></dt>
 <dd>It is a reading comprehension dataset. Given a paragraph extracted from Wikipedia, annotators were asked to write questions for which the answer is span from the same paragraph.</dd>
 </dl>
-Authors used validation as test and keep 10% of the training set for validation. And same preprocessing(Chen et al 2017, Karpukhin et al. 2020) was applied resulting in passages of 100 words which do not overlap.
+Authors used validation as test and keep 10% of the training set for validation. And same preprocessing(<a href="https://arxiv.org/abs/1704.00051">Chen et al 2017</a>, <a href="https://arxiv.org/abs/2004.04906">Karpukhin et al. 2020</a>) was applied resulting in passages of 100 words which do not overlap.
 </p>
 <img width="800px" src="{{ site.baseurl }}/assets/img/blog/dpr_evaluation.png"/>
 <p align="justify">
