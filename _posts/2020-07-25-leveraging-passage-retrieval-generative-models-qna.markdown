@@ -91,7 +91,7 @@ For indexing and retrieval, FAISS (<a href="https://arxiv.org/abs/1702.08734">Jo
 Generative model for Answer Generation
 </h3>
 <p align="justify">
-The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. T5 (Text-to-Text Transformer) model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture presented in this paper is very similar to The Transformers (<a href="https://arxiv.org/abs/1706.03762">Vaswani et al. 2017</a>), but with a small variation as you will see as we proceed. Below shown is the standard Transformer architecture by Vaswani et al:
+The generative model in this approach is based on a Seq2Seq network pretrained on unsupervised data - such as BART or T5. <a href="https://arxiv.org/abs/1910.10683">T5 (Text-to-Text Transformer)</a> model is a model where all the tasks are modeled using Encoder-Decoder architecture. The architecture presented in this paper is very similar to The Transformers (<a href="https://arxiv.org/abs/1706.03762">Vaswani et al. 2017</a>), but with a small variation as you will see as we proceed. Below shown is the standard Transformer architecture by Vaswani et al:
 </p>
 <img width="950px" src="{{ site.baseurl }}/assets/img/blog/transformer.png"/>
 <p align="justify">
