@@ -130,6 +130,9 @@ The empirical evaluations of Fusion-in-Decoder for open domain QA are presented 
 </dl>
 Authors used validation as test and keep 10% of the training set for validation. And same preprocessing(Chen et al 2017, Karpukhin et al. 2020) was applied resulting in passages of 100 words which do not overlap.
 </p>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/dpr_evaluation.png"/>
+<p align="justify">
+</p>
 
 {% if page.comments %}
 <div id="disqus_thread"></div>
