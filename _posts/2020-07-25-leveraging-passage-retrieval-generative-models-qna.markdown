@@ -138,11 +138,11 @@ The table above shows the comparison of approach described in this paper with ex
 <li>This approach outperforms existing work on NaturalQuestions and TriviaQA benchmarks.</li>
 <li>Generative models seem to perform well when evidence from multiple passages need to be aggregated, comparaed to extractive appraoches.</li>
 <li>Using additional knowledge in generative models by using retrieval lead to important performance gains.</li>
-<li>On NaturalQuestions, the closed book T5 model obtains 36.6% accuracy with 11B parameters, whereas this approach obtains 44.1% with 770M parameters plus Wikipedia with BM25 retrieval.</li>
+<li><b>On NaturalQuestions, the closed book T5 model obtains 36.6% accuracy with 11B parameters, whereas this approach obtains 44.1% with 770M parameters plus Wikipedia with BM25 retrieval</b>.</li>
 </ul>
-<img width="650px" src="{{ site.baseurl }}/assets/img/blog/fid_scale.png"/>
+<img width="800px" src="{{ site.baseurl }}/assets/img/blog/fid_scale.png"/>
 <p align="justify">
-The figure above shows the performance of this approach with respect to the number of retrieved passages. Specifically, on increasing the number of passages retrieved from 10 to 100 leads to 6% improvement on TriviaQA and 3.5% improvement on NaturalQuestions. As compared to other extractive models whose performance peak around 10 to 20 passages. This is used as an evidence by Authors that sequence-to-sequence models are good at combining infomration from multiple passages.
+The figure above shows the performance of this approach with respect to the number of retrieved passages. Specifically, <b>on increasing the number of passages retrieved from 10 to 100 leads to 6% improvement on TriviaQA and 3.5% improvement on NaturalQuestions</b>. As compared to other extractive models whose performance peak around 10 to 20 passages. This is used as an evidence by Authors that sequence-to-sequence models are good at combining infomration from multiple passages.
 </p>
 
 {% if page.comments %}
