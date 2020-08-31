@@ -7,7 +7,9 @@ description:
 profile:
   align: left
   image: prpic.jpeg
-  address: test 123
+  address: >
+    <p></p>
+    <p></p>
 
 news: false
 social: false
