@@ -8,8 +8,6 @@ profile:
   align: left
   image: prpic.jpeg
   address: >
-    <p></p>
-    <p></p>
 
 news: false
 social: false
