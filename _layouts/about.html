@@ -1,9 +1,6 @@
 ---
 layout: page
 ---
-<table border="0px">
-  <tr>
-    <td>
 {% if page.profile %}
 <div class="profile col one {{ page.profile.align }}">
   {% if page.profile.image %}
@@ -16,17 +13,12 @@ layout: page
   {% endif %}
   <div class="social" align="center">
     <span>
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">Github</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">Github*</a>
       / <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">LinkedIn</a>
       / <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter">Twitter</a>
     </span>
   </div>
 </div>
 {% endif %}
-</td>
 
-<td>
 {{ content }}
-</td>
-</tr>
-</table>
