@@ -7,11 +7,6 @@ description:
 profile:
   align: left
   image: prpic.jpeg
-  address: >
-
-news: false
-social: false
-
 ---
 <p align="left">
 Currently working on Open Domain Question Answering for <a href="https://www.apple.com/siri/" target="_blank">Apple Siri</a>.</p>
