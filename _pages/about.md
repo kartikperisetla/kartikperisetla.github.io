@@ -23,19 +23,3 @@ My research interests spans Natural Language Generation, Question Answering, Lan
 <br/>
 <br/>
 <br/>
-<table>
-<tr>
-<td>
-  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/linkedin.png"/>
-</td>
-<td>
-  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/cmu.png"/>
-</td>
-<td>
-  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/microsoft.png"/>
-</td>
-<td>
-  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/apple.png"/>
-</td>
-</tr>
-</table>
