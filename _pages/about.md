@@ -26,16 +26,16 @@ My research interests spans Natural Language Generation, Question Answering, Lan
 <table>
 <tr>
 <td>
-  <img width="100px" height="100px" src="{{ site.baseurl }}/assets/img/blog/linkedin.png"/>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/linkedin.png"/>
 </td>
 <td>
-  <img width="100px" height="100px" src="{{ site.baseurl }}/assets/img/blog/cmu.png"/>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/cmu.png"/>
 </td>
 <td>
-  <img width="100px" height="100px" src="{{ site.baseurl }}/assets/img/blog/microsoft.png"/>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/microsoft.png"/>
 </td>
 <td>
-  <img width="100px" height="100px" src="{{ site.baseurl }}/assets/img/blog/apple.png"/>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/apple.png"/>
 </td>
 </tr>
 </table>
