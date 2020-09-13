@@ -17,9 +17,24 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 <p align="left">
 My research interests spans Natural Language Generation, Question Answering, Language Modeling, Visual Question Answering and Commonsense reasoning with a view to build agents that can operate in this world by understanding existing concepts from text, images and videos.
 </p>
-
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
+<table>
+<tr>
+<td>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/linkedin.png"/>
+</td>
+<td>
+  <img width="100px" height="100px" src="{{ site.baseurl }}/assets/img/cmu.png"/>
+</td>
+<td>
+  <img width="80px" height="80px" src="{{ site.baseurl }}/assets/img/microsoft.png"/>
+</td>
+<td>
+  <img width="80" height="100px" src="{{ site.baseurl }}/assets/img/apple.png"/>
+</td>
+</tr>
+</table>
