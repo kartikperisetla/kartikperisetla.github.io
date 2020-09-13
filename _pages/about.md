@@ -15,5 +15,22 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 </p>
 
 <p align="left">
-My research interests spans Natural Language Generation, Question Answering, Language Modeling, Visual Question Answering and Commonsense reasoning with a view to build agents that can operate in this world by understanding existing concepts from text, images and videos.
+My research interests spans following areas with a view to build agents that can operate in this world by understanding existing concepts from different modalities:
+<ul>
+<li> Open-Domain Question Answering
+</li>
+<li>Natural Language Generation
+</li>
+<li>Language Modeling
+</li>
+<li>
+Visual Question Answering
+</li>
+<li>
+Commonsense reasoning
+</li>
+<li>
+ML Model interpretability
+</li>
+</ul>
 </p>
