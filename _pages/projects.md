@@ -18,7 +18,7 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">CRF Query Tagger for LinkedIn Search
+<h3 style="color:#202E6E">Conditional Random Fields Named Entity Tagger for LinkedIn Search
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
