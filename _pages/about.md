@@ -16,7 +16,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 
 <p align="left">
 My research interests spans following areas with a view to build agents that can operate in this world by understanding existing concepts from different modalities:
-<ul padding-left="14rem;">
+<ul style="padding-left: 14rem;">
 <li> Open-Domain Question Answering
 </li>
 <li>Natural Language Generation
