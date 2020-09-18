@@ -16,7 +16,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 
 <script>
 ul {
-    padding: 5px;
+    padding: 200px;
     margin-top:0px;
     margin-bottom:0px;
 }
