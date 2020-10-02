@@ -30,6 +30,9 @@ Visual Question Answering
 Commonsense reasoning
 </li>
 <li>
+Semantic Parsing
+</li>
+<li>
 ML Model interpretability
 </li>
 </ul>
