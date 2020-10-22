@@ -21,10 +21,8 @@ My research interests span following areas:
 </li>
 <li>Natural Language Generation
 </li>
-<li>Language Modeling
-</li>
 <li>
-Visual Question Answering
+Visual Question Answering | Visual Dialog
 </li>
 <li>
 Commonsense reasoning
