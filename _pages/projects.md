@@ -11,7 +11,7 @@ description:
 <img class="thumbnail" src="/assets/img/siri_icon.png" width="100px" height="100px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Currently working on Question Answering in Siri </h4></b>
-    Knowledge on the go. Powering Siri with intelligence to answer questions on any domain. Try asking "How tall is Mount Rainier", "Who won English Premier League in 2018", "What is the distance from Seattle to Florida in car".
+    Powering Siri with intelligence to answer questions on any domain. Try asking "How tall is Mount Rainier", "Who won English Premier League in 2018", "What is the distance from Seattle to Florida in car".
 </p>
 <h4 class="year" />
 <br />
