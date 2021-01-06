@@ -4,6 +4,8 @@ title: projects
 permalink: /projects/
 description:
 ---
+<h4 class="year" />
+<br />
 <h3 style="color:#202E6E">Siri Open-domain Question Answering
 </h3>
 <img class="thumbnail" src="/assets/img/siri_icon.png" width="100px" height="100px" border="0px"/>
