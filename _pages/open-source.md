@@ -35,10 +35,10 @@ Involved as a volunteer in XSCE school server development, looking at Sugar rela
 <p align="justify">
 <a href="http://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project Bhagmalpur</a>
 <ul>
-<li>Played key role in OLPC XO laptops and XS School Server development and deployment in the remote Indian village of Bhagmalpur.</li>
-<li>Played key role in deploying and connecting XS School Server to internet. Thus connecting all XO laptops in Bhagmalpur to internet.</li>
-<li>Responsible to teach children in Bhagmalpur learn to use XO laptops, XS school server for educational and social activities.</li>
-<li> Developed Wikipedia Hindi activity- Developed one of the most widely used sugar activities at Bhagmalpur as children love it. [<a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Download</a>]</li>
+<li>Played key role in OLPC XO laptops and XS School Server development and deployment in the remote Indian village of <a href="https://en.wikipedia.org/wiki/Bhagmalpur,_India">Bhagmalpur</a>.</li>
+<li>Played key role in deploying and connecting XS School Server to internet. Thus connecting all XO laptops in <a href="https://en.wikipedia.org/wiki/Bhagmalpur,_India">Bhagmalpur</a> to internet.</li>
+<li>Responsible to teach children in <a href="https://en.wikipedia.org/wiki/Bhagmalpur,_India">Bhagmalpur</a> learn to use XO laptops, XS school server for educational and social activities.</li>
+<li> Developed Wikipedia Hindi activity- Developed one of the most widely used sugar activities at <a href="https://en.wikipedia.org/wiki/Bhagmalpur,_India">Bhagmalpur</a> as children love it. [<a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Download</a>]</li>
 </ul>
 </p>
 <br/>
