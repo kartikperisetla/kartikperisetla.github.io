@@ -12,15 +12,13 @@ comments: true
 <b>keywords</b>: language modeling, question answering, passage retrieval, interpretable model, interpretable knowledge<br />
 
 <p align="justify">
-    This post will walk through paper "REALM: Retrieval-Augmented Language Model Pre-Training" by Google Research <a href="https://arxiv.org/abs/2002.08909"> [arXiv]
+    This post will walk through paper <strong>REALM: Retrieval-Augmented Language Model Pre-Training</strong> by Google Research <a href="https://arxiv.org/abs/2002.08909"> [arXiv]
 </a>
 </p>
 <p align="justify">
-    
+    At a glance this paper might appear to be on the lines of typical model architecture for Question Answering where you have two main components: a retriever and reader to predict contiguous span of text as answer. However, this paper is unique in the sense that it is one of the papers that is focused more on interpretability of model and how to address the problem of 'how can we know what the model is learning' for a particular task. We all have seen large language models with billions of parameters trained on huge corpus of data to achieve SOTA results. But this paper tackles the problem of how we can build a lightweight neural model that achieve equal or better accuracy on downstream task. For that, authors have presented an approach wherein they use a latent model that is responsible for deciding what knowledge the model will learn.
 	<br/>
 </p>
-
-<
 
 {% if page.comments %}
 <div id="disqus_thread"></div>
