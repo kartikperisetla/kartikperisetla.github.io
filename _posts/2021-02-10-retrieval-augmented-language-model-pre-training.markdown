@@ -1,6 +1,6 @@
 ---
 layout: post
-title: REALM: Retrieval Augmented Language Model Pre-Training
+title: Retrieval Augmented Language Model Pre-Training (REALM)
 description: An approach that provides alternative to training large language models that capture world knowledge in model parameters. To capture knowledge in modular and interpretable way, language model is augmented with a knowledge retriever that allows language model to retrieve and attend over documents from a large corpus for pre-training and fine tuning tasks.
 comments: true
 ---
