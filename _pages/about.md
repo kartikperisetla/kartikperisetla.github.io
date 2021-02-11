@@ -19,19 +19,16 @@ My research interests span following areas:
 <ul style="padding-left: 14rem;">
 <li> Open-Domain Question Answering
 </li>
-<li>Natural Language Generation
+<li>NLU/NLG
 </li>
 <li>
-Visual Question Answering | Visual Dialog
+Visual Question Answering
 </li>
 <li>
 Commonsense reasoning
 </li>
 <li>
 Semantic Parsing
-</li>
-<li>
-ML Model interpretability
 </li>
 </ul>
 </p>
