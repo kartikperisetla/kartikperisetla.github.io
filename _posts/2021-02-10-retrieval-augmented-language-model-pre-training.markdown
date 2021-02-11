@@ -16,10 +16,12 @@ comments: true
 </a>
 </p>
 <p align="justify">
-    At a glance this paper might appear to be on the lines of typical model architecture for Question Answering where you have two main components: a retriever and reader to predict contiguous span of text as answer. However, this paper is unique in the sense that it is one of the papers that is focused more on interpretability of model and how to address the problem of 'how can we know what the model is learning' for a particular task. We all have seen large language models with billions of parameters trained on huge corpus of data to achieve SOTA results. But this paper tackles the problem of how we can build a lightweight neural model that achieve equal or better accuracy on downstream task. For that, authors have presented an approach wherein they use a latent model that is responsible for deciding what knowledge the model will learn.
-	<br/>
+    At a glance this paper might appear to be on the lines of typical model architecture for Question Answering where you have two main components: a retriever and reader to predict contiguous span of text as answer. However, this paper is unique in the sense that it is one of the papers that is focused more on interpretability of model and how to address the problem of 'how can we know what the model is learning' for a particular task.
 </p>
-
+<p align="justify">
+We all have seen large language models with billions of parameters trained on huge corpus of data to achieve SOTA results. But this paper tackles the problem of how we can build a lightweight neural model that achieve equal or better accuracy on downstream task. For that, authors have presented an approach wherein they use a latent model that is responsible for deciding what knowledge the model will learn.
+<br/>
+</p>
 {% if page.comments %}
 <div id="disqus_thread"></div>
 
