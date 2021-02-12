@@ -15,6 +15,20 @@ comments: true
     This post will walk through paper <strong>REALM: Retrieval-Augmented Language Model Pre-Training</strong> by Google Research <a href="https://arxiv.org/abs/2002.08909"> [arXiv]
 </a>
 </p>
+<h3>TL;DR</h3>
+<p align="justify">
+<ul>
+    <li>
+        Language Model pre-training captures good amount of world knowledge for NLP tasks such as Question-Answering. However this knowledge is stored in parameters of neural network. In order to store more knowledge, one has to go for even larger network i.e. even more parameters.
+    </li>
+    <li>
+        Key contribution of thie paper: A solution to above mentioned problem. The approach outlined in this paper allows us to build neural models with relatively fewer parameters that perform better than SOTA on downstream tasks such as Question-Answering.
+    </li>
+    <li>
+        In order to capture the knowledge in a modular and interpretable way, Language model pre-training is augmented with a knowledge retriever that allows model to retrieve and attend over the documents from a large corpus such as Wikipedia, that is used during pre-training, fine-tuning and inference.
+    </li>
+</ul>
+</p>
 <p align="justify">
     At a glance this paper might appear to be on the lines of typical model architecture for Question Answering where you have two main components: a retriever and reader to predict contiguous span of text as answer. However, this paper is unique in the sense that it is one of the papers that is focused more on interpretability of model and how to address the problem of 'how can we know what the model is learning' for a particular task.
 </p>
