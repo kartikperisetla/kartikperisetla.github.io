@@ -97,7 +97,7 @@ comments: true
     </li>
     <li>
         Compared with SOTA Open-domain Question-Answering models such as T5
-    <li>
+    </li>
     <li>
     Exact Match metric is used in evaluation.
     </li>
@@ -114,7 +114,7 @@ comments: true
         REALM decomposes p(y|x) in two steps: retrieve and predict. For input x, it retrieves relevant documents z from a knowledge corpus Z. Then conditioning on input as well as retrieved document to generate output y. Here, z is treated as latent variable and overall likelihood of generating y is computed by marginalized over all possible documents z:
     </li>
 </ul>
-<img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
 </p>
 
 <h3>Two staged approach</h3>
