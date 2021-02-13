@@ -45,7 +45,7 @@ comments: true
 <br/>
 </p>
 
-<h3>Background</h3>
+<h3>Background & Experiment Setup</h3>
 <p align="justify">
     Language Model pre-training has been used to learn useful representations of language from unlabeld text. pre-trained model is then fine-tuned to perform the downstream task. Model parameters are essentially updated in this fine-tuning stage on top of learned representations at pre-training stage. Masked-Language-Model(MLM) is used as pre-training variant in this paper. One key difference or extension in this paper is that - Authors use different variant of masking - like Salient span masking which we will discuss further.
     <br/>
@@ -86,22 +86,35 @@ comments: true
         <a href="https://arxiv.org/pdf/1911.00172.pdf">kNN-LMs (Khandelwal et al.)</a> uses only examples labeled for the target task, not fine tuned for downstream tasks. 
     </li>
 </ul>
-<img class="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/knn_lm.png"/><br/>
-</p>
-
-<h3>Experiment Setup</h3>
-<p align="justify">
-
+<img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/knn_lm.png"/><br/>
 </p>
 
 <h3>Evaluation Strategy</h3>
 <p align="justify">
-
+<ul>
+    <li>
+        REALM approach is pre-trained and then fine-tuned on Open-domain Question-Answering and is evaluated on 3 benchmark datasets: NaturalQuestion-open, WebQuestions, CuratedTrec.
+    </li>
+    <li>
+        Compared with SOTA Open-domain Question-Answering models such as T5
+    <li>
+    <li>
+    Exact Match metric is used in evaluation.
+    </li>
+</ul>
 </p>
 
 <h3>Approach</h3>
 <p align="justify">
-
+<ul>
+    <li>    
+        In both pre-training and fine-tuning, REALM is learning a probability distribution P(y|x) for input x over possible outputs y. For pre-training, x is sentence from pre-training corpus X with masked tokens or masked salient spans. For fine-tuning task, x is a question and y is the answer.
+    </li>
+    <li>
+        REALM decomposes p(y|x) in two steps: retrieve and predict. For input x, it retrieves relevant documents z from a knowledge corpus Z. Then conditioning on input as well as retrieved document to generate output y. Here, z is treated as latent variable and overall likelihood of generating y is computed by marginalized over all possible documents z:
+    </li>
+</ul>
+<img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
 </p>
 
 <h3>Two staged approach</h3>
