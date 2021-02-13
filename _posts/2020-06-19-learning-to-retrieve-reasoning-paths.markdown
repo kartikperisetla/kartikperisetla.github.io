@@ -213,29 +213,3 @@ In order to show how interplay between retriever and reader model, authors share
 <p align="justify">
 In Figure 3, the approach successfully retrieves the correct reasoning path and answers correctly, while reranking fails. The top 2 paragraphs next to the graph are the introductory paragraphs of the two entities on the reasoning path and the paragraph at the bottom shows the wrong paragraph selected by rerank. As we can see "Millwall F.C" has feweer lexical overlaps and the bridge entity "Millwall" is not stated in the given question. In Figure 4, the comparison between reasoning paths ranked highest by retriever model and reader is shared. Although gold path is included in top 8 paths selected by beam search, the retriever model selects a wrong paragraph as the best reasoning path. By reranking the reasoning paths, the reader eventually selects the correct reasoning path ("2017-18 Wigan Athletic F.C. season" -> "EFL Cup").
 </p>
-
-<br/>
-{% if page.comments %}
-<div id="disqus_thread"></div>
-
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://kartikblog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-{% endif %}
