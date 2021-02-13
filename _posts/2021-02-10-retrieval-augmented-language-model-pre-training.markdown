@@ -43,11 +43,18 @@ comments: true
     <br/>
     I believe the readers are familiar with task of Open-domain question answering. Authors have choosen this task in order to see what knowledge has been incorporated in model parameters. The typical architecture of Question-Answering systems utilitize a two staged appraoch: retrieve relevant documents and extract an answer from the document. They key idea in this paper extends this two staged approach with language model pre-trainig.
 </p>
-
 <h3>Key Contributions</h3>
 <p align="justify">
-
+<ul>
+    <li>
+        A new approach which augments language model pre-training with a textual knowledge retriever. Also, on how to train such a knowledge retriever in an unsupervised manner using Masked-Language-Model as a learning signal and back-propogating through a retrieval step that considers millions of documents.
+    </li>
+    <li>
+        Effectiveness of REALM pre-training is demonstrated by fine-tuning on Open-domain question answering and comparing against state-of-the-art models on 3 question-answering benchmarks. REALM approach outperforms all methods by 4-16% on absolute accuracy.
+    </li>
+</ul>
 </p>
+<img width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_approach.png"/><br/>
 
 <h3>Main Challenge</h3>
 <p align="justify">
