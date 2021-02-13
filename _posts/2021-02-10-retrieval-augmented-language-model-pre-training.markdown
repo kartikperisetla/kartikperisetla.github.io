@@ -12,7 +12,7 @@ comments: true
 <b>keywords</b>: language modeling, question answering, passage retrieval, interpretable model, interpretable knowledge<br />
 
 <p align="justify">
-    This post will walk through paper <strong>REALM: Retrieval-Augmented Language Model Pre-Training</strong> by Google Research <a href="https://arxiv.org/abs/2002.08909"> [arXiv]
+    This post will walk through paper <a href="https://arxiv.org/abs/2002.08909">REALM: Retrieval-Augmented Language Model Pre-Training</a> by Google Research
 </a>
 </p>
 <h3>TL;DR</h3>
