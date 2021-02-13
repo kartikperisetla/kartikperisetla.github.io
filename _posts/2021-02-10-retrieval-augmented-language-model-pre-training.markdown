@@ -54,7 +54,7 @@ comments: true
     </li>
 </ul>
 </p>
-<img width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_approach.png"/><br/>
+<img align="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_approach.png"/><br/>
 
 <h3>Main Challenge</h3>
 <p align="justify">
