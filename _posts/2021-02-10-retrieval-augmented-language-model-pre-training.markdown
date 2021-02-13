@@ -8,6 +8,14 @@ comments: true
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+<script>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</script>
 10th Feb 2021<br/>
 <b>keywords</b>: language modeling, question answering, passage retrieval, interpretable model, interpretable knowledge<br />
 
@@ -47,18 +55,25 @@ comments: true
 <p align="justify">
 <ul>
     <li>
-        A new approach which augments language model pre-training with a textual knowledge retriever. Also, on how to train such a knowledge retriever in an unsupervised manner using Masked-Language-Model as a learning signal and back-propogating through a retrieval step that considers millions of documents.
+        A new approach which augments language model pre-training with a textual knowledge retriever. Also, on how to train such a knowledge retriever in an unsupervised manner using Masked-Language-Model as a learning signal and back-propogating through a retrieval step that considers millions of documents. Essentially, a retrieval that improves the language model perplexity should be rewarded and the uninformative retrieval should be penalized.
     </li>
     <li>
         Effectiveness of REALM pre-training is demonstrated by fine-tuning on Open-domain question answering and comparing against state-of-the-art models on 3 question-answering benchmarks. REALM approach outperforms all methods by 4-16% on absolute accuracy.
     </li>
 </ul>
 </p>
-<img align="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_approach.png"/><br/>
+<img class="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_approach.png"/><br/>
 
 <h3>Main Challenge</h3>
 <p align="justify">
-
+<ul>
+    <li>
+        Incorporating a large scale neural retrieval module during pre-training poses a significant computational challenge, since the retriever must consider millions of documents for each pre-training step and it has to learn through backpropagation.
+    </li>
+    <li>
+        Addressing this: structured the retriever such that the computation performed for each can be cached and asynchronously updated and selection of best documents can be formulated as MIPS.
+    </li>
+</ul>
 </p>
 
 <h3>How different is this approach from previous work</h3>
