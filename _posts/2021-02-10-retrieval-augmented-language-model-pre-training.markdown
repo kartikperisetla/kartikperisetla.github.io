@@ -78,7 +78,15 @@ comments: true
 
 <h3>How different is this approach from previous work</h3>
 <p align="justify">
-
+<ul>
+    <li>
+        Prior work has used discrete retrieval step to neural networks(<a href="https://arxiv.org/pdf/1704.00051.pdf">Danqi Chen's DrQA</a>), but did not apply to LM pre-training and used non-learned retrievers
+    </li>
+    <li>
+        <a href="https://arxiv.org/pdf/1911.00172.pdf">kNN-LMs (Khandelwal et al.)</a> uses only examples labeled for the target task, not fine tuned for downstream tasks. 
+    </li>
+</ul>
+<img class="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/knn_lm.png"/><br/>
 </p>
 
 <h3>Experiment Setup</h3>
