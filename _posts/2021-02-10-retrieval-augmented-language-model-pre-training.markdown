@@ -21,7 +21,6 @@ comments: true
 
 <p align="justify">
     This post will walk through paper <a href="https://arxiv.org/abs/2002.08909">REALM: Retrieval-Augmented Language Model Pre-Training</a> by Google Research
-</a>
 </p>
 <h3>TL;DR</h3>
 <p align="justify">
@@ -83,7 +82,7 @@ comments: true
         Prior work has used discrete retrieval step to neural networks(<a href="https://arxiv.org/pdf/1704.00051.pdf">Danqi Chen's DrQA</a>), but did not apply to LM pre-training and used non-learned retrievers
     </li>
     <li>
-        <a href="https://arxiv.org/pdf/1911.00172.pdf">kNN-LMs (Khandelwal et al.)</a> uses only examples labeled for the target task, not fine tuned for downstream tasks. 
+        <a href="https://arxiv.org/pdf/1911.00172.pdf">kNN-LMs (Khandelwal et al.)</a> uses only examples labeled for the target task, not fine tuned for downstream tasks. Also, this approach doesn't use any pre-training, it does single pass over data to build the Key-Value store training context and target.
     </li>
 </ul>
 <img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/knn_lm.png"/><br/>
@@ -126,12 +125,12 @@ Model architecture is presented in the form of two components: a Neural Knowledg
 <p align="justify">
 The retriever is defined using a dense inner product model:
 </p>
-<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/dense_inner_product_model.png"/><br/>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/dense_inner_product_model.png"/><br/>
 
 <p align="justify">
 The relevance score f(x,z) between x and z is defined as inner product of the vector embeddings. The retrieval distribution is the softmax over all relevance scores.
 </p>
-<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
+<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
 <h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
