@@ -122,7 +122,7 @@ comments: true
 Model architecture is presented in the form of two components: a Neural Knowledge Retriever, which models p(z|x) and the Knowledge Augmented Encoder which models p(y|z,x).
 </p>
 
-<h4>Neural Knowledge Retriever</h4>
+<b><h4>Neural Knowledge Retriever</h4></b>
 <p align="justify">
 The retriever is defined using a dense inner product model:
 </p>
@@ -133,11 +133,11 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 </p>
 <img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
-<h4>Knowledge Augmented Encoder</h4>
+<b><h4>Knowledge Augmented Encoder</h4></b>
 <p align="justify">
 Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
 input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
-<br/> Just to refresh, below figure shows what cross attention does- In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention. That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
+<br/><br/> Just to refresh, below figure shows what cross attention does- In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention. That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
 </p>
 <img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
 <br/>
