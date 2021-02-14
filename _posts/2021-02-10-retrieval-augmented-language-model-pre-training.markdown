@@ -35,6 +35,9 @@ comments: true
     <li>
         In order to capture the knowledge in a modular and interpretable way, Language model pre-training is augmented with a knowledge retriever that allows model to retrieve and attend over the documents from a large corpus such as Wikipedia, that is used during pre-training, fine-tuning and inference.
     </li>
+    <li>
+        Key idea of REALM is to train the retriever using a performance based signal from unsupervised text: a retrieval that improves the language model's perplexity is helpful and should be rewarded, while an uninformative retrieval should be penalized.
+    </li>
 </ul>
 </p>
 <p align="justify">
@@ -116,10 +119,31 @@ comments: true
 
 <h3>Two staged approach</h3>
 <p align="justify">
+Model architecture is presented in the form of two components: a Neural Knowledge Retriever, which models p(z|x) and the Knowledge Augmented Encoder which models p(y|z,x).
+</p>
+
+<h3>Neural Knowledge Retriever</h3>
+<p align="justify">
+The retriever is defined using a dense inner product model:
+</p>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/dense_inner_product_model.png"/><br/>
+
+<p align="justify">
+The relevance score f(x,z) between x and z is defined as inner product of the vector embeddings. The retrieval distribution is the softmax over all relevance scores.
+</p>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
+
+<h3>Knowledge Augmented Encoder</h3>
+<p align="justify">
 
 </p>
 
-<h3>Knowledge Retriever</h3>
+<h3>Knowledge Augmented Encoder</h3>
+<p align="justify">
+
+</p>
+
+<h3>Training</h3>
 <p align="justify">
 
 </p>
