@@ -115,7 +115,7 @@ comments: true
 </ul>
 </p>
 <img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
-<img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/figure2.png"/><br/>
+<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/figure2.png"/><br/>
 
 <h3>Two staged approach</h3>
 <p align="justify">
@@ -145,7 +145,7 @@ input x and retrieved document z are joined into a single sequence and fed into 
 <p align="justify">
 For Masked-Language-Model pre-training task, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
 </p>
-<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
 
 
 <h3>Training</h3>
