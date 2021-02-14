@@ -122,7 +122,7 @@ comments: true
 Model architecture is presented in the form of two components: a Neural Knowledge Retriever, which models p(z|x) and the Knowledge Augmented Encoder which models p(y|z,x).
 </p>
 
-<h3>Neural Knowledge Retriever</h3>
+<h4>Neural Knowledge Retriever</h4>
 <p align="justify">
 The retriever is defined using a dense inner product model:
 </p>
@@ -133,20 +133,24 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 </p>
 <img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
-<h3>Knowledge Augmented Encoder</h3>
+<h4>Knowledge Augmented Encoder</h4>
 <p align="justify">
 Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
 input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
 <br/> Just to refresh, below figure shows what cross attention does- In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention. That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
 </p>
-<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
+<img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
 <br/>
 
 <p align="justify">
 For Masked-Language-Model pre-training task, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
 </p>
-<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
 
+<p align="justify">
+For Open-domain question answering fine tuning task, we want model to produce answer y. The assumption that answer y can be found as a contiguous sequence of tokens in some document z. Let S(z, y) be the set of spans matching y in z. Then p(y|z,x) can be defined as:
+</p>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/p_y_z_x.png"/>
 
 <h3>Training</h3>
 <p align="justify">
