@@ -122,7 +122,7 @@ comments: true
 Model architecture is presented in the form of two components: a Neural Knowledge Retriever, which models p(z|x) and the Knowledge Augmented Encoder which models p(y|z,x).
 </p>
 
-<b><h4>Neural Knowledge Retriever</h4></b>
+<h3>Neural Knowledge Retriever</h3>
 <p align="justify">
 The retriever is defined using a dense inner product model:
 </p>
@@ -133,7 +133,7 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 </p>
 <img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
-<b><h4>Knowledge Augmented Encoder</h4></b>
+<h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
 Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
 input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
