@@ -113,8 +113,9 @@ comments: true
         REALM decomposes p(y|x) in two steps: retrieve and predict. For input x, it retrieves relevant documents z from a knowledge corpus Z. Then conditioning on input as well as retrieved document to generate output y. Here, z is treated as latent variable and overall likelihood of generating y is computed by marginalized over all possible documents z:
     </li>
 </ul>
-<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
 </p>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/realm_conditional_prob.png"/><br/>
+<img class="center" width="750px" src="{{ site.baseurl }}/assets/img/blog/figure2.png"/><br/>
 
 <h3>Two staged approach</h3>
 <p align="justify">
@@ -136,6 +137,7 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 <p align="justify">
 Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
 input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
+<br/> Just to refresh, below figure shows what cross attention does- In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention. That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
 </p>
 <img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
 <br/>
@@ -143,6 +145,7 @@ input x and retrieved document z are joined into a single sequence and fed into 
 <p align="justify">
 For Masked-Language-Model pre-training task, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
 </p>
+<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
 
 
 <h3>Training</h3>
