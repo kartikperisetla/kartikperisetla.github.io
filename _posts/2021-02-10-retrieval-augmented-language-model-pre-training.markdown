@@ -134,13 +134,16 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 
 <h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
-
+Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
+input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
 </p>
+<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
+<br/>
 
-<h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
-
+For Masked-Language-Model pre-training task, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
 </p>
+
 
 <h3>Training</h3>
 <p align="justify">
