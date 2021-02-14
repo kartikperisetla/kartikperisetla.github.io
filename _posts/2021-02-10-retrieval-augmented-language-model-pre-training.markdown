@@ -119,7 +119,7 @@ comments: true
 
 <h3>Two staged approach</h3>
 <p align="justify">
-Model architecture is presented in the form of two components: a Neural Knowledge Retriever, which models p(z|x) and the Knowledge Augmented Encoder which models p(y|z,x).
+Model architecture is presented in the form of two components: a <b>Neural Knowledge Retriever</b>, which models p(z|x) and the <b>Knowledge Augmented Encoder</b> which models p(y|z,x).
 </p>
 
 <h3>Neural Knowledge Retriever</h3>
@@ -129,7 +129,7 @@ The retriever is defined using a dense inner product model:
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/dense_inner_product_model.png"/><br/>
 
 <p align="justify">
-The relevance score f(x,z) between x and z is defined as inner product of the vector embeddings. The retrieval distribution is the softmax over all relevance scores.
+The relevance score f(x,z) between x and z is defined as inner product of the vector embeddings. The retrieval distribution is the softmax over all relevance scores. The detailed diagram of how Knowledge retriever works is shown below:
 </p>
 <img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
