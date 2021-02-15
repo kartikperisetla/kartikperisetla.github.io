@@ -177,3 +177,36 @@ In order to employ MIPS, an search index is built using the document embeddings 
 <p align="justify">
     One interesting experiment to carry out would be to see - how MIPS index refresh rate helps with model performance. Also, the impact of using multiple sources for Knowledge Corpus.
 </p>
+
+<h3>What is Neural Knowledge Retriever Learning?</h3>
+<p align="justify">
+    Authors have clearly explained how the training objective encourages meaningful retrievals - by rewaring for relevant retrievals and penalizing for irrelevant retrievals.
+    <br/><br/>
+    For a given query x and document z, the relevance score f(x,z) is assigned by retriever to the document z. It is demonstrated how a single step of gradient descent during REALM pre-training alters this score by looking at gradient with respect to the parameters of Neural Knowledge Retriever(θ):
+</p>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/gradient.png"/>
+
+<ul>
+<li>
+    For each document z, the gradient encourages the retriever to change the score f(x,z) by r(z) -> increasing if r(z) is positive and decreasing if r(z) is negative.
+</li>
+<li>
+    r(z) is positive iff p(y|z,x) > p(y|x) -> probability of predicting the correct output when document z is greater than probability of correct output when randomly sampling a document from p(z|x). Thus, document z receives a positive update when it performs better than expected. The detailed derivation of the gradient is provided in appendix of the paper.
+</li>
+</ul>
+
+<p align="justify">
+    
+</p>
+
+<p align="justify">
+</p>
+
+<p align="justify">
+</p>
+
+<p align="justify">
+</p>
+
+<p align="justify">
+</p>
