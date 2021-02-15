@@ -237,10 +237,16 @@ In order to employ MIPS, an search index is built using the document embeddings 
         Most direct comparison of REALM is with ORQA where fine-tuning setup, hyperparameters and training data are identical. The immprovement seen in REALM over ORQA is due to better pre-training methods. Table also shows that REALM approach can be applied both on - single corpus setting and separate corpus setting.
     </li>
 </ul>
-
-<p align="justify">
-    
-</p>
+<h3>Ablation Study</h3>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/realm_table2.png"/>
+<ul>
+    <li>
+        Authors ablated critical components of REALM and presented the impacted. In order to understand whether REALM pre-training MLM task improves retriever or encoder, authors reset the parameters of either retriever or encoder to their baseline settings( as presented in ORQA paper) before pre-training and fed that into fine-tuning.
+    </li>
+    <li>
+        Resetting both retriever and encoder reduces the system to baseline ORQA. Conclusion from ablation study is that both components benefit from REALM appraoch but best performance is achieved when both are pre-trained with REALM and both used.
+    </li>
+</ul>
 
 <p align="justify">
 </p>
