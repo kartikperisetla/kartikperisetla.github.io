@@ -159,11 +159,6 @@ description:
 
         </li>
     </ul>
-
-    <div class="img_row">
-        <img class="col three left" src="{{ site.baseurl }}/assets/img/xo_bhagmalpur.png" alt=""
-            title="little joy" />
-    </div>
     <div class="col three caption">
         developed WikipediaHindi for offline access on XO laptop through XSCE school server<br/>Download: <a href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
     </div>
@@ -187,46 +182,3 @@ description:
     
 
 </p>
-
-<!-- 
-{% for project in site.projects %}
-
-{% if project.redirect %}
-<div class="project">
-    <div class="thumbnail">
-        <a href="{{ project.redirect }}" target="_blank">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p align="justify">{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-{% else %}
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p align="justify">{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-{% endif %}
-
-{% endfor %} -->
