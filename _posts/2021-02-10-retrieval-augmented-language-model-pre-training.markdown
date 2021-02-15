@@ -219,11 +219,27 @@ In order to employ MIPS, an search index is built using the document embeddings 
 </li>
 </ul>
 
+<h3>Experiments & Results</h3>
 <p align="justify">
-    
+    Authors present comparison of REALM approach with Retrieval-based open-QA and Generation-based open-QA systems. Retrieval-based open-QA systems first retrieve relevant documents and a reading comprehension system to extract answer from the documents. Generative-based open-QA systems model this as a sequence prediction task - encode the question and then decode the answer token-by-token based on the encoding.
+    <br/><br/>
+    Authors have reused the all hyperparameters from paper : <a href="https://arxiv.org/pdf/1906.00300.pdf">Lee et al.(2019)</a>. You may refer to paper for actual details on infra level details on training like how many TPUs used, batch size, etc.
 </p>
+<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/realm_table1.png"/>
+<ul>
+    <li>
+        Table 1 shows the accuracy of different approaches on three open-QA datasets. Table also shows the number of parameters for each model.
+    </li>
+    <li>
+        As it can be seen from the table, Generative open-QA systems based on T5 are powerful and their performance improves with model size. In contrast REALM(39.2, 40.4) outperforms T5-11B(34.5) model while being 30 times smaller.
+    </li>
+    <li>
+        Most direct comparison of REALM is with ORQA where fine-tuning setup, hyperparameters and training data are identical. The immprovement seen in REALM over ORQA is due to better pre-training methods. Table also shows that REALM approach can be applied both on - single corpus setting and separate corpus setting.
+    </li>
+</ul>
 
 <p align="justify">
+    
 </p>
 
 <p align="justify">
