@@ -231,7 +231,7 @@ In order to employ MIPS, an search index is built using the document embeddings 
         Table 1 shows the accuracy of different approaches on three open-QA datasets. Table also shows the number of parameters for each model.
     </li>
     <li>
-        As it can be seen from the table, Generative open-QA systems based on T5 are powerful and their performance improves with model size. <b><i>In contrast REALM(39.2, 40.4) outperforms T5-11B(34.5) model while being 30 times smaller</i></b>.
+        As it can be seen from the table, Generative open-QA systems based on T5 are powerful and their performance improves with model size. <b>In contrast REALM(39.2, 40.4) outperforms T5-11B(34.5) model while being 30 times smaller</b>.
     </li>
     <li>
         Most direct comparison of REALM is with ORQA where fine-tuning setup, hyperparameters and training data are identical. The immprovement seen in REALM over ORQA is due to better pre-training methods. Table also shows that REALM approach can be applied both on - single corpus setting and separate corpus setting.
@@ -244,7 +244,7 @@ In order to employ MIPS, an search index is built using the document embeddings 
         Authors ablated critical components of REALM and presented the impacted. In order to understand whether REALM pre-training MLM task improves retriever or encoder, authors reset the parameters of either retriever or encoder to their baseline settings( as presented in ORQA paper) before pre-training and fed that into fine-tuning.
     </li>
     <li>
-        Resetting both retriever and encoder reduces the system to baseline ORQA. <b><i>Conclusion from ablation study is that both components benefit from REALM appraoch but best performance is achieved when both are pre-trained with REALM and both used</i></b>.
+        Resetting both retriever and encoder reduces the system to baseline ORQA. <b>Conclusion from ablation study is that both components benefit from REALM appraoch but best performance is achieved when both are pre-trained with REALM and both used</b>.
     </li>
 </ul>
 
