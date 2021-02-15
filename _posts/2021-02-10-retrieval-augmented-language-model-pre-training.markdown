@@ -225,34 +225,30 @@ In order to employ MIPS, an search index is built using the document embeddings 
     <br/><br/>
     Authors have reused the all hyperparameters from paper : <a href="https://arxiv.org/pdf/1906.00300.pdf">Lee et al.(2019)</a>. You may refer to paper for actual details on infra level details on training like how many TPUs used, batch size, etc.
 </p>
-<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/realm_table1.png"/>
+<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/realm_table1.png"/>
 <ul>
     <li>
         Table 1 shows the accuracy of different approaches on three open-QA datasets. Table also shows the number of parameters for each model.
     </li>
     <li>
-        As it can be seen from the table, Generative open-QA systems based on T5 are powerful and their performance improves with model size. In contrast REALM(39.2, 40.4) outperforms T5-11B(34.5) model while being 30 times smaller.
+        As it can be seen from the table, Generative open-QA systems based on T5 are powerful and their performance improves with model size. <b><i>In contrast REALM(39.2, 40.4) outperforms T5-11B(34.5) model while being 30 times smaller</i></b>.
     </li>
     <li>
         Most direct comparison of REALM is with ORQA where fine-tuning setup, hyperparameters and training data are identical. The immprovement seen in REALM over ORQA is due to better pre-training methods. Table also shows that REALM approach can be applied both on - single corpus setting and separate corpus setting.
     </li>
 </ul>
 <h3>Ablation Study</h3>
-<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/realm_table2.png"/>
+<img class="center" width="350px" src="{{ site.baseurl }}/assets/img/blog/realm_table2.png"/>
 <ul>
     <li>
         Authors ablated critical components of REALM and presented the impacted. In order to understand whether REALM pre-training MLM task improves retriever or encoder, authors reset the parameters of either retriever or encoder to their baseline settings( as presented in ORQA paper) before pre-training and fed that into fine-tuning.
     </li>
     <li>
-        Resetting both retriever and encoder reduces the system to baseline ORQA. Conclusion from ablation study is that both components benefit from REALM appraoch but best performance is achieved when both are pre-trained with REALM and both used.
+        Resetting both retriever and encoder reduces the system to baseline ORQA. <b><i>Conclusion from ablation study is that both components benefit from REALM appraoch but best performance is achieved when both are pre-trained with REALM and both used</i></b>.
     </li>
 </ul>
 
+<h3>Adapting to new Knowledge</h3>
 <p align="justify">
-</p>
-
-<p align="justify">
-</p>
-
-<p align="justify">
+An explicit retrieval system allows authors to adapt to new world knowledge simply by modifying the corpus documents. To demonstrate this authors replaced the knowledge corpus with a more recent version of Wikipedia corpus after pre-training is done. When the input query is about a fact where the two corpora disagree, REALM can change the prediction to reflect the updated information. However, even with explicit knowledge retrieval mechanism, the knowledge augmented encoder ends up remembering some world knowledge, making the prediction of some input sentences not updated with the new corpus.
 </p>
