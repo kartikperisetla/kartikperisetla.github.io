@@ -151,6 +151,7 @@ For Masked-Language-Model pre-training task, model has to predict the original v
 For Open-domain question answering fine tuning task, we want model to produce answer y. The assumption that answer y can be found as a contiguous sequence of tokens in some document z. Let S(z, y) be the set of spans matching y in z. Then p(y|z,x) can be defined as:
 </p>
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/p_y_z_x.png"/>
+<img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
 
 <h3>Training</h3>
 <p align="justify">
