@@ -178,23 +178,25 @@ Authors have presented a few strategies that further guided the model towards mo
 <h3>Training</h3>
 <p align="justify">
 The training objective for pre-training and fine-tuning is to maximize the log-likelihood log p(y|x) of the correct output y. Since <b>Neural Knowledge Retriever(θ)</b> and <b>Knowledge Augmented Encoder(ϕ)</b> are differentiable neural networks, thus allowing us to compute gradients, backpropagate the errors and update the model parameters using stochastic gradient descent.
-<br/>
+<br/><br/>
 The key challenge is that marginal probability computation p(y|x) involves summation over all the documents z in the knowledge corpus Z. Authors have approximated this by instead summing over top-k documents with highest probability. Authors are leveraging <b>Maximum Inner Product Search(MIPS)</b> algorithms to find the approximate top-k documents using relevance score f(x,z) - inner product between query and document embeddings.
-<br/>
+<br/><br/>
 In order to employ MIPS, an search index is built using the document embeddings as shown in figure above for <b>Neural Knowledge Retriever(θ)</b>. <i>One issue here is that the search index will go stale every time the model parameters are updated after each step</i>. 
 </p>
 <h4>Addressing the stale MIPS search index issue with Aysnchronous refresh<h4>
-<ul><li>
+<dl>
+<dt><b>Asynchronous re-embedding and re-indexing</b></dt>
+<dd>
     One solutions authors employ is to refresh the search index by asynchronously re-embedding and re-indexing alll the documents with latest set of model parameters, after few hundred steps. Even with this solution, the index is slightly stale between refreshes. But authors show empirically that this procedure results in stable optimization, provided the index refresh happens at a suffuciently frequent rate.
-    
-</li>
-<li>
+</dd>
+<dt><b>Two jobs: trainer and index builder</b></dt>
+<dd>
     Figure below shoes the REALM pre-training with asynchronous MIPS refreshes. Two jobs are running at any given point of time: primary trainer job - that performs gradient updates on the parameters and secondary index builder job- that embeds and indexes the documnets. As it can be seen from the figure, trainer sends the index builder a snapshot of its parameters, the trainer then continues to train while index builder uses latest parameters snapshot to construct a new index in background. As soon as new index is built, it is sent to the trainer.
-</li>
-<li>
+</dd>
+<dt><b>Choice on refresh</b></dt>
+<dd>
     Authors have used asynchronous regresh only for pre-training while it could have been used for pre-training as well as fine-tuning tasks. Authors used the MIPS index built once and used for fine-tuning and do not update document embeddings.
-</li>    
-</ul>
+</dd>
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/asynch_index_update.png"/>
 <p align="justify">
     One interesting experiment to carry out would be to see - how MIPS index refresh rate helps with model performance. Also, the impact of using multiple sources for Knowledge Corpus.
