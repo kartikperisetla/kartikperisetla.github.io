@@ -131,7 +131,7 @@ The retriever is defined using a dense inner product model:
 <p align="justify">
 The relevance score f(x,z) between x and z is defined as inner product of the vector embeddings. The retrieval distribution is the softmax over all relevance scores. The detailed diagram of how Knowledge retriever works is shown below:
 </p>
-<img class="center" width="850px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
+<img class="center" width="950px" src="{{ site.baseurl }}/assets/img/blog/knowledge_retriever.png"/><br/>
 
 <h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
@@ -143,15 +143,15 @@ input x and retrieved document z are joined into a single sequence and fed into 
 <br/>
 
 <p align="justify">
-For Masked-Language-Model pre-training task, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
+For <b>Masked-Language-Model pre-training task</b>, model has to predict the original value of masked token in input x. Same MLM objective is used as presented in BERT paper.
 </p>
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/bert_mlm.png"/>
 
 <p align="justify">
-For Open-domain question answering fine tuning task, we want model to produce answer y. The assumption that answer y can be found as a contiguous sequence of tokens in some document z. Let S(z, y) be the set of spans matching y in z. Then p(y|z,x) can be defined as:
+For <b>Open-domain question answering fine tuning task</b>, we want model to produce answer y. The assumption that answer y can be found as a contiguous sequence of tokens in some document z. Let S(z, y) be the set of spans matching y in z. Then p(y|z,x) can be defined as:
 </p>
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/p_y_z_x.png"/>
-<img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
+<img class="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
 
 <h3>Training</h3>
 <p align="justify">
