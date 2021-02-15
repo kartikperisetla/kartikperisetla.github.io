@@ -153,6 +153,28 @@ For <b>Open-domain question answering fine tuning task</b>, we want model to pro
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/p_y_z_x.png"/>
 <img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
 
+<h3>Injecting inductive biases into pre-training</h3>
+<p align="justify">
+Authors have presented a few strategies that further guided the model towards more meaningful retrievals:
+</p>
+<dl>
+<dt><b>Salient span masking</b></dt>
+<dd> In order to make the model learn about world knowledge when predicting the missing token during MLM, authors masked out salient spans pertaining to named entities. They used a BERT based named-entity-tagger and masked out spans tagged as entities and asked model in REALM pre-training to predict masked entities.
+</dd>
+<dt><b>Null document</b></dt>
+<dd>
+    Consider the case when no document needs to be retrieved to predict the masked tokens - this is modeled by adding an empty null document to the top-k retrieved documents.
+</dd>
+<dt><b>Prohibiting trivial retrievals</b></dt>
+<dd>
+    Here the authors have tried to address the issue when pre-training corpus and knowledge corpus are the same. If masked sentence x comes from document z, the knowledge enoder can trivially predict y by looking at the unmasked version of x in document z. This results in large positive gradient - if this occurs too often, the knowledge retriever ends up learning to look for exact string matches between input x and document z. Thus such candidates are excluded during pre-training.
+</dd>
+<dt><b>Initialization - Warm start Embeddings</b></dt>
+<dd>
+    At the beginning of training if the retriever does not have good embeddings for input x and documents z, the retrieved documents z will likely be unrelated to input x. This causes knowledge encoder to learn to ignore the retrieved documents. Once this occurs the knowledge retriever never receives a meaningful gradient and thus cannot improve, creating a vicious cycle. In order to avoid this cold-start problem, authors do a warm start for these embeddings by leveraging BERT trained with simple training objective - Inverse Cloze Task(ICT) where given a sentence, model is trained to predict context/document it came from.
+</dd>
+</dl>
+
 <h3>Training</h3>
 <p align="justify">
 The training objective for pre-training and fine-tuning is to maximize the log-likelihood log p(y|x) of the correct output y. Since <b>Neural Knowledge Retriever(θ)</b> and <b>Knowledge Augmented Encoder(ϕ)</b> are differentiable neural networks, thus allowing us to compute gradients, backpropagate the errors and update the model parameters using stochastic gradient descent.
