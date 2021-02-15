@@ -151,9 +151,21 @@ For <b>Masked-Language-Model pre-training task</b>, model has to predict the ori
 For <b>Open-domain question answering fine tuning task</b>, we want model to produce answer y. The assumption that answer y can be found as a contiguous sequence of tokens in some document z. Let S(z, y) be the set of spans matching y in z. Then p(y|z,x) can be defined as:
 </p>
 <img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/p_y_z_x.png"/>
-<img class="center" width="450px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
+<img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/realm_encoder.png"/>
 
 <h3>Training</h3>
 <p align="justify">
-
+The training objective for pre-training and fine-tuning is to maximize the log-likelihood log p(y|x) of the correct output y. Since Neural Knowledge Retriever(θ) and Knowledge Augmented Encoder(ϕ) are differentiable neural networks, thus allowing us to compute gradients, backpropagate the errors and update the model parameters using stochastic gradient descent.
+<br/>
+The key challenge is that marginal probability computation p(y|x) involves summation over all the documents z in the knowledge corpus Z. Authors have approximated this by instead summing over top-k documents with highest probability. Authors are leveraging Maximum Inner Product Search(MIPS) algorithms to find the approximate top-k documents using relevance score f(x,z) - inner product between query and document embeddings.
+<br/>
+In order to employ MIPS, an search index is built using the document embeddings as shown in figure above for "Neural Knowledge Retriever". One issue here is that the search index will go stale every time the model parameters are updated after each step. 
 </p>
+<h4>Addressing the stale MIPS search index issue with Aysnchronous refresh<h4>
+<p align="justify">
+    One solutions authors employ is to refresh the search index by asynchronously re-embedding and re-indexing alll the documents with latest set of model parameters, after few hundred steps. Even with this solution, the index is slightly stale between refreshes. But authors show empirically that this procedure results in stable optimization, provided the index refresh happens at a suffuciently frequent rate.
+    </br>
+    Figure below shoes the REALM pre-training with asynchronous MIPS refreshes. Two jobs are running at any given point of time: primary trainer job - that performs gradient updates on the parameters and secondary index builder job- that embeds and indexes the documnets. As it can be seen from the figure, trainer sends the index builder a snapshot of its parameters, the trainer then continues to train while index builder uses latest parameters snapshot to construct a new index in background. As soon as new index is built, it is sent to the trainer.
+</p>
+<img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/asynch_index_update.png"/>
+
