@@ -22,13 +22,8 @@ My research interests span following areas:
 <li>NLU/NLG
 </li>
 <li>
-Visual Question Answering
-</li>
-<li>
 Commonsense reasoning
 </li>
-<li>
-Semantic Parsing
-</li>
+<li>Neural Reading Comprehension</li>
 </ul>
 </p>
