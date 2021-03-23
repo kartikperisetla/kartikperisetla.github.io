@@ -146,9 +146,7 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
     They key idea is to allow cross attention between input x and document x before predicting y.
 </li>
 </ul>
-
- 
-<br/><br/> Just to refresh, below figure shows <strong>what cross attention does</strong>
+<br/> Just to refresh, below figure shows <strong>what Cross Attention does</strong>
 <ul>
 <li>In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention.
 </li>
@@ -176,7 +174,8 @@ Authors have presented a few strategies that further guided the model towards mo
 </p>
 <dl>
 <dt><b>Salient span masking</b></dt>
-<dd> In order to make the model learn about world knowledge when predicting the missing token during MLM, authors masked out salient spans pertaining to named entities. They used a BERT based named-entity-tagger and masked out spans tagged as entities and asked model in REALM pre-training to predict masked entities.
+<dd> 
+In order to make the model learn about world knowledge when predicting the missing token during MLM, authors masked out salient spans pertaining to named entities. They used a BERT based named-entity-tagger and masked out spans tagged as entities and asked model in REALM pre-training to predict masked entities.
 </dd>
 <dt><b>Null document</b></dt>
 <dd>
