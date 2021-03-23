@@ -29,7 +29,7 @@ comments: true
         Language Model pre-training captures good amount of world knowledge for NLP tasks such as Question-Answering. However this knowledge is stored in parameters of neural network. In order to store more knowledge, one has to go for even larger network i.e. even more parameters.
     </li>
     <li>
-        Key contribution of thie paper: A solution to above mentioned problem. The approach outlined in this paper allows us to build neural models with relatively fewer parameters that perform better than SOTA on downstream tasks such as Question-Answering.
+        Key contribution of this paper: A solution to above mentioned problem. The approach outlined in this paper allows us to build neural models with relatively fewer parameters that perform better than SOTA on downstream tasks such as Question-Answering.
     </li>
     <li>
         In order to capture the knowledge in a modular and interpretable way, Language model pre-training is augmented with a knowledge retriever that allows model to retrieve and attend over the documents from a large corpus such as Wikipedia, that is used during pre-training, fine-tuning and inference.
@@ -46,9 +46,9 @@ comments: true
 
 <h3>Background & Experiment Setup</h3>
 <p align="justify">
-    Language Model pre-training has been used to learn useful representations of language from unlabeld text. pre-trained model is then fine-tuned to perform the downstream task. Model parameters are essentially updated in this fine-tuning stage on top of learned representations at pre-training stage. Masked-Language-Model(MLM) is used as pre-training variant in this paper. One key difference or extension in this paper is that - Authors use different variant of masking - like Salient span masking which we will discuss further.
+    Language Model pre-training has been used to learn useful representations of language from unlabeled text. pre-trained model is then fine-tuned to perform the downstream task. Model parameters are essentially updated in this fine-tuning stage on top of learned representations at pre-training stage. Masked-Language-Model(MLM) is used as pre-training variant in this paper. One key difference or extension in this paper is that - Authors use different variant of masking - like Salient span masking which we will discuss further.
     <br/>
-    I believe the readers are familiar with task of Open-domain question answering. Authors have choosen this task in order to see what knowledge has been incorporated in model parameters. The typical architecture of Question-Answering systems utilitize a two staged appraoch: retrieve relevant documents and extract an answer from the document. They key idea in this paper extends this two staged approach with language model pre-trainig.
+    I believe the readers are familiar with task of Open-domain question answering. Authors have choosen this task in order to see what knowledge has been incorporated in model parameters. The typical architecture of Question-Answering systems utilize a two staged appraoch: retrieve relevant documents and extract an answer from the document. They key idea in this paper extends this two staged approach with language model pre-trainig.
 </p>
 <h3>Key Contributions</h3>
 <p align="justify">
@@ -135,9 +135,26 @@ The relevance score f(x,z) between x and z is defined as inner product of the ve
 
 <h3>Knowledge Augmented Encoder</h3>
 <p align="justify">
-Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
-input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence. They key idea is to allow cross attention between input x and document x before predicting y.
-<br/><br/> Just to refresh, below figure shows what cross attention does- In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention. That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
+<ul>
+<li>
+    Given an input x and a retrieved document z, Knowledge Augmented Encoder defines p(y|z,x).
+</li>
+<li>
+    Input x and retrieved document z are joined into a single sequence and fed into a different BERT model and [CLS] token representation is used as a pooled representation of the sequence.
+</li>
+<li>
+    They key idea is to allow cross attention between input x and document x before predicting y.
+</li>
+</ul>
+
+ 
+<br/><br/> Just to refresh, below figure shows <strong>what cross attention does</strong>
+<ul>
+<li>In encoder-decoder setting, on decoder side for each timestep decoded so far, the representation for each token is recomputed using the cross attention.
+</li>
+<li>That is, using each token decoded so far as query and using representation from last layer from encoder as key-value, attention is computed and each token representation on decoder side is recomputed.
+</li>
+</ul>
 </p>
 <img class="center" width="650px" src="{{ site.baseurl }}/assets/img/blog/cross_attention.png"/>
 <br/>
