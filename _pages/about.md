@@ -19,11 +19,9 @@ My research interests span following areas:
 <ul style="padding-left: 14rem;">
 <li> Open-Domain Question Answering
 </li>
-<li>NLU/NLG
-</li>
-<li>
-Commonsense reasoning
+<li>NLU, NLG
 </li>
 <li>Neural Reading Comprehension</li>
+<li>Commonsense reasoning</li>
 </ul>
 </p>
