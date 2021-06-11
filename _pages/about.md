@@ -15,13 +15,13 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 </p>
 
 <p align="left">
-My research interests span following areas:
+My research interests span:
 <ul style="padding-left: 14rem;">
 <li> Open-Domain Question Answering
 </li>
+<li>Neural Reading Comprehension</li>
 <li>NLU/NLG
 </li>
-<li>Neural Reading Comprehension</li>
 <li>Commonsense reasoning</li>
 </ul>
 </p>
