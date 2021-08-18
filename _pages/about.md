@@ -6,7 +6,7 @@ description:
 
 profile:
   align: left
-  image: morang-curve.png
+  image: prpic.jpeg
 ---
 <p align="left">
 I am currently working on <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering">Open-Domain Question Answering</a> at <a href="https://www.apple.com/siri/" target="_blank">Apple Siri</a>.</p>
