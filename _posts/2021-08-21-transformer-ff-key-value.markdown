@@ -16,12 +16,12 @@ comments: true
   width: 50%;
 }
 </script>
-10th Feb 2021<br/>
+15th Aug 2021<br/>
 <b>keywords</b>: language modeling, transformers, feed-forward, key-value memories<br />
 
 <p align="justify">
-    In this post we are going to discuss some interesting empirical observations from <a href="https://arxiv.org/abs/2012.14913">Transformer Feed-Forward Layers Are Key-Value Memories
-</a> by (Tel Aviv Univ, Cornell Univ and AI2)
+    In this post I will be sharing some interesting empirical observations from <a href="https://arxiv.org/abs/2012.14913">Transformer Feed-Forward Layers Are Key-Value Memories
+</a> by (Geva et al. 2020)
 </p>
 <h3>TL;DR</h3>
 <p align="justify">
