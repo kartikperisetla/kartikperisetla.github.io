@@ -10,10 +10,10 @@ comments: true
 </script>
 <script>
 .center {
-  display: block;
+  display: block;****
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%
 }
 </script>
 15th Aug 2021<br/>
@@ -29,10 +29,15 @@ comments: true
     <li>
         This paper provides insights into what actually is stored in two-thirds of a transformer model's parameter. i.e. Feed-forward layers.
     </li>
-    <li>
+    <li>****
         Through empirical observations, authors show that transformer feed-forward layers operate as key-value memories, where key correlates to textual patterns in training instances and value induces a distribution over output vocab indicating what token is most likely to appear after the textual pattern.
     </li>
     <li>
         Lower Feed-forward layers tend to capture shallow textual patterns whereas upper Feed-forward layers capture semantic patterns indicated by variations in textual patterns denoting the same semantic concept.
     </li>
 </ul>
+</p>
+<p align="justify">
+    While there is much literature to attributing success of Transformer models to self-attention layers, the role of feed-forward layers is yet being explored and this paper is one such contribution.
+</p>
+<img class="center" width="400px" src="{{ site.baseurl }}/assets/img/blog/tf-key-val-fig1.png"/><br/>
