@@ -30,10 +30,12 @@
 
         <!-- Pages -->
         {% for page in site.pages %}
-          {% if page.title and page.url != "/" and page.url != "https://kartik-perisetla.medium.com/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
+          {% if page.url == "https://kartik-perisetla.medium.com/" %}
+            <a class="page-link" href="https://kartik-perisetla.medium.com/">blog</a>
           {% else %}
-          <a class="page-link" href="https://kartik-perisetla.medium.com/">blog</a>
+            {% if page.title and page.url != "/"%}
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
 
