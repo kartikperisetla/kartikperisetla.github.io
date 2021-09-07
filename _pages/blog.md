@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blog/
+permalink: https://kartik-perisetla.medium.com/
 title: blog
 description: 
 ---
