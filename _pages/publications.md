@@ -2,9 +2,9 @@
 layout: page
 permalink: /publications/
 title: publications
-nav: true
+description:
 ---
-
+Publications
 <div class="publications">
 
 {% for y in page.years %}
