@@ -23,16 +23,9 @@ description:
     
       &nbsp;<b>2021</b>
     </span>
-  <span class="links">
-  
-    [<a class="abstract">abstract</a>]
-  
-  
-    [<a href="https://arxiv.org/abs/" target="_blank">paper</a>]
+  <span class="links">  
+    [<a href="https://arxiv.org/abs/" target="_blank">Paper coming soon</a>]
   </span>
-
-      <button class="btn NLP" title="Natural Language Processing">NLP</button>
-      <button class="btn Question-Answering" title="Question Answering">Question Answering</button>
 
 </div>
     </li>
