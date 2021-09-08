@@ -13,7 +13,7 @@ description:
   
     <span class="title" style="color:black"><b>Entity-Based Knowledge Conflicts in Question Answering.</b></span>
     <span class="author">
-            Shayne Longpre, <em>Kartik Perisetla</em>, Anthony Chen, Nikhil Ramesh, Chris DuBois, Sameer Singh
+            Shayne Longpre, <b><em>Kartik Perisetla</em></b>, Anthony Chen, Nikhil Ramesh, Chris DuBois, Sameer Singh
     </span>
 
     
