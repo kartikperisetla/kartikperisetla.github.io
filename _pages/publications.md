@@ -19,9 +19,9 @@ description:
     
     <span class="periodical">
     
-      <em>Empirical Methods in Natural Language Processing (EMNLP)</em>
+      <b><em>Empirical Methods in Natural Language Processing (EMNLP)</em></b>
     
-      &nbsp;2021
+      &nbsp;<b>2021</b>
     </span>
   <span class="links">
   
