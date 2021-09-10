@@ -6,7 +6,7 @@ description:
 ---
 <h3 style="color:#202E6E">One Laptop per Child (OLPC) and Sugarlabs</h3>
 <p align="justify">
-    I worked with OLPC project on Sugar. Sugar is an open source desktop environment designed with the goal of being used by children for interactive learning. Developed as part of the One Laptop per Child (OLPC) project, it is the default interface on OLPC XO-1 family of laptop computers, but also runs on most computers' hardware. Following are my contributions towards this project.
+    I worked with <a href="http://one.laptop.org/">One Laptop per Child (OLPC)</a> project on Sugar. <a href="https://www.sugarlabs.org/">Sugar</a> is an open source desktop environment designed with the goal of being used by children for interactive learning. Developed as part of the OLPC project, it is the default interface on OLPC XO-1 family of laptop computers, but also runs on most computers' hardware. Following are my contributions towards this project.
 </p>
 <br/>
 <h4 style="color:#202E6E">DevelopWeb</h4>
@@ -16,7 +16,7 @@ description:
 </p><br/>
 <h4 style="color:#202E6E">OLPC School Server Community Edition (XSCE)</h4>
 <p align="justify">
-XSCE provides communication, networking, content, and maintenance to schools and classrooms. In everyday usage, the school server extends capabilities of connected laptops and devices with services in these areas, towards giving kids the very best learning opportunities imaginable:
+<a href="http://wiki.laptop.org/go/XS_Community_Edition">XSCE</a> provides communication, networking, content, and maintenance to schools and classrooms. In everyday usage, the school server extends capabilities of connected laptops and devices with services in these areas, towards giving kids the very best learning opportunities imaginable:
 <dl>
 <dt><b>Classroom connectivity</b></dt> 
 <dd>- Similar to what you would find in an advanced home router.</dd>
