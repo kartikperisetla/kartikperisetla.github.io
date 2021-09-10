@@ -11,15 +11,15 @@ description:
     <ol class="bibliography"><li>
         <div id="wang2021grounding">
   
-    <span class="title" style="color:black"><b>Entity-Based Knowledge Conflicts in Question Answering.</b></span>
+    <span class="title" style="color:#276ca8"><b>Entity-Based Knowledge Conflicts in Question Answering.</b></span>
     <span class="author">
             Shayne Longpre, <b>Kartik Perisetla</b>, Anthony Chen, Nikhil Ramesh, Chris DuBois, Sameer Singh
     </span>
 
     
-    <span class="periodical">
+    <span class="periodical" style="color:#7d8085">
     
-      <b><em>Empirical Methods in Natural Language Processing (EMNLP)</em></b>
+      <b>Empirical Methods in Natural Language Processing (EMNLP)</b>
     
       &nbsp;<b>2021</b>
     </span>
