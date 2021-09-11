@@ -90,20 +90,6 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">NELL- Never-Ending Language Learning
-</h3>
-<img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
-<p align="justify">
-    <b><h4 style="color:#4E505A">a computer system that learns over time to read the web</h4></b>
-    worked on project <a href="http://rtw.ml.cmu.edu/rtw/">NELL</a> at Carnegie Mellon University under <a
-        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
-
-    You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
-
-</p>
-
-<h4 class="year" />
-<br />
 <h3 style="color:#202E6E">Gloss Extraction Engine
 </h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
