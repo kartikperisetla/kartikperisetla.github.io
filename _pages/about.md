@@ -17,7 +17,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 
 <p align="left">
 My research interests span:
-<ul style="padding-left: 14rem;">
+<ul>
 <li>Neural Reading Comprehension</li>
 <li>NLU/NLG</li>
 <li>Model Interpretability: Understanding why model behave the way they do</li>
