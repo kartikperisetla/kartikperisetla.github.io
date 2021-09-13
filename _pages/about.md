@@ -5,7 +5,7 @@ title: Kartik Perisetla
 description:
 
 profile:
-  align: left
+  align: right
   image: prpic.jpeg
 ---
 <p align="left">
