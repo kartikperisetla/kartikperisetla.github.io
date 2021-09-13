@@ -73,23 +73,6 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Knowledge Extraction from unstructured text
-</h3>
-<img class="thumbnail" src="/assets/img/Microsoft-AI.jpg" width="240px" height="150px" border="0px" />
-<p align="justify">
-    <b><h4 style="color:#4E505A">worked on this project as part of Microsoft Research AI school(AI-611)</h4></b>
-    Among top 12 teams that got selected from a pool of 535 teams for Microsoft Research AI School.<br/><br/>
-
-    Our goal was to leverage deep learning methods for knowledge extraction leveraging ontological constrainsts from
-    Satori knowledge graph. We used bi-directional LSTMs to capture semantic context and Hierarchical LSTMs to encode
-    Ontological constraints in Knowledge Graph.<br/><br/>
-
-    We were able to improve the quality of knowledge extracted for certain entity types with specific predicate relating
-    them.
-</p>
-
-<h4 class="year" />
-<br />
 <h3 style="color:#202E6E">Gloss Extraction Engine
 </h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
