@@ -24,7 +24,7 @@ description:
       &nbsp;<b>2021</b>
     </span>
   <span class="links">  
-    [<a href="https://arxiv.org/abs/" target="_blank">Paper coming soon</a>]
+    [<a  style="color:blue" href="https://arxiv.org/abs/" target="_blank">Paper coming soon</a>]
   </span>
 
 </div>

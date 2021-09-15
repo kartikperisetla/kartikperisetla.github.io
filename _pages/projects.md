@@ -9,7 +9,7 @@ description:
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Neural Language Modeling for text generation </h4></b>
-    Joint work with <a href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank"> Chris Quirk</a>, <a href="https://www.microsoft.com/en-us/research/people/pbailey/" target="_blank">Peter Bailey</a> and others at Microsoft AI&R<br/><br/>
+    Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank" style="color:blue"> Chris Quirk</a>, <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/pbailey/" target="_blank" style="color:blue">Peter Bailey</a> and others at Microsoft AI&R<br/><br/>
     Worked on feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
     Specifically, developed Neural Language Models for reranking and text generation- using prior context and additional signals from emails.
 </p>
@@ -42,7 +42,7 @@ description:
 <p align="justify">
     <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4></b>
-        Joint work with <a href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank"> Silviu Cucerzan</a> at Microsoft AI&R<br/><br/>
+        Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank" style="color:blue"> Silviu Cucerzan</a> at Microsoft AI&R<br/><br/>
     Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
     knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
     component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering
@@ -68,7 +68,7 @@ description:
 
     You can learn more about this project here :
     <a
-        href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
+        href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way"  style="color:blue">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 </p>
 
 <h4 class="year" />
@@ -85,12 +85,12 @@ description:
     parsers, feature extractors, samplers and modelers specific for your NLP task or datasource.<br/><br/>
 
     Project URL: <a
-        href="https://github.com/kartikperisetla/glossextractionengine">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
+        href="https://github.com/kartikperisetla/glossextractionengine" style="color:blue">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
 
-    Part of project <a href="http://rtw.ml.cmu.edu/rtw/">NELL</a> at Carnegie Mellon University under <a
-        href="http://www.cs.cmu.edu/~wcohen/">Prof. William Cohen</a><br/><br/>
+    Part of project <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">NELL</a> at Carnegie Mellon University under <a
+        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a><br/><br/>
 
-    You can read more about this project at: <a href="http://rtw.ml.cmu.edu/rtw/">http://rtw.ml.cmu.edu/rtw/</a>
+    You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
 
 </p>
 
@@ -108,20 +108,20 @@ description:
     As part of this effort, I have developed/contributed to:
 
     <ul>
-        <li><a href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Wikipedia Hindi</a> - Wikipedia in Hindi for
+        <li><a  style="color:blue" href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Wikipedia Hindi</a> - Wikipedia in Hindi for
             Sugar.
         </li>
-        <li><a href="https://sites.google.com/site/developwebactivity/">DevelopWeb</a> - it is an Activity for Web
+        <li><a  style="color:blue" href="https://sites.google.com/site/developwebactivity/">DevelopWeb</a> - it is an Activity for Web
             Development using which children can develop Web Sites through HTML, Javascript and other web technologies.
             Children can learn quickly how to develop web pages in a step by step approach through examples provided for
             each HTML component.
         </li>
-        <li><a href="https://sites.google.com/site/oopsysugaractivity/">Oopsy</a> is a Sugar activity that will allow
+        <li><a  style="color:blue" href="https://sites.google.com/site/oopsysugaractivity/">Oopsy</a> is a Sugar activity that will allow
             children to develop C/C++ programs, compile them and execute them to learn, explore and have fun!
         </li>
         <li>
-            <a href="https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project
-                Bhagmalpur</a> : worked with <a href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a
+            <a  style="color:blue" href="https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project
+                Bhagmalpur</a> : worked with <a  style="color:blue" href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a
                 href="https://www.olpcsf.org/node/91">Dr. Sameer Verma</a> and <a
                 href="https://github.com/godiard">Gonzalo
                 Odiard</a> to deploy XSCE school server at Bhagmalpur, India.
@@ -129,7 +129,7 @@ description:
         </li>
     </ul>
     <div class="col three caption">
-        developed WikipediaHindi for offline access on XO laptop through XSCE school server<br/>Download: <a href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
+        developed WikipediaHindi for offline access on XO laptop through XSCE school server<br/>Download: <a  style="color:blue" href="https://activities.sugarlabs.org/en-US/sugar/addon/4632">https://activities.sugarlabs.org/en-US/sugar/addon/4632</a>
     </div>
 
     <div class="img_row">
