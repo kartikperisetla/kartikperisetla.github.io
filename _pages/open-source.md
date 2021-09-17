@@ -10,7 +10,7 @@ description:
 </p>
 <br/>
 <h4 style="color:#202E6E">DevelopWeb</h4>
-<img class="thumbnail" src="https://sites.google.com/site/kartikperisetla/miscellaneous/developWeb.png" width="100px" height="100px" border="0px"/>
+<img class="thumbnail" src="/assets/img/developWeb.png" width="100px" height="100px" border="0px"/>
 <p align="justify">
 <a  style="color:blue" href="https://sites.google.com/site/developwebactivity" target="_blank">DevelopWeb</a> is an Activity for Web Development using which children can develop Web Sites through HTML, Javascript and other web technologies. Children can learn quickly how to develop web pages in a step by step approach through examples provided for each HTML component.
 </p><br/>
