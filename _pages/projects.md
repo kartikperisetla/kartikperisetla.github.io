@@ -121,8 +121,8 @@ description:
         </li>
         <li>
             <a  style="color:blue" href="https://bhagmalpur.wordpress.com/2013/07/21/hello-world-from-bhagmalpur-part-1/">Project
-                Bhagmalpur</a> : worked with <a  style="color:blue" href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a
-                href="https://www.olpcsf.org/node/91">Dr. Sameer Verma</a> and <a
+                Bhagmalpur</a> : worked with <a  style="color:blue" href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a style="color:blue"
+                href="https://www.olpcsf.org/node/91">Dr. Sameer Verma</a> and <a style="color:blue"
                 href="https://github.com/godiard">Gonzalo
                 Odiard</a> to deploy XSCE school server at Bhagmalpur, India.
 
