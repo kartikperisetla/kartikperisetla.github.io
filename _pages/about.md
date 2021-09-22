@@ -20,6 +20,6 @@ My research interests span:
 <ul>
 <li>Neural Reading Comprehension</li>
 <li>Natural Language Understanding</li>
-<li>Understanding why model behave the way they do</li>
+<li>Interpretability of Deep Neural models</li>
 </ul>
 </p>
