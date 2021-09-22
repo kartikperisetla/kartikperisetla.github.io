@@ -17,14 +17,14 @@ description:
     </span>
 
     
-    <span class="periodical" style="color:#7d8085">
+    <span class="periodical" style="color:#000033">
     
       <b>Empirical Methods in Natural Language Processing (EMNLP)</b>
     
       &nbsp;<b>2021</b>
     </span>
   <span class="links">  
-    [<a  style="color:blue" href="https://arxiv.org/abs/" target="_blank">Paper coming soon</a>]
+    [<a  style="color:blue" href="https://arxiv.org/abs/2109.05052" target="_blank">arXiv</a>]
   </span>
 
 </div>
