@@ -18,7 +18,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 <p align="left">
 My research interests span:
 <ul>
-<li>Machine Reading Comprehension</li>
+<li>Neural Reading Comprehension</li>
 <li>Natural Language Understanding</li>
 <li>Understanding why model behave the way they do</li>
 </ul>
