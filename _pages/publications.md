@@ -11,7 +11,8 @@ description:
     <ol class="bibliography"><li>
         <div id="wang2021grounding">
   
-    <span class="title" style="color:#276ca8"><b>Entity-Based Knowledge Conflicts in Question Answering.</b></span>
+    <!-- <span class="title" style="color:#276ca8"><b>Entity-Based Knowledge Conflicts in Question Answering.</b></span> -->
+    <a  style="color:blue" href="https://arxiv.org/abs/2109.05052" target="_blank">Entity-Based Knowledge Conflicts in Question Answering</a>
     <span class="author">
             Shayne Longpre, <b>Kartik Perisetla</b>, Anthony Chen, Nikhil Ramesh, Chris DuBois, Sameer Singh
     </span>
