@@ -24,9 +24,12 @@ description:
     
       &nbsp;<b>2021</b>
     </span>
-  <!-- <span class="links">  
+  <span class="links">  
     [<a  style="color:blue" href="https://arxiv.org/abs/2109.05052" target="_blank">arXiv</a>]
-  </span> -->
+  </span>
+  <span class="links">  
+    [<a  style="color:blue" href="https://github.com/apple/ml-knowledge-conflicts" target="_blank">code</a>]
+  </span>
 
 </div>
     </li>
