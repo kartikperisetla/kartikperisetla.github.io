@@ -20,7 +20,7 @@ description:
     
     <span class="periodical" style="color:#000033">
     
-      <b>Empirical Methods in Natural Language Processing (EMNLP)</b>
+      <b>EMNLP 2021</b>
     
       &nbsp;<b>2021</b>
     </span>
