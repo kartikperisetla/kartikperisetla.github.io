@@ -20,7 +20,7 @@ description:
     
     <span class="periodical" style="color:#000033">
     
-      <b>Empirical Methods in Natural Language Processing (EMNLP) 2021/b>
+      <b>Empirical Methods in Natural Language Processing (EMNLP) 2021</b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://arxiv.org/abs/2109.05052" target="_blank">arXiv</a>] [<a  style="color:blue" href="https://github.com/apple/ml-knowledge-conflicts" target="_blank">code</a>]
