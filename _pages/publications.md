@@ -20,7 +20,7 @@ description:
     
     <span class="periodical" style="color:#000033">
     
-      <b>Empirical Methods in Natural Language Processing (EMNLP) 2021</b>
+      <b><i>Empirical Methods in Natural Language Processing (EMNLP) 2021</i></b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://arxiv.org/abs/2109.05052" target="_blank">arXiv</a>] [<a  style="color:blue" href="https://github.com/apple/ml-knowledge-conflicts" target="_blank">code</a>] [<a  style="color:blue" href="{{ site.baseurl }}/assets/files/poster_final.pdf" target="_blank">poster</a>] [<a  style="color:blue" href="https://machinelearning.apple.com/research/entity-knowledge-conflicts" target="_blank">website</a>]
@@ -29,7 +29,7 @@ description:
       <b>and</b>
     </span>
     <span class="periodical" style="color:#000033">
-      <b>3rd Workshop on Machine Reading for Question Answering 2021</b>
+      <b><i>3rd Workshop on Machine Reading for Question Answering (MRQA) 2021</i></b>
     </span>
     <span class="links">  
     [<a  style="color:blue" href="https://mrqa.github.io/papers.html" target="_blank">link</a>]
