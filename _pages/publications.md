@@ -40,7 +40,7 @@ description:
       <b><i>Used in Stanford CS224N (NLP with Deep Learning) Course Lecture, Spring 2022</i></b>
     </span>
     <span class="links">  
-    [<a  style="color:blue" href="https://youtu.be/4ynrGLIuPv4?t=4388" target="_blank">Building Knowledge Representation</a> by <a href="https://www.kelvinguu.com/">Kelvin Guu</a>]
+    [<a  style="color:blue" href="https://youtu.be/4ynrGLIuPv4?t=4388" target="_blank">Building Knowledge Representation</a> by <a target="_blank" href="https://www.kelvinguu.com/">Kelvin Guu</a>]
   </span>
 
 </div>
