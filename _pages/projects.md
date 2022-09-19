@@ -9,7 +9,7 @@ description:
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Neural Language Modeling for text generation </h4></b>
-    Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank" style="color:blue"> Chris Quirk</a>, <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/pbailey/" target="_blank" style="color:blue">Peter Bailey</a> and others at Microsoft AI & Research<br/><br/>
+    Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank" style="color:blue"> Chris Quirk</a>, <a  style="color:blue" href="https://www.linkedin.com/in/peter-bailey-0b74aa/" target="_blank" style="color:blue">Peter Bailey</a> and others at Microsoft AI & Research<br/><br/>
     Worked on feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
     Specifically, developed Neural Language Models for reranking and text generation- using prior context and additional signals from emails.
 </p>
