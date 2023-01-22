@@ -4,6 +4,16 @@ title: projects
 permalink: /projects/
 description:
 ---
+<h3 style="color:#202E6E">Natural Language Understanding for Siri's Question Answering
+</h3>
+<img class="thumbnail" src="/assets/img/siri_nlu.jpg"  width="480px" height="100px"  border="0px"/>
+<p align="justify">
+    <b><h4 style="color:#4E505A"> Worked on Natural Language Understanding models for Siri's Knowledge based Question Answering system </h4></b>
+    Worked on building Deep Neural Models for understanding user's question and serve answer in Siri.
+</p>
+<h4 class="year" />
+<br />
+
 <h3 style="color:#202E6E">SmartCompose
 </h3>
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
@@ -55,7 +65,7 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Search ranker for LinkedIn people card in O365
+<h3 style="color:#202E6E">Machine Learned Ranking for LinkedIn search in O365
 </h3>
 <img class="thumbnail"
     src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
