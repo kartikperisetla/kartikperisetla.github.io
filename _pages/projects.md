@@ -6,7 +6,7 @@ description:
 ---
 <h3 style="color:#202E6E">Natural Language Understanding for Question Answering in Siri
 </h3>
-<img class="thumbnail" src="/assets/img/siri_nlu.jpg"  width="520px" height="250px"  border="0px"/>
+<img class="thumbnail" src="/assets/img/siri_nlu.jpg"  width="550px" height="280px"  border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Natural Language Understanding models for Siri's Question Answering system </h4></b>
     Worked on building Deep Neural Models for understanding user's question and serve answer in Siri for Knowledge based Question Answering.<br/><br/>
