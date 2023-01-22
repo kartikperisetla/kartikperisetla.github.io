@@ -10,7 +10,7 @@ description:
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Natural Language Understanding models for Siri's Question Answering system </h4></b>
     Worked on building Deep Neural Models for understanding user's question and serve answer in Siri for Knowledge based Question Answering.<br/><br/>
-    Try out yourself: <a href="https://www.apple.com/siri/#utterance-knowledge-trigger">https://www.apple.com/siri/#utterance-knowledge-trigger</a>
+    Try out yourself: <a href="https://www.apple.com/siri/#utterance-knowledge-trigger" target="_blank" style="color:blue">https://www.apple.com/siri/#utterance-knowledge-trigger</a>
 </p>
 <h4 class="year" />
 <br />
