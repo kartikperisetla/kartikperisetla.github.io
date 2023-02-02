@@ -4,16 +4,6 @@ title: projects
 permalink: /projects/
 description:
 ---
-<h3 style="color:#202E6E">Natural Language Understanding for Question Answering in Siri
-</h3>
-<img class="thumbnail" src="/assets/img/siri_nlu.jpg"  width="550px" height="280px"  border="0px"/>
-<p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on Natural Language Understanding models for Siri's Question Answering system </h4></b>
-    Worked on building Deep Neural Models for understanding user's question and serve answer in Siri for Knowledge based Question Answering.<br/><br/>
-    Try out yourself: <a href="https://www.apple.com/siri/#utterance-knowledge-trigger" target="_blank" style="color:blue">https://www.apple.com/siri/#utterance-knowledge-trigger</a>
-</p>
-<h4 class="year" />
-<br />
 
 <h3 style="color:#202E6E">SmartCompose
 </h3>
