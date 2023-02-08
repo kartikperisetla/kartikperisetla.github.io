@@ -67,9 +67,19 @@ description:
 <br />
 <h3 style="color:#202E6E">Machine Learned Ranking for Bing and Office365
 </h3>
+<table>
+<tr>
+<td>
+<img class="thumbnail" src="/assets/img/bing.png" width="96px" height="140px" border="0px" />
+</td>
+<td>
 <img class="thumbnail"
     src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
     height="380px" border="0px">
+</td>
+</tr>
+</table>
+
 <p align="justify">
     <b><h4 style="color:#4E505A">Developed ML rankers for Bing and search in Office 365 products</h4></b>
     
