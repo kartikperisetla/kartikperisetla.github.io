@@ -39,7 +39,16 @@ description:
 <br />
 <h3 style="color:#202E6E">Knowledge worth ingesting for Satori -Bing's Knowledge Graph
 </h3>
+<table>
+<tr>
+<td>
+<img class="thumbnail" src="/assets/img/bing.png" width="360px" height="180px" border="0px" />
+</td>
+<td>
 <img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px" />
+</td>
+</tr>
+</table>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4></b>
