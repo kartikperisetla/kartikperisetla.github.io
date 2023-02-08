@@ -65,18 +65,15 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Machine Learned Ranking for LinkedIn search in O365
+<h3 style="color:#202E6E">Machine Learned Ranking for Bing and Office365
 </h3>
 <img class="thumbnail"
     src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
     height="380px" border="0px">
 <p align="justify">
-    <b><h4 style="color:#4E505A">Developed search rankers for LinkedIn people card feature in Office 365 products</h4></b>
-    The goal of the project was to find relevant profile from LinkedIn using people information in O365 products about
-    authors, participants. I worked on Machine Learned Ranker for this problem and shipped several Search Rankers for
-    this feature. This feature went live in September 2017.<br/><br/>
-
-    You can learn more about this project here :
+    <b><h4 style="color:#4E505A">Developed ML rankers for Bing and search in Office 365 products</h4></b>
+    
+    You can learn more about one of the project here :
     <a
         href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way"  style="color:blue">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 </p>
