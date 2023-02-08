@@ -42,7 +42,7 @@ description:
 <table>
 <tr>
 <td>
-<img class="thumbnail" src="/assets/img/bing.png" width="360px" height="180px" border="0px" />
+<img class="thumbnail" src="/assets/img/bing.png" width="96px" height="140px" border="0px" />
 </td>
 <td>
 <img class="thumbnail" src="/assets/img/satori.png" width="360px" height="180px" border="0px" />
