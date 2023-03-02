@@ -11,7 +11,7 @@ description:
 <p align="justify">
     <b><h4 style="color:#4E505A"> Worked on Neural Language Generation for Microsoft SmartCompose </h4></b>
     Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank" style="color:blue"> Chris Quirk</a>, <a  style="color:blue" href="https://www.linkedin.com/in/peter-bailey-0b74aa/" target="_blank" style="color:blue">Peter Bailey</a> and others at Microsoft AI & Research<br/><br/>
-    Worked on feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
+    Developed and shipped a text-generation-feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
     Specifically, developed Neural Language Models for reranking and text generation- using prior context and additional signals from emails.
 </p>
 
@@ -53,10 +53,10 @@ description:
     <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4></b>
         Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank" style="color:blue"> Silviu Cucerzan</a> at Microsoft AI & Research<br/><br/>
-    Worked on coming up with a Machine Learning framework for detecting whether information extracted from crowdsourced
+    Worked on creating a Machine Learning framework for detecting whether information extracted from crowdsourced
     knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
-    component in Satori- Bing' Knowledge graph as it prevented lot of noise, vandalism, transient content from entering
-    Satori Knowledge graph. This component has been deployed in production and is helping selectively ingest extracted
+    component in Satori- Bing' Knowledge graph as it checked every single knowledge piece getting ingested and prevented ingestion of ephemeral and vandalism content from entering
+    Satori Knowledge graph. This component is filtering 100s of millions knowledge deltas in production and is helping selectively ingest knowledge.
     information.<br/><br/>
 
     This framework is not only based on Natural Language processing components but also on User behavior modeling on
@@ -81,7 +81,7 @@ description:
 </table>
 
 <p align="justify">
-    <b><h4 style="color:#4E505A">Developed ML rankers for Bing and search in Office 365 products</h4></b>
+    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and search in Office 365 products</h4></b>
     
     You can learn more about one of the project here :
     <a
@@ -122,7 +122,7 @@ description:
     Laptop
     Per Child project in collaboration with SugarLabs. My goal was to develop Sugar Activities that makes learning experience fun on XO laptops.<br/><br/>
 
-    As part of this effort, I have developed/contributed to:
+    As part of this effort, I have developed to:
 
     <ul>
         <li><a  style="color:blue" href="http://activities.sugarlabs.org/en-US/sugar/addon/4632">Wikipedia Hindi</a> - Wikipedia in Hindi for
