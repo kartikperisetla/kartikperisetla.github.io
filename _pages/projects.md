@@ -37,7 +37,7 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Knowledge worth ingesting for Satori -Bing's Knowledge Graph
+<h3 style="color:#202E6E">Detecting Knowledge worth ingesting for Bing Knowledge Graph
 </h3>
 <table>
 <tr>
@@ -50,17 +50,12 @@ description:
 </tr>
 </table>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Developed a Machine Learning framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
+    <b><h4 style="color:#4E505A"> Developed a NLP/ML framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
         from the web</h4></b>
         Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank" style="color:blue"> Silviu Cucerzan</a> at Microsoft AI & Research<br/><br/>
-    Worked on creating a Machine Learning framework for detecting whether information extracted from crowdsourced
-    knowledge platforms like Wikipedia is worth ingesting at any given moment of time. This project was crucial
-    component in Satori- Bing' Knowledge graph as it checked every single knowledge piece getting ingested and prevented ingestion of ephemeral and vandalism content from entering
-    Satori Knowledge graph. This component is filtering 100s of millions knowledge deltas in production and is helping selectively ingest knowledge.
-    information.<br/><br/>
-
-    This framework is not only based on Natural Language processing components but also on User behavior modeling on
-    crowdsourced knowledge platforms like Wikipedia, Reddit.
+    Worked on creating a NLP/ML framework for detecting whether information extracted from crowdsourced
+    knowledge platforms like Wikipedia, Reddit is worth ingesting at any given moment of time. This project was crucial
+    component in Satori- Bing' Knowledge graph as it checked every single knowledge piece getting ingested and preventing ingestion of misinformation, ephemeral and vandalism content from entering Satori Knowledge graph. This component is filtering 100s of millions of knowledge deltas in production and is helping selectively ingest knowledge and continuously grow knowledge graph.<br/><br/>
 </p>
 
 <h4 class="year" />
@@ -90,8 +85,7 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Gloss Extraction Engine
-</h3>
+<h3 style="color:#202E6E">Attaching Glosses to CMU NELL Knowledge Graph</h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">An attempt to attach glosses to Knowledge Bases</h4></b>
