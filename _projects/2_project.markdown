@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CRF Query Tagger for LinkedIn Search
-description: Developed query tagger for LinkedIn Search
+title: Search Query Entity Tagger for LinkedIn Search
+description: Developed CRF based query tagger for LinkedIn Search
 img: /assets/img/crf_query_tagger.png
 
 ---
