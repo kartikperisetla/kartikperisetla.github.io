@@ -47,3 +47,24 @@ description:
     </li>
     </ol>
 </article>
+
+<article class="post-content publications clearfix">
+    <h3 class="year">2023</h3>
+    <ol class="bibliography"><li>
+        <div id="wang2021grounding">
+  
+    <!-- <span class="title" style="color:#276ca8"><b>The Data Provenance Project</b></span> -->
+    <b><a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">The Data Provenance Project</a></b>
+    <span class="author">
+            Shayne Longpre, Robert Mahari, Niklas Muennighoff, Anthony Chen, <b>Kartik Perisetla</b>, William Brannon, Jad Kabbara, Luis Villa, Sara Hooker
+    </span>
+    <span class="periodical" style="color:#113e85">
+      <b><i>International Conference on Machine Learning(ICML) 2023</i></b>
+    </span>
+  <span class="links">  
+    [<a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">paper</a>]
+  </span>
+</div>
+    </li>
+    </ol>
+</article>
