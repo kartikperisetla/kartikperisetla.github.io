@@ -4,6 +4,16 @@ title: projects
 permalink: /projects/
 description:
 ---
+<h3 style="color:#202E6E">Natural Language Understanding(NLU) for Question-Answering in Apple Siri.
+</h3>
+<p align="justify">
+    <b><h4 style="color:#4E505A"> Worked on developing NLU models for Siri's Question-Answering capabilities.</h4></b>
+    Developed NLU models for answering knowledge seeking questions to Siri. <br/><br/>
+    Specifically, worked on Multi-task Neural models for NLU in Tensorflow.
+</p>
+
+<h4 class="year" />
+<br />
 
 <h3 style="color:#202E6E">SmartCompose
 </h3>
