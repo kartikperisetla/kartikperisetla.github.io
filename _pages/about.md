@@ -18,10 +18,10 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 <p align="left">
 My research interests span:
 <ul>
-<li>Retrieval-Augmented Text Generation</li>
+<li>Retrieval Augmented Text Generation</li>
 <li>Text Summarization</li>
 <li>Neural Reading Comprehension</li>
-<li>Natural Language Understanding, Semantic Parsing</li>
+<li>Natural Language Understanding</li>
 <li>Interpretability of Deep Neural Networks</li>
 </ul>
 </p>
