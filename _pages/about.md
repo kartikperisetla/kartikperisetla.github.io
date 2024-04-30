@@ -18,7 +18,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 <p align="left">
 My research interests span:
 <ul>
-<li>Instruction Tuning</li>
+<li>Instruction Tuning/Alignment</li>
 <li>RAG/Text Summarization</li>
 <li>Neural Reading Comprehension</li>
 <li>Natural Language Understanding</li>
