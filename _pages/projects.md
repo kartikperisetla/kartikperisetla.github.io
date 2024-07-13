@@ -118,16 +118,12 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Attaching Glosses to CMU NELL Knowledge Graph</h3>
+<h3 style="color:#202E6E">CMU Never-Ending-Language-Learner(NELL)</h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A">An attempt to attach glosses to Knowledge Bases</h4></b>
-    Natural Language Processing framework written in python to extract definitional sentences about real world named
-    entities from large datasets like Wikipedia and ClueWeb. The core of the framework is based on the filters,
-    transformations, parsers, feature extractors, samplers and modelers you use. Thus it is extensible and customizable
-    for your needs. All you need to do is extend the base functionality and write your own filters, transformations,
-    parsers, feature extractors, samplers and modelers specific for your NLP task or datasource.<br/><br/>
-
+    <b><h4 style="color:#4E505A">Worked on a component in project NELL</h4></b>
+    Natural Language Processing framework to detect glosses from large web corpus like Wikipedia and ClueWeb. The core of the framework is based on the filters,
+    transformations, parsers, feature extractors, samplers and modelers in easy-to-use extensible framework design. This enriches NELL's knowledge.<br/><br/>
     Project URL: <a
         href="https://github.com/kartikperisetla/glossextractionengine" style="color:blue">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
 
