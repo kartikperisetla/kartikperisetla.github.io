@@ -17,20 +17,20 @@ description:
 
 <h3 style="color:#202E6E">Open-domain Question Answering
 </h3>
-<img class="thumbnail" src="/assets/img/odqa.jpg" width="480px" height="100px" border="0px"/>
+<img class="thumbnail" src="/assets/img/odqa.jpg" width="1000px" height="520px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on developing Ranking/Relevance models to serve most relevant Answer to your Question and ensure Siri answers from most Authoritative sources.</h4></b>
+    <b><h4 style="color:#4E505A"> Worked on developing Ranking/Relevance models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.</h4></b>
     Worked on developing all aspects of ML models to power most relevant answer to questions user ask Siri.<br/>
 </p>
 
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Natural Language Understanding (NLU) for Question-Answering
+<h3 style="color:#202E6E">Natural Language Understanding (NLU) for Question Answering
 </h3>
-<img class="thumbnail" src="/assets/img/nlu.jpg" width="480px" height="100px" border="0px"/>
+<img class="thumbnail" src="/assets/img/nlu.jpg" width="1000px" height="520px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on developing NLU models for Siri's Question-Answering capabilities.</h4></b>
+    <b><h4 style="color:#4E505A"> Developed NLU models for Question-Answering in Siri</h4></b>
     Developed NLU models for answering knowledge seeking questions to Siri.<br/>
     Specifically, worked on Multi-task Neural models for NLU.
 </p>
