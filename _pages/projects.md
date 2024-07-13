@@ -11,7 +11,7 @@ description:
 <p align="justify">
     <b><h4 style="color:#4E505A">Summarize the Web</h4></b>
     Worked on Large Language Models(LLMs) for Large-scale Text Summarization powering products like Safari used by billions of lives.<br/>
-    <a src="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader">Project announced at Apple WWDC2024.</a>
+    <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project announced at Apple WWDC2024.</a>
 </p>
 
 <h4 class="year" />
