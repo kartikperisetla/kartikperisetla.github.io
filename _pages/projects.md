@@ -124,13 +124,9 @@ description:
     <b><h4 style="color:#4E505A">Worked on a component in project NELL</h4></b>
     Natural Language Processing framework to detect glosses from large web corpus like Wikipedia and ClueWeb. The core of the framework is based on the filters,
     transformations, parsers, feature extractors, samplers and modelers in easy-to-use extensible framework design. This enriches NELL's knowledge.<br/><br/>
-    Project URL: <a
-        href="https://github.com/kartikperisetla/glossextractionengine" style="color:blue">https://github.com/kartikperisetla/glossextractionengine</a><br/><br/>
 
-    Part of project <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">NELL</a> at Carnegie Mellon University under <a
-        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a><br/><br/>
-
-    You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
+    Worked with <a
+        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a> as advisor. You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
 
 </p>
 
