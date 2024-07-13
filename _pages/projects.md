@@ -5,11 +5,13 @@ permalink: /projects/
 description:
 ---
 
-<h3 style="color:#202E6E">Web-Scale Text Summarization
+<h3 style="color:#202E6E">Large-scale Text Summarization
 </h3>
+<img class="thumbnail" src="/assets/img/summarization.jpg" width="1000px" height="520px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on Large Language Models(LLMs) for Text Summarization.</h4></b>
-    Leading Text Summarization efforts for an undisclosed project that will touch billions of lives.<br/>
+    <b><h4 style="color:#4E505A"> Worked on Large Language Models(LLMs) for Large-scale Text Summarization.</h4></b>
+    Leading Text Summarization efforts powering products like Safari used by billions of lives.<br/>
+    <a src="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader">Project announced at Apple WWDC2024.</a>
 </p>
 
 <h4 class="year" />
@@ -19,8 +21,8 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/odqa.jpg" width="1000px" height="520px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on developing Ranking/Relevance models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.</h4></b>
-    Worked on developing all aspects of ML models to power most relevant answer to questions user ask Siri.<br/>
+    <b><h4 style="color:#4E505A">Answering all your Questions!</h4></b>
+    Worked on developing ML/NLP models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.<br/>
 </p>
 
 <h4 class="year" />
