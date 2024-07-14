@@ -7,7 +7,7 @@ description:
 
 <h3 style="color:#202E6E">Large-scale Text Summarization
 </h3>
-<img class="thumbnail" src="/assets/img/summarization.jpg" width="1150px" height="520px" border="0px"/>
+<img class="thumbnail" src="/assets/img/summarization1.jpg" width="1150px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Summarize the Web</h4></b>
     Worked on Large Language Models(LLMs) for Large-scale Text Summarization powering products like Safari used by billions of lives.<br/>
