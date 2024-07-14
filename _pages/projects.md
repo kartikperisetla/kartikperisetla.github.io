@@ -7,7 +7,7 @@ description:
 
 <h3 style="color:#202E6E">Large-scale Text Summarization
 </h3>
-<img class="thumbnail" src="/assets/img/summarization.jpg" width="1000px" height="520px" border="0px"/>
+<img class="thumbnail" src="/assets/img/summarization.jpg" width="1150px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Summarize the Web</h4></b>
     Worked on Large Language Models(LLMs) for Large-scale Text Summarization powering products like Safari used by billions of lives.<br/>
@@ -19,7 +19,7 @@ description:
 
 <h3 style="color:#202E6E">Open-domain Question Answering
 </h3>
-<img class="thumbnail" src="/assets/img/odqa.jpg" width="1000px" height="520px" border="0px"/>
+<img class="thumbnail" src="/assets/img/odqa.jpg" width="1050px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Answering all your Questions</h4></b>
     Worked on developing ML/NLP models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.<br/>
@@ -30,7 +30,7 @@ description:
 
 <h3 style="color:#202E6E">Natural Language Understanding (NLU) for Question Answering
 </h3>
-<img class="thumbnail" src="/assets/img/nlu.jpg" width="1000px" height="520px" border="0px"/>
+<img class="thumbnail" src="/assets/img/nlu.jpg" width="1050px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A"> Developed NLU models for Question-Answering in Siri</h4></b>
     Developed NLU models for answering knowledge seeking questions to Siri.<br/>
