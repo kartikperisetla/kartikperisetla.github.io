@@ -16,7 +16,7 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 </p>
 
 <p align="left">
-My research interests span:
+<b>My research interests span:</b>
 <ul>
 <li>Instruction Tuning/Model Alignment</li>
 <li>RAG/Text Summarization</li>
@@ -39,10 +39,10 @@ My research interests span:
 </style>
 
 <table>
-<th>Affiliations</th>
+<th style="border: none;">Affiliations</th>
   <tbody>
     <tr>
-      <td style="text-align: center; vertical-align: top; border: none;">
+      <td style="text-align: center; vertical-align: top; border: none; padding: 2px;">
         <img src="assets/img/apple_logo.png" width="33px" height="40px" alt="Apple Logo">
       </td>
       <td style="text-align: center; vertical-align: middle; border: none;">
@@ -50,6 +50,9 @@ My research interests span:
       </td>
       <td style="text-align: center; vertical-align: middle; border: none;">
         <img src="assets/img/linkedin_logo.png" width="100px" height="30px" alt="LinkedIn Logo">
+      </td>
+      <td style="text-align: center; vertical-align: middle; border: none;">
+        <img src="assets/img/cmu_logo.png" width="100px" height="30px" alt="CMU Logo">
       </td>
     </tr>
   </tbody>
