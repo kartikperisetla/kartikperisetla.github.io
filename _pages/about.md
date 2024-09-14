@@ -42,18 +42,12 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 <th style="border: none;">Affiliations</th>
   <tbody>
     <tr>
-      <td style="text-align: center; vertical-align: top; border: none; padding: 2px;">
-        <img src="assets/img/apple_logo.png" width="33px" height="40px" alt="Apple Logo">
-      </td>
-      <td style="text-align: center; vertical-align: middle; border: none;">
-        <img src="assets/img/microsoft_logo.png" width="100px" height="30px" alt="Microsoft Logo">
-      </td>
-      <td style="text-align: center; vertical-align: middle; border: none;">
-        <img src="assets/img/linkedin_logo.png" width="100px" height="30px" alt="LinkedIn Logo">
-      </td>
-      <td style="text-align: center; vertical-align: middle; border: none;">
-        <img src="assets/img/cmu_logo.png" width="100px" height="30px" alt="CMU Logo">
-      </td>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
+        <img src="assets/img/apple_logo.png" alt="Logo 1" style="height: 100px; width: auto;">
+        <img src="assets/img/microsoft_logo.png" alt="Logo 2" style="height: 100px; width: auto;">
+        <img src="assets/img/linkedin_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
+        <img src="assets/img/cmu_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
+      </div>
     </tr>
   </tbody>
 </table>
