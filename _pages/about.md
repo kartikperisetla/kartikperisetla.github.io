@@ -41,10 +41,13 @@ My research interests span:
   <tbody>
     <tr>
       <td>
-        <img src="assets/img/linkedin_logo.png" width="100px" height="30px" alt="LinkedIn Logo">
+        <img src="assets/img/apple_logo.png" width="100px" height="30px" alt="Apple Logo">
       </td>
       <td>
-        <img src="assets/img/microsoft_logo.png" width="120px" height="30px"alt="Microsoft Logo">
+        <img src="assets/img/microsoft_logo.png" width="120px" height="30px" alt="Microsoft Logo">
+      </td>
+      <td>
+        <img src="assets/img/linkedin_logo.png" width="100px" height="30px" alt="LinkedIn Logo">
       </td>
     </tr>
   </tbody>
