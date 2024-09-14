@@ -26,28 +26,11 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 </ul>
 </p>
 
-<style>
-  table {
-    width: 50%;
-    table-layout: fixed; /* Distribute the space evenly */
-    border-collapse: collapse;
-  }
 
-  td {
-    text-align: center; /* Center align the logos */
-  }
-</style>
-
-<table>
-<th style="border: none;">Affiliations</th>
-  <tbody>
-    <tr>
-      <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
-        <img src="assets/img/apple_logo.png" alt="Logo 1" style="height: 100px; width: auto;">
-        <img src="assets/img/microsoft_logo.png" alt="Logo 2" style="height: 100px; width: auto;">
-        <img src="assets/img/linkedin_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
-        <img src="assets/img/cmu_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
-      </div>
-    </tr>
-  </tbody>
-</table>
+<h3>Affiliations</h3>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
+  <img src="assets/img/apple_logo.png" alt="Logo 1" style="height: 100px; width: auto;">
+  <img src="assets/img/microsoft_logo.png" alt="Logo 2" style="height: 100px; width: auto;">
+  <img src="assets/img/linkedin_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
+  <img src="assets/img/cmu_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
+</div>
