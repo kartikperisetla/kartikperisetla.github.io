@@ -26,23 +26,26 @@ My research interests span:
 </ul>
 </p>
 
-<table width="300px">
-  <tr>
-    <td>
-      <div>
-        <img style="width:50%" src="assets/img/linkedin_logo.png">
-        <p align="justify">
-            <b>LinkedIn</b>
-        </p>
-      </div>
-    </td>
-    <td>
-      <div>
-        <img style="width:50%" src="assets/img/microsoft_logo.png">
-        <p align="justify">
-            <b>Microsoft</b>
-        </p>
-      </div>
-    </td>
-  </tr>
+<style>
+  table {
+    width: 50%;
+    table-layout: fixed; /* Distribute the space evenly */
+  }
+
+  td {
+    text-align: center; /* Center align the logos */
+  }
+</style>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <img src="assets/img/linkedin_logo.png" width="100px" height="30px" alt="LinkedIn Logo">
+      </td>
+      <td>
+        <img src="assets/img/microsoft_logo.png" width="120px" height="30px"alt="Microsoft Logo">
+      </td>
+    </tr>
+  </tbody>
 </table>
