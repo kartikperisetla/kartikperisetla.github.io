@@ -26,7 +26,7 @@ My research interests span:
 </ul>
 </p>
 
-<table>
+<table width="300px">
   <tr>
     <td>
       <div>
