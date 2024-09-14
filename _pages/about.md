@@ -25,3 +25,24 @@ My research interests span:
 <li>Interpretability of Deep Neural Networks</li>
 </ul>
 </p>
+
+<table>
+  <tr>
+    <td>
+      <div>
+        <img style="width:50%" src="assets/img/linkedin_logo.png">
+        <p align="justify">
+            <b>LinkedIn</b>
+        </p>
+      </div>
+    </td>
+    <td>
+      <div>
+        <img style="width:50%" src="assets/img/microsoft_logo.png">
+        <p align="justify">
+            <b>Microsoft</b>
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>
