@@ -39,6 +39,7 @@ My research interests span:
 </style>
 
 <table>
+<th>Affiliations</th>
   <tbody>
     <tr>
       <td style="text-align: center; vertical-align: top; border: none;">
