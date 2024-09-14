@@ -27,10 +27,10 @@ Prior to this, I worked on <a href="https://www.theverge.com/2020/5/11/21254298/
 </p>
 
 
-<h3>Affiliations</h3>
+<h5>Affiliations</h5>
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
-  <img src="assets/img/apple_logo.png" alt="Logo 1" style="height: 100px; width: auto;">
-  <img src="assets/img/microsoft_logo.png" alt="Logo 2" style="height: 100px; width: auto;">
-  <img src="assets/img/linkedin_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
-  <img src="assets/img/cmu_logo.png" alt="Logo 3" style="height: 100px; width: auto;">
+  <img src="assets/img/apple_logo.png" alt="Logo 1" style="height: 35px; width: 30px;">
+  <img src="assets/img/microsoft_logo.png" alt="Logo 2" style="height: 86x; width: 109px;">
+  <img src="assets/img/linkedin_logo.png" alt="Logo 3" style="height: 34px; width: 100px;">
+  <img src="assets/img/cmu_logo.png" alt="Logo 3" style="height: 70px; width: 84px;">
 </div>
