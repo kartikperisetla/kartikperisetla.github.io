@@ -19,25 +19,25 @@ description:
 
     
     <span class="periodical" style="color:#113e85">
-      <b><i>Empirical Methods in Natural Language Processing (EMNLP) 2021</i></b>
+      <b>Empirical Methods in Natural Language Processing (EMNLP) 2021</b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://aclanthology.org/2021.emnlp-main.565/" target="_blank">paper</a>] [<a  style="color:blue" href="https://github.com/apple/ml-knowledge-conflicts" target="_blank">code</a>] [<a  style="color:blue" href="{{ site.baseurl }}/assets/files/poster_final.pdf" target="_blank">poster</a>] [<a  style="color:blue" href="https://machinelearning.apple.com/research/entity-knowledge-conflicts" target="_blank">website</a>]
   </span>
   <span class="periodical" style="color:#000033">
-      <b>&</b>
+      <b>+</b>
     </span>
     <span class="periodical" style="color:#113e85">
-      <b><i>3rd Workshop on Machine Reading for Question Answering (MRQA) 2021</i></b>
+      <b>3rd Workshop on Machine Reading for Question Answering (MRQA) 2021</b>
     </span>
     <span class="links">  
     [<a  style="color:blue" href="https://mrqa.github.io/papers.html" target="_blank">link</a>]
   </span>
   <span class="periodical" style="color:#000033">
-      <b>&</b>
+      <b>+</b>
     </span>
     <span class="periodical" style="color:#113e85">
-      <b><i>Covered in Stanford CS224N (NLP with Deep Learning) Course Lecture, Spring 2022</i></b>
+      <b>Covered in Stanford CS224N (NLP with Deep Learning) Course Lecture, Spring 2022</b>
     </span>
     <span class="links">  
     [Lecture: <a  style="color:blue" href="https://youtu.be/4ynrGLIuPv4?t=4388" target="_blank">Representing and Using Knowledge in NLP</a> by <a target="_blank" href="https://www.kelvinguu.com/">Kelvin Guu</a>] [<a target="_blank" style="color:blue"  href="https://web.stanford.edu/class/cs224n/slides/cs224n-2022-lecture15-guu.pdf#page=94">Lecture Slides</a>]
@@ -59,13 +59,16 @@ description:
             Shayne Longpre, Robert Mahari, Niklas Muennighoff, Anthony Chen, <b>Kartik Perisetla</b>, William Brannon, Jad Kabbara, Luis Villa, Sara Hooker
     </span>
     <span class="periodical" style="color:#113e85">
-      <b><i>- [2024] Published in Nature journal 2024.</i></b>
+      <b>- [2024] Published in Nature journal 2024</b>
     </span>
     <span class="links">  
     [<a  style="color:blue" href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">nature_journal</a>]
   </span>
+  <span class="periodical" style="color:#000033">
+      <b>+</b>
+    </span>
     <span class="periodical" style="color:#113e85">
-      <b><i>- [2023] Generative AI + Law (GenLaw) workshop at International Conference on Machine Learning (ICML) 2023</i></b>
+      <b>- [2023] Generative AI workshop at International Conference on Machine Learning (ICML) 2023</b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">paper</a>]
