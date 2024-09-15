@@ -59,7 +59,13 @@ description:
             Shayne Longpre, Robert Mahari, Niklas Muennighoff, Anthony Chen, <b>Kartik Perisetla</b>, William Brannon, Jad Kabbara, Luis Villa, Sara Hooker
     </span>
     <span class="periodical" style="color:#113e85">
-      <b><i>Generative AI + Law (GenLaw) workshop at International Conference on Machine Learning (ICML) 2023</i></b>
+      <b><i>- [2024] Published in Nature journal 2024.</i></b>
+    </span>
+    <span class="links">  
+    [<a  style="color:blue" href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">nature_journal</a>]
+  </span>
+    <span class="periodical" style="color:#113e85">
+      <b><i>- [2023] Generative AI + Law (GenLaw) workshop at International Conference on Machine Learning (ICML) 2023</i></b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">paper</a>]
