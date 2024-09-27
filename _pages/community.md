@@ -24,7 +24,7 @@ description:
     <ol class="bibliography"><li>
         <div id="wang2021grounding">
   
-    <b><a  style="color:blue" href="https://trustnlpworkshop.github.io/#:~:text=Aishwarya%20Padmakumar-,Kartik%20Perisetla,-Salman%20Rahman" target="_blank">TrustNLP: Fourth Workshop on Trustworthy Natural Language Processing @ NAACL 2024n</a></b>
+    <b><a  style="color:blue" href="https://trustnlpworkshop.github.io/#:~:text=Aishwarya%20Padmakumar-,Kartik%20Perisetla,-Salman%20Rahman" target="_blank">TrustNLP: Fourth Workshop on Trustworthy Natural Language Processing @ NAACL 2024</a></b>
     <span class="author">
             Served in Program Committee for this workshop at North American Chapter of the Association for Computational Linguistics (NAACL 2024)
     </span>
