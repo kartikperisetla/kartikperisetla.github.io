@@ -12,7 +12,7 @@ description:
         <div id="wang2021grounding">
 			<b><a  style="color:blue" href="https://an-instructive-workshop.github.io/organization/#:~:text=Kartik%20Perisetla%2C%20Apple" target="_blank">Workshop on Instruction Tuning and Instruction Following @ NeurIPS 2023</a></b>
 			<span class="author">
-					Served as a reviewer.
+					Served as a Reviewer.
 			</span>
 		</div>
 		</li>
