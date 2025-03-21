@@ -5,7 +5,19 @@ title: community
 years: [2021]
 description:
 ---
-
+<article class="post-content publications clearfix">
+    <h3 class="year">2025</h3>
+    <ol class="bibliography"><li>
+        <div id="wang2021grounding">
+  
+    <b><a  style="color:blue" href="https://trustnlpworkshop.github.io/#:~:text=Aishwarya%20Padmakumar-,Kartik%20Perisetla,-Salman%20Rahman" target="_blank">TrustNLP: Fifth Workshop on Trustworthy Natural Language Processing @ NAACL 2025</a></b>
+    <span class="author">
+            Served in Program Committee for this workshop at <b>North American Chapter of the Association for Computational Linguistics (NAACL 2025)</b>
+    </span>
+	</div>
+		</li>
+		</ol>
+	</article>
 <article class="post-content publications clearfix">
     <h3 class="year">2024</h3>
     <ol class="bibliography"><li>
