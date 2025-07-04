@@ -53,11 +53,11 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Search Query Entity Tagger for LinkedIn Search
+<h3 style="color:#202E6E">Query Understanding for LinkedIn Search
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Developed CRF based query tagger for LinkedIn Search </h4></b>
+    <b><h4 style="color:#4E505A"> Developed CRF based query understanding component for LinkedIn Search </h4></b>
     Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.<br/><br/>
 
     I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from
