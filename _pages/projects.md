@@ -9,9 +9,9 @@ description:
 </h3>
 
 <p align="justify">
-    <b><h4 style="color:#4E505A">poweing Apple Intelligence</h4></b>
+    <b><h4 style="color:#4E505A">powering Apple Intelligence</h4></b>
     Worked on Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
-    <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project launched at Apple WWDC2024.</a>
+    read more: <a  style="color:blue" href="https://www.apple.com/apple-intelligence/" target="_blank">Apple Intelligence</a>
 </p>
 
 <h4 class="year" />
