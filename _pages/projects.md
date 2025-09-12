@@ -56,10 +56,10 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Worked on Neural Language Generation for Microsoft SmartCompose </h4></b>
+    <b><h4 style="color:#4E505A"> Led Neural Language Generation efforts powering different Microsoft products. </h4></b>
     Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/chrisq/" target="_blank" style="color:blue"> Chris Quirk</a>, <a  style="color:blue" href="https://www.linkedin.com/in/peter-bailey-0b74aa/" target="_blank" style="color:blue">Peter Bailey</a> and others at Microsoft AI Research<br/><br/>
-    Developed and shipped a text-generation-feature to automatically complete emails in Microsoft Outlook based on what user has typed so far and context of the email.<br/><br/>
-    Specifically, developed Neural Language Models for reranking and text generation- using prior context and additional signals from emails.
+    Developed and shipped a Deep Learning powered text-generation-feature to automatically complete what user is writing in Microsoft products.
+    Specifically, developed Neural Language Models for reranking and text generation- using contextual signals.
 </p>
 
 <h4 class="year" />
@@ -69,22 +69,13 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Developed CRF based query understanding component for LinkedIn Search </h4></b>
-    Before this project, LinkedIn search was using a Hidden Markov Model(HMM) based query tagger.<br/><br/>
-
-    I developed a vital component in Search Query Understanding Pipeline that extracts LinkedIn ecosystem entities from
-    your search query using Conditional Random Fields(CRF). Implemented Conditional Random Fields(CRF) library for
-    LinkedIn Search Query Tagger to detect entities like Name, Company, Title, Location, Skill, Geo-location. In order
-    to get this tagger in production - I designed and developed end-to-end pipeline to generate training dataset using
-    SERP click-through chains, extract features, train CRF model and evaluate the model.<br/><br/>
-
-    These tags are leveraged in downstream components in Query Understanding pipeline to provide most relevant Search
-    Results to users.
+    <b><h4 style="color:#4E505A"> Led efforts to make Query Understanding more intelligent</h4></b>
+    Empowering users to issue Search in natural language.
 </p>
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Detecting Knowledge worth ingesting for Bing Knowledge Graph
+<h3 style="color:#202E6E">Bing Knowledge Graph - Satori
 </h3>
 <table>
 <tr>
@@ -97,17 +88,13 @@ description:
 </tr>
 </table>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Developed a NLP/ML framework for Bing's Knowledge Graph that is helping selectively ingest knowledge
-        from the web</h4></b>
+    <b><h4 style="color:#4E505A"> Developed a NLP framework powering Bing's Knowledge Graph that is helping it grow by selectively ingest knowledge from the web</h4></b>
         Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank" style="color:blue"> Silviu Cucerzan</a> at Microsoft AI Research<br/><br/>
-    Worked on creating a NLP/ML framework for detecting whether information extracted from crowdsourced
-    knowledge platforms like Wikipedia, Reddit is worth ingesting at any given moment of time. This project was crucial
-    component in Satori- Bing' Knowledge graph as it checked every single knowledge piece getting ingested and preventing ingestion of misinformation, ephemeral and vandalism content from entering Satori Knowledge graph. This component is filtering 100s of millions of knowledge deltas in production and is helping selectively ingest knowledge and continuously grow knowledge graph.<br/><br/>
 </p>
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Machine Learned Ranking for Bing and Office365
+<h3 style="color:#202E6E">Machine Learned Ranking for Microsoft Bing and other products
 </h3>
 <table>
 <tr>
@@ -121,11 +108,10 @@ description:
 </td>
 </tr>
 </table>
-
 <p align="justify">
-    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and search in Office 365 products</h4></b>
+    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and producst in Office 365 products</h4></b>
     
-    You can learn more about one of the project here :
+    You can learn more about one of the project here:
     <a
         href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way"  style="color:blue">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 </p>
@@ -135,7 +121,7 @@ description:
 <h3 style="color:#202E6E">CMU Never-Ending-Language-Learner(NELL)</h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A">Worked on a component in project NELL</h4></b>
+    <b><h4 style="color:#4E505A">Learning to read the web</h4></b>
     Natural Language Processing framework to detect glosses from large web corpus like Wikipedia and ClueWeb. The core of the framework is based on the filters,
     transformations, parsers, feature extractors, samplers and modelers in easy-to-use extensible framework design. This enriches NELL's knowledge.<br/><br/>
 
