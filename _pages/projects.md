@@ -17,12 +17,12 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Large-scale Text Summarization
+<h3 style="color:#202E6E">Smart Browsing Assistant
 </h3>
-<img class="thumbnail" src="/assets/img/summarization1.jpg" width="1150px" height="520px" border="0px"/>
+<img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
 <p align="justify">
-    <b><h4 style="color:#4E505A">Summarize the Web</h4></b>
-    Worked on Large Language Models(LLMs) for Large-scale Text Summarization powering products used by billions everyday.<br/>
+    <b><h4 style="color:#4E505A">Web-scale Summarization and ToC generation</h4></b>
+    Led efforts for development of Large Language Models(LLMs) for Large-scale Text Summarization and ToC generation powering products used by billions everyday.<br/>
     <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project launched at Apple WWDC2024.</a>
 </p>
 
