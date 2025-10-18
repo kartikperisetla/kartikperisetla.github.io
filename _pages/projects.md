@@ -109,7 +109,7 @@ description:
 </tr>
 </table>
 <p align="justify">
-    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and producst in Office 365 products</h4></b>
+    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and products in Office 365 products</h4></b>
     
     You can learn more about one of the project here:
     <a
@@ -183,7 +183,4 @@ description:
     <div class="col three caption">
         kids using Wikipedia Hindi at Bhagmalpur
     </div>
-
-    
-
 </p>
