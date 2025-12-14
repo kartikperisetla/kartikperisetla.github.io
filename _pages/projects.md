@@ -7,7 +7,7 @@ description:
 
 <h3 style="color:#202E6E">LLM Post-training & Alignment
 </h3>
-
+<img class="thumbnail" src="/assets/img/notif_summarization.png" width="1050px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">powering Apple Intelligence</h4></b>
     Worked on Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
@@ -22,7 +22,7 @@ description:
 <img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Web-scale Summarization and ToC generation</h4></b>
-    Led efforts for development of Large Language Models(LLMs) for Large-scale Text Summarization and ToC generation powering products used by billions everyday.<br/>
+    Led efforts for development of Large Language Models(LLMs) powering AI features in products used by billions everyday like Safari web browser.<br/>
     <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project launched at Apple WWDC2024.</a>
 </p>
 
@@ -88,7 +88,7 @@ description:
 </tr>
 </table>
 <p align="justify">
-    <b><h4 style="color:#4E505A"> Developed a NLP framework powering Bing's Knowledge Graph that is helping it grow by selectively ingest knowledge from the web</h4></b>
+    <b><h4 style="color:#4E505A"> Developed a NLP framework powering Bing's Knowledge Graph (Satori) that is helping it grow by selectively ingest knowledge from the web</h4></b>
         Joint work with <a  style="color:blue" href="https://www.microsoft.com/en-us/research/people/silviu/" target="_blank" style="color:blue"> Silviu Cucerzan</a> at Microsoft AI Research<br/><br/>
 </p>
 
@@ -99,7 +99,7 @@ description:
 <table>
 <tr>
 <td>
-<img class="thumbnail" src="/assets/img/bing.png" width="96px" height="140px" border="0px" />
+<img class="thumbnail" src="https://blogs.bing.com/getmedia/55862933-6a0b-4bbd-8fce-37f3489b7273/clip_5F00_image002_5F00_thumb_5F00_7143AC2A.aspx" width="540px" height="380px" border="0px" />
 </td>
 <td>
 <img class="thumbnail"
@@ -126,7 +126,7 @@ description:
     transformations, parsers, feature extractors, samplers and modelers in easy-to-use extensible framework design. This enriches NELL's knowledge.<br/><br/>
 
     Worked with <a
-        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a> as advisor. You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
+        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a> as advisor during my time at <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a>. You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
 
 </p>
 
@@ -136,7 +136,7 @@ description:
 </h3>
 <img class="thumbnail" src="/assets/img/olpc1.jpg" width="140px" height="125px" border="0px" />
 <p align="justify">
-    <b><h4 style="color:#4E505A">open source contributor for OLPC laptop's sugar desktop environment</h4></b>
+    <b><h4 style="color:#4E505A">Open source contributor for OLPC laptop's sugar desktop environment</h4></b>
     Sugar Desktop Environment is being developed for One
     Laptop
     Per Child project in collaboration with SugarLabs. My goal was to develop Sugar Activities that makes learning experience fun on XO laptops.<br/><br/>
@@ -160,7 +160,7 @@ description:
                 Bhagmalpur</a> : worked with <a  style="color:blue" href="https://people.sugarlabs.org/anish/site/">Anish Mangal</a> and <a style="color:blue"
                 href="https://faculty.sfsu.edu/~sverma/">Dr. Sameer Verma</a> and <a style="color:blue"
                 href="https://github.com/godiard">Gonzalo
-                Odiard</a> to deploy XSCE school server at Bhagmalpur, India.
+                Odiard</a> to deploy XSCE school server at Bhagmalpur, India - mainly to empower kids with access to internet and useful tool to access knowledge readily.
 
         </li>
     </ul>
