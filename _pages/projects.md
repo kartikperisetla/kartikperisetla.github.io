@@ -7,7 +7,7 @@ description:
 
 <h3 style="color:#202E6E">LLM Post-training & Alignment
 </h3>
-<img class="thumbnail" src="/assets/img/notif_summarization.png" width="1050px" height="520px" border="0px"/>
+
 <p align="justify">
     <b><h4 style="color:#4E505A">powering Apple Intelligence</h4></b>
     Worked on Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
