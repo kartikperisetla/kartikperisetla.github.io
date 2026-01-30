@@ -7,7 +7,7 @@ description:
 
 <h3 style="color:#202E6E">LLM Post-training & Alignment
 </h3>
-<img class="thumbnail" src="/assets/img/notif_summarization.png" width="1050px" height="520px" border="0px"/>
+
 <p align="justify">
     <b><h4 style="color:#4E505A">powering Apple Intelligence</h4></b>
     Worked on Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
@@ -109,7 +109,7 @@ description:
 </tr>
 </table>
 <p align="justify">
-    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and products in Office 365 products</h4></b>
+    <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and Office 365 products</h4></b>
     
     You can learn more about one of the project here:
     <a
