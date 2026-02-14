@@ -141,11 +141,9 @@ description:
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">Learning to read the web</h4></b>
-    Natural Language Processing framework to detect glosses from large web corpus like Wikipedia and ClueWeb. The core of the framework is based on the filters,
-    transformations, parsers, feature extractors, samplers and modelers in easy-to-use extensible framework design. This enriches NELL's knowledge.<br/><br/>
+    Contributed to Natural Language Processing models and frameworks to enhance ever growing Knowledge Graph.<br/><br/>
 
-    Worked with <a
-        href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a> as advisor during my time at <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a>. You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
+    The NELL project was led by <a target="_blank" href="http://www.cs.cmu.edu/~tom/" style="color:blue">Prof. Tom Mitchell</a> and <a target="_blank" href="http://www.cs.cmu.edu/~wcohen/" style="color:blue">Prof. William Cohen</a> at <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a>. You can read more about this project at: <a  style="color:blue" href="http://rtw.ml.cmu.edu/rtw/" style="color:blue">http://rtw.ml.cmu.edu/rtw/</a>
 
 </p>
 
