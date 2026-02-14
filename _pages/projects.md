@@ -5,7 +5,9 @@ permalink: /projects/
 description:
 ---
 
-<h3 style="color:#202E6E">LLM Post-training & Alignment
+<h3 style="color:#202E6E">
+    <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    LLM Post-training & Alignment
 </h3>
 
 <p align="justify">
@@ -17,7 +19,9 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Smart Browsing Assistant
+<h3 style="color:#202E6E">
+    <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Smart Browsing Assistant
 </h3>
 <img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
 <p align="justify">
@@ -29,7 +33,9 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Open-domain Question Answering
+<h3 style="color:#202E6E">
+    <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Open-domain Question Answering
 </h3>
 <img class="thumbnail" src="/assets/img/odqa.jpg" width="1050px" height="520px" border="0px"/>
 <p align="justify">
@@ -40,7 +46,9 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Natural Language Understanding (NLU) for Question Answering
+<h3 style="color:#202E6E">
+    <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Natural Language Understanding (NLU) for Question Answering
 </h3>
 <img class="thumbnail" src="/assets/img/nlu.jpg" width="1050px" height="520px" border="0px"/>
 <p align="justify">
@@ -52,7 +60,9 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">SmartCompose
+<h3 style="color:#202E6E">
+    <img src="/assets/img/microsoft_logo.png" alt="Microsoft" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    SmartCompose
 </h3>
 <img class="thumbnail" src="/assets/img/smartcompose.png" width="480px" height="100px" border="0px"/>
 <p align="justify">
@@ -65,7 +75,9 @@ description:
 <h4 class="year" />
 <br />
 
-<h3 style="color:#202E6E">Query Understanding for LinkedIn Search
+<h3 style="color:#202E6E">
+    <img src="/assets/img/linkedin_logo.png" alt="LinkedIn" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Query Understanding for LinkedIn Search
 </h3>
 <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
@@ -75,7 +87,9 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Bing Knowledge Graph - Satori
+<h3 style="color:#202E6E">
+    <img src="/assets/img/microsoft_logo.png" alt="Microsoft" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Bing Knowledge Graph - Satori
 </h3>
 <table>
 <tr>
@@ -94,7 +108,9 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">Machine Learned Ranking for Microsoft Bing and other products
+<h3 style="color:#202E6E">
+    <img src="/assets/img/microsoft_logo.png" alt="Microsoft" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    Machine Learned Ranking for Microsoft Bing and other products
 </h3>
 <table>
 <tr>
@@ -118,7 +134,10 @@ description:
 
 <h4 class="year" />
 <br />
-<h3 style="color:#202E6E">CMU Never-Ending-Language-Learner(NELL)</h3>
+<h3 style="color:#202E6E">
+    <img src="/assets/img/cmu_logo.png" alt="CMU" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    CMU Never-Ending-Language-Learner(NELL)
+</h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">Learning to read the web</h4></b>
@@ -134,6 +153,12 @@ description:
 <br />
 <h3 style="color:#202E6E">One Laptop per Child
 </h3>
+<!-- Note: Add OLPC logo once the logo file is added to /assets/img/ -->
+<!-- Suggested format: -->
+<!-- <h3 style="color:#202E6E">
+    <img src="/assets/img/olpc_logo.png" alt="OLPC" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    One Laptop per Child
+</h3> -->
 <img class="thumbnail" src="/assets/img/olpc1.jpg" width="140px" height="125px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A">Open source contributor for OLPC laptop's sugar desktop environment</h4></b>
