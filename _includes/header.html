@@ -28,11 +28,11 @@
         <!-- Blog -->
         <!-- <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a> -->
 
-        <a class="page-link" href="https://kartik-perisetla.medium.com/" target="_blank">blog</a>
+        <a class="page-link" href="https://substack.com/@aipapertrail" target="_blank">blog</a>
         <!-- Pages -->
         {% for page in site.pages %}
           {% if page.title and page.url != "/"%}
-           {% if page.url !="https://kartik-perisetla.medium.com/" %}
+           {% if page.url !="https://substack.com/@aipapertrail" %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
             {% endif %}
           {% endif %}
