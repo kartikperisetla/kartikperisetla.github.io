@@ -11,6 +11,9 @@ description:
         <div id="trustnlp6">
   
     <b><a  style="color:blue" href="https://trustnlpworkshop.github.io/" target="_blank">TrustNLP: Sixth Workshop on Trustworthy Natural Language Processing @ ACL 2026</a></b>
+    <span class="author">
+            Served in this workshop at <b>Annual Conference of the Association for Computational Linguistics (ACL 2026)</b>
+    </span>
 	</div>
 		</li>
 		</ol>
