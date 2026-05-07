@@ -6,6 +6,16 @@ years: [2021]
 description:
 ---
 <article class="post-content publications clearfix">
+    <h3 class="year">2026</h3>
+    <ol class="bibliography"><li>
+        <div id="trustnlp6">
+  
+    <b><a  style="color:blue" href="https://trustnlpworkshop.github.io/" target="_blank">TrustNLP: Sixth Workshop on Trustworthy Natural Language Processing @ ACL 2026</a></b>
+	</div>
+		</li>
+		</ol>
+	</article>
+<article class="post-content publications clearfix">
     <h3 class="year">2025</h3>
     <ol class="bibliography"><li>
         <div id="wang2021grounding">
