@@ -135,7 +135,7 @@ description:
 <h4 class="year" />
 <br />
 <h3 style="color:#202E6E">
-    <img src="/assets/img/cmu_logo.png" alt="CMU" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
+    <img src="/assets/img/cmu_logo.png" alt="CMU" style="height:50px; width:auto; vertical-align:middle; margin-right:10px;">
     CMU Never-Ending-Language-Learner(NELL)
 </h3>
 <img class="thumbnail" src="/assets/img/nell.png" width="140px" height="125px" border="0px" />
