@@ -36,7 +36,7 @@ details > summary::-webkit-details-marker { display: none; }
     <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project launched at Apple WWDC2024.</a>
 </p>
 <details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
     </div>
@@ -54,7 +54,7 @@ details > summary::-webkit-details-marker { display: none; }
     Worked on developing ML/NLP models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.<br/>
 </p>
 <details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/odqa.jpg" width="1050px" height="520px" border="0px"/>
     </div>
@@ -73,7 +73,7 @@ details > summary::-webkit-details-marker { display: none; }
     Specifically, worked on Multi-task Neural models for NLU.
 </p>
 <details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/nlu.jpg" width="1050px" height="520px" border="0px"/>
     </div>
@@ -106,7 +106,7 @@ details > summary::-webkit-details-marker { display: none; }
     Empowering users to issue Search in natural language.
 </p>
 <details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px"/>
     </div>
