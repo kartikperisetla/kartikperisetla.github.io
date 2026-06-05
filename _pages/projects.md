@@ -59,7 +59,6 @@ description:
     <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block;">View screenshots</summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/nlu.jpg" width="1050px" height="520px" border="0px"/>
-        <img class="thumbnail" src="/assets/img/siri_nlu.jpg" width="1050px" height="520px" border="0px" style="margin-top: 10px;"/>
     </div>
 </details>
 
