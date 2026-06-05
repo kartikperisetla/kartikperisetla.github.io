@@ -139,18 +139,6 @@ details > summary::-webkit-details-marker { display: none; }
     <img src="/assets/img/microsoft_logo.png" alt="Microsoft" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
     Machine Learned Ranking for Microsoft Bing and other products
 </h3>
-<table>
-<tr>
-<td>
-<img class="thumbnail" src="https://blogs.bing.com/getmedia/55862933-6a0b-4bbd-8fce-37f3489b7273/clip_5F00_image002_5F00_thumb_5F00_7143AC2A.aspx" width="540px" height="380px" border="0px" />
-</td>
-<td>
-<img class="thumbnail"
-    src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
-    height="380px" border="0px">
-</td>
-</tr>
-</table>
 <p align="justify">
     <b><h4 style="color:#4E505A">Developed and shipped ML rankers for Bing and Office 365 products</h4></b>
     
@@ -158,6 +146,23 @@ details > summary::-webkit-details-marker { display: none; }
     <a
         href="https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way"  style="color:blue">https://blog.linkedin.com/2017/september/250/adding-linkedin_s-profile-card-on-office-365-offers-a-simple-way</a>
 </p>
+<details style="margin: 10px 0 20px 0;">
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
+    <div style="margin-top: 12px;">
+        <table>
+        <tr>
+        <td>
+        <img class="thumbnail" src="https://blogs.bing.com/getmedia/55862933-6a0b-4bbd-8fce-37f3489b7273/clip_5F00_image002_5F00_thumb_5F00_7143AC2A.aspx" width="540px" height="380px" border="0px" />
+        </td>
+        <td>
+        <img class="thumbnail"
+            src="https://content.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/LinkedInwire_blogV2.png" width="540px"
+            height="380px" border="0px">
+        </td>
+        </tr>
+        </table>
+    </div>
+</details>
 
 <h4 class="year" />
 <br />
