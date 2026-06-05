@@ -19,7 +19,7 @@ details > summary::-webkit-details-marker { display: none; }
 
 <p align="justify">
     <b><h4 style="color:#4E505A">powering Apple Intelligence</h4></b>
-    Worked on Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
+    Led Large Language Models(LLM) Post-training and Alignment for areas like Summarization, Text-Generation powering products used by billions everyday.<br/>
     read more: <a  style="color:blue" href="https://www.apple.com/apple-intelligence/" target="_blank">Apple Intelligence</a>
 </p>
 
