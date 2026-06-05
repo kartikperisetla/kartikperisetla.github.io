@@ -30,12 +30,17 @@ details > summary::-webkit-details-marker { display: none; }
     <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
     Smart Browsing Assistant
 </h3>
-<img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Web-scale Summarization and smart insights from browsing session</h4></b>
     Led efforts for development of Large Language Models(LLMs) powering AI features in products used by billions everyday like Safari web browser.<br/>
     <a  style="color:blue" href="https://www.apple.com/macos/macos-sequoia-preview/#:~:text=A%20smarter%2C%20redesigned%20Reader" target="_blank">Project launched at Apple WWDC2024.</a>
 </p>
+<details style="margin: 10px 0 20px 0;">
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View screenshots</span><span class="screenshot-hide">Hide screenshots</span></summary>
+    <div style="margin-top: 12px;">
+        <img class="thumbnail" src="/assets/img/toc.png" width="1150px" height="520px" border="0px"/>
+    </div>
+</details>
 
 <h4 class="year" />
 <br />
@@ -96,11 +101,16 @@ details > summary::-webkit-details-marker { display: none; }
     <img src="/assets/img/linkedin_logo.png" alt="LinkedIn" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
     Query Understanding for LinkedIn Search
 </h3>
-<img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px" />
 <p align="justify">
     <b><h4 style="color:#4E505A"> Led efforts to make Query Understanding more intelligent</h4></b>
     Empowering users to issue Search in natural language.
 </p>
+<details style="margin: 10px 0 20px 0;">
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View screenshots</span><span class="screenshot-hide">Hide screenshots</span></summary>
+    <div style="margin-top: 12px;">
+        <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px"/>
+    </div>
+</details>
 
 <h4 class="year" />
 <br />
