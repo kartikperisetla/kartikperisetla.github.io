@@ -5,6 +5,13 @@ permalink: /projects/
 description:
 ---
 
+<style>
+details .screenshot-hide { display: none; }
+details[open] .screenshot-show { display: none; }
+details[open] .screenshot-hide { display: inline; }
+details > summary::-webkit-details-marker { display: none; }
+</style>
+
 <h3 style="color:#202E6E">
     <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
     LLM Post-training & Alignment
@@ -37,11 +44,16 @@ description:
     <img src="/assets/img/apple_logo.png" alt="Apple" style="height:30px; width:auto; vertical-align:middle; margin-right:10px;">
     Open-domain Question Answering
 </h3>
-<img class="thumbnail" src="/assets/img/odqa.jpg" width="1050px" height="520px" border="0px"/>
 <p align="justify">
     <b><h4 style="color:#4E505A">Answering all your Questions</h4></b>
     Worked on developing ML/NLP models to serve most relevant Answer to your Question and ensure Siri answers are based on most Authoritative sources.<br/>
 </p>
+<details style="margin: 10px 0 20px 0;">
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View screenshots</span><span class="screenshot-hide">Hide screenshots</span></summary>
+    <div style="margin-top: 12px;">
+        <img class="thumbnail" src="/assets/img/odqa.jpg" width="1050px" height="520px" border="0px"/>
+    </div>
+</details>
 
 <h4 class="year" />
 <br />
@@ -56,7 +68,7 @@ description:
     Specifically, worked on Multi-task Neural models for NLU.
 </p>
 <details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block;">View screenshots</summary>
+    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 8px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View screenshots</span><span class="screenshot-hide">Hide screenshots</span></summary>
     <div style="margin-top: 12px;">
         <img class="thumbnail" src="/assets/img/nlu.jpg" width="1050px" height="520px" border="0px"/>
     </div>
