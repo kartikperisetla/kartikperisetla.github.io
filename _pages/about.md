@@ -10,7 +10,7 @@ profile:
 ---
 <p align="left">
 Hi!<br/>
-I'm an Engineering leader at <a href="https://www.apple.com/siri/" target="_blank" style="color:blue">Apple</a>, leading efforts in Post-training and Alignment for problems spanning <a target="_blank" href="https://en.wikipedia.org/wiki/Automatic_summarization#Abstractive-based_summarization">Text Summarization</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering" style="color:blue">Open-domain Question Answering</a>, Agentic AI, including Long-Context aspects powering Apple Intelligence and Siri AI.</p>
+I'm an Engineering leader at <a href="https://www.apple.com/siri/" target="_blank" style="color:blue">Apple</a>, leading efforts in Post-training and Alignment for problems spanning <a target="_blank" href="https://en.wikipedia.org/wiki/Automatic_summarization#Abstractive-based_summarization">Text Summarization</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering" style="color:blue">Open-domain Question Answering</a>, Agentic AI, including Long-Context powering Apple Intelligence and Siri AI.</p>
 
 <p>
 Prior to this, I worked on Text Generation, Question-Answering, Search Relevance, Search Quality at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank" style="color:blue">Microsoft AI Research, Redmond</a>. Before Microsoft, I went to <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a> for my specialization in Natural Language Process, Machine Learning. And prior to that, I worked on Query Understanding and Search Relevance at <a href="https://linkedin.com" target="_blank" style="color:blue">LinkedIn</a>.
