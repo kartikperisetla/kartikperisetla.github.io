@@ -10,10 +10,10 @@ profile:
 ---
 <p align="left">
 Hi!<br/>
-I'm an Engineering leader at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, leading efforts in Post-training and Alignment for problems spanning <a target="_blank" href="https://en.wikipedia.org/wiki/Automatic_summarization#Abstractive-based_summarization">Text Summarization</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering" style="color:blue">Open-domain Question Answering</a>, Agentic AI, powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri AI</a>.</p>
+I'm an Engineering leader at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, where I lead Post-training and Alignment for Large Language Models across <a target="_blank" href="https://en.wikipedia.org/wiki/Automatic_summarization#Abstractive-based_summarization">Text Summarization</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering" style="color:blue">Open-domain Question Answering</a>, and Agentic AI — powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri</a>.</p>
 
 <p>
-Prior to this, I worked on Text Generation, Question-Answering, Search Relevance, Search Quality at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank" style="color:blue">Microsoft AI Research</a>. Before Microsoft, I went to <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a> for my specialization in Natural Language Process, Machine Learning. And prior to that, I worked on Query Understanding and Search Relevance at <a href="https://linkedin.com" target="_blank" style="color:blue">LinkedIn</a>.
+Before Apple, I worked on Text Generation, Question Answering, Search Relevance, and Search Quality at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank" style="color:blue">Microsoft AI Research</a>. I hold a specialization in NLP and Machine Learning from <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a>, and earlier in my career worked on Query Understanding and Search Relevance at <a href="https://linkedin.com" target="_blank" style="color:blue">LinkedIn</a>.
 </p>
 
 <p align="left">
