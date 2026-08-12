@@ -10,21 +10,15 @@ profile:
 ---
 <p align="left">
 Hi!<br/>
-I'm currently at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, leading Post-training and Alignment for Large Language Models across <a target="_blank" href="https://en.wikipedia.org/wiki/Automatic_summarization#Abstractive-based_summarization">Text Summarization</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Question_answering#Open_domain_question_answering" style="color:blue">Open-domain Question Answering</a>, and Agentic AI, powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri</a>.</p>
+I'm currently at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, leading Post-training and Alignment for Large Language Models across Text Summarization, Open-domain Question Answering, and Agentic AI, powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri</a>.</p>
 
 <p>
 Before Apple, I worked on Text Generation, Question Answering, Search Relevance, and Search Quality at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank" style="color:blue">Microsoft AI Research</a>. I hold a specialization in NLP and Machine Learning from <a href="http://cmu.edu/" target="_blank" style="color:blue">Carnegie Mellon University</a>, and earlier in my career worked on Query Understanding and Search Relevance at <a href="https://linkedin.com" target="_blank" style="color:blue">LinkedIn</a>.
 </p>
 
 <p align="left">
-<b>My research interests span</b>
-<ul>
-<li>Model Alignment</li>
-<li>RAG/Text Summarization</li>
-<li>Neural Reading Comprehension</li>
-<li>Natural Language Understanding</li>
-<li>Interpretability of Deep Neural Networks</li>
-</ul>
+<b>My research interests span</b><br/>
+Model Alignment &middot; Post-training &middot; Agentic AI &middot; Long-context Reasoning &middot; Interpretability
 </p>
 
 
