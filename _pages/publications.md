@@ -9,27 +9,32 @@ description:
 <article class="post-content publications clearfix">
     <h3 class="year">2023</h3>
     <ol class="bibliography"><li>
-        <div id="wang2021grounding">
+        <div id="dataprovenance2023">
   
-    <!-- <span class="title" style="color:#276ca8"><b>The Data Provenance Project</b></span> -->
     <b><a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">The Data Provenance Project</a></b>
     <span class="author">
             Shayne Longpre, Robert Mahari, Niklas Muennighoff, Anthony Chen, <b>Kartik Perisetla</b>, William Brannon, Jad Kabbara, Luis Villa, Sara Hooker
     </span>
     <span class="periodical" style="color:#113e85">
-      <b>- [2024] Published in Nature journal 2024</b>
-    </span>
-    <span class="links">  
-    [<a  style="color:blue" href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">nature_journal</a>]
-  </span>
-  <span class="periodical" style="color:#000033">
-      <b>+</b>
-    </span>
-    <span class="periodical" style="color:#113e85">
-      <b>- [2023] Generative AI workshop at International Conference on Machine Learning (ICML) 2023</b>
+      <b>Generative AI workshop at International Conference on Machine Learning (ICML) 2023</b>
     </span>
   <span class="links">  
     [<a  style="color:blue" href="https://genlaw.github.io/CameraReady/20.pdf" target="_blank">paper</a>]
+  </span>
+</div>
+    </li>
+    <li>
+        <div id="dataprovenance_nature2024">
+  
+    <b><a  style="color:blue" href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">A large-scale audit of dataset licensing and attribution in AI</a></b>
+    <span class="author">
+            Shayne Longpre, Robert Mahari, Niklas Muennighoff, Anthony Chen, <b>Kartik Perisetla</b>, William Brannon, Jad Kabbara, Luis Villa, Sara Hooker
+    </span>
+    <span class="periodical" style="color:#113e85">
+      <b>Nature Machine Intelligence 2024</b>
+    </span>
+  <span class="links">  
+    [<a  style="color:blue" href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">nature_journal</a>]
   </span>
 </div>
     </li>
