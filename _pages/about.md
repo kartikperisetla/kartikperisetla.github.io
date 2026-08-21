@@ -10,7 +10,7 @@ profile:
 ---
 <p align="left">
 Hi!<br/>
-I'm currently at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, leading Post-training and Alignment for Large Language Models across Text Summarization, Open-domain Question Answering, and Agentic AI, powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri</a>.</p>
+I'm currently at <a href="https://www.apple.com/" target="_blank" style="color:blue">Apple</a>, leading Post-training and Alignment for Large Language Models across Agentic Search, Text Summarization, and Open-domain Question Answering, powering <a href="https://www.apple.com/apple-intelligence/" target="_blank" style="color:blue">Apple Intelligence and Siri</a>.</p>
 
 <p>
 Previously, I worked on Natural Language Generation, Question Answering, Search Relevance &amp; Quality at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank" style="color:blue">Microsoft AI Research</a> and <a href="https://linkedin.com" target="_blank" style="color:blue">LinkedIn</a>.
@@ -18,7 +18,7 @@ Previously, I worked on Natural Language Generation, Question Answering, Search 
 
 <p align="left">
 <b>My research interests span</b><br/>
-Model Alignment &middot; Post-training &middot; Agentic AI &middot; Long-context Reasoning &middot; Interpretability
+Model Alignment &middot; Post-training &middot; Agentic Search &middot; Long-context Reasoning &middot; Interpretability
 </p>
 
 
