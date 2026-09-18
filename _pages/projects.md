@@ -105,12 +105,6 @@ details > summary::-webkit-details-marker { display: none; }
     <b><h4 style="color:#4E505A"> Led efforts to make Query Understanding more intelligent</h4></b>
     Empowering users to issue Search in natural language.
 </p>
-<details style="margin: 10px 0 20px 0;">
-    <summary style="cursor: pointer; color: #202E6E; font-weight: 600; padding: 4px 12px; background: #f4f4f8; border-radius: 6px; display: inline-block; list-style: none;"><span class="screenshot-show">View</span><span class="screenshot-hide">Hide</span></summary>
-    <div style="margin-top: 12px;">
-        <img class="thumbnail" src="/assets/img/crf_query_tagger.png" width="520px" height="230px" border="0px"/>
-    </div>
-</details>
 
 <h4 class="year" />
 <br />
