@@ -3,6 +3,7 @@ layout: page
 title: open-source
 permalink: /open-source/
 description:
+published: false
 ---
 <h3 style="color:#202E6E">One Laptop per Child (OLPC) and Sugarlabs</h3>
 <p align="justify">
